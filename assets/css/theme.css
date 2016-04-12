@@ -9875,6 +9875,12 @@ body {
 .white-pathes path {
   stroke: white !important; }
 
+.bg-gray-lighter {
+  background-color: #eceeef; }
+
+.bg-gray-light {
+  background-color: #818a91; }
+
 [onclick] {
   cursor: pointer; }
 

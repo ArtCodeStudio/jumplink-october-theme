@@ -56,6 +56,15 @@ body {
     }
 }
 
+.bg-gray-lighter {
+    background-color: $gray-lighter;
+}
+
+.bg-gray-light {
+    background-color: $gray-light;
+}
+
+
 // javascript links
 [onclick] {
     cursor: pointer;
