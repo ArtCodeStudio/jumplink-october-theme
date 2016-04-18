@@ -25,6 +25,7 @@ $navbar-height:             54px; // TODO get from bootstrap variables or calc t
 @import "./sidebar.scss";
 @import "./sticky.scss";
 @import "./location.scss";
+@import "./card.scss";
 
 body {
 	-webkit-font-smoothing: antialiased;
@@ -117,7 +118,9 @@ select[name="locale"] {
         color: white;
     }
 }
-.fadeInLeftOnViewport, .fadeInRightOnViewport {
+
+.fadeInLeftOnViewport,
+.fadeInRightOnViewport {
     opacity: 0;
     &.animationDone {
         opacity: 1;
@@ -128,19 +131,15 @@ select[name="locale"] {
     @extend .bg-inverse;
 }
 
-.home {
-    .description {
-        background-color: $body-bg;
-        .container {
-            @extend .p-y-2;
-        }
-    }
-        
-    // anker elements with padding with navbar height to avoid scroll position overlap
-    [data-target] {
-        padding-top: 54px;
-        margin-top: -54px;
-    }
+
+// anker elements with padding with navbar height to avoid scroll position overlap
+[data-target] {
+    padding-top: 54px;
+    margin-top: -54px;
+}
+
+.bg-body {
+    background-color: $body-bg;
 }
 
 #top {
@@ -213,102 +212,99 @@ select[name="locale"] {
         max-height: 300px;
     }
 }
-
-#programming {
-    
-    #apps {
-        background-color: #b1e9f2;
-        overflow-x: hidden; // hide clouds for bad x scrolling
-        .appdesign-video, .crossplattform-image {
-            max-height: 300px;
-        }
-        .svg_apps_col {
-            background-image: url(../images/apps_background.svg);
-            background-position: center bottom;
-            background-repeat:repeat-x;
-            height: 500px;
-            .foreground, .foreground_finger {
-                background-repeat: no-repeat;
-                position: absolute;
-                pointer-events: none;
-            }
-            .foreground {
-                background-image: url(../images/apps_foreground.svg);
-                background-position: center bottom;
-                height: 500px;
-                width: 100%;
-                z-index: 2;
-            }
-            .foreground_finger {
-                background-image: url(../images/apps_foreground_finger.svg);
-                background-position: center 200px; 
-                height: 500px;
-                width: 100%;
-                z-index: 3;
-            }
-            .framewrapper {
-                position: relative;
-                top: 16px; // TODO calc this?
-                height: 250px * $apps-iframe-decrease;
-                width: 160px * $apps-iframe-decrease;
-                -webkit-transform: scale(1 / $apps-iframe-decrease);
-                -moz-transform: scale(1 / $apps-iframe-decrease);
-                -ms-transform: scale(1 / $apps-iframe-decrease);
-                -o-transform: scale(1 / $apps-iframe-decrease);
-                transform: scale(1 / $apps-iframe-decrease);
-                background-color: white;
-                .la-square-jelly-box {
-                    position: absolute;
-                    margin: 70% 45%;
-                }
-                iframe {
-                    position: relative;
-                    width: 100%;
-                    height: 100%; 
-                    border: none;
-                    z-index: 1;
-                }
-            }
-        }
+ 
+#apps {
+    background-color: #b1e9f2;
+    overflow-x: hidden; // hide clouds for bad x scrolling
+    .appdesign-video, .crossplattform-image {
+        max-height: 300px;
     }
-    
-    #ecommerce {
-        .description {
-            .bindings-image,  .markets-image, .erp-image, .custom-image {
-                max-height: 300px;
-            }
-        }
-
-        background-color: #b1e9f2;
-        .svg-wrapper {
-            background-image: url(../images/ecommerce_background_spring.svg);
+    .svg_apps_col {
+        background-image: url(../images/apps_background.svg);
+        background-position: center bottom;
+        background-repeat:repeat-x;
+        height: 500px;
+        .foreground, .foreground_finger {
             background-repeat: no-repeat;
-            background-position: center bottom;
-            background-size: auto 100%;
+            position: absolute;
+            pointer-events: none;
         }
-        #street {
+        .foreground {
+            background-image: url(../images/apps_foreground.svg);
+            background-position: center bottom;
+            height: 500px;
             width: 100%;
+            z-index: 2;
+        }
+        .foreground_finger {
+            background-image: url(../images/apps_foreground_finger.svg);
+            background-position: center 200px; 
+            height: 500px;
+            width: 100%;
+            z-index: 3;
+        }
+        .framewrapper {
+            position: relative;
+            top: 16px; // TODO calc this?
+            height: 250px * $apps-iframe-decrease;
+            width: 160px * $apps-iframe-decrease;
+            -webkit-transform: scale(1 / $apps-iframe-decrease);
+            -moz-transform: scale(1 / $apps-iframe-decrease);
+            -ms-transform: scale(1 / $apps-iframe-decrease);
+            -o-transform: scale(1 / $apps-iframe-decrease);
+            transform: scale(1 / $apps-iframe-decrease);
+            background-color: white;
+            .la-square-jelly-box {
+                position: absolute;
+                margin: 70% 45%;
+            }
+            iframe {
+                position: relative;
+                width: 100%;
+                height: 100%; 
+                border: none;
+                z-index: 1;
+            }
         }
     }
-    
-    #web {
-        background-color: #b1e9f2;
-        
-        .content-image, .files-image, .responsive-image, .code-image {
+}
+
+#ecommerce {
+    .description {
+        .bindings-image,  .markets-image, .erp-image, .custom-image {
             max-height: 300px;
         }
-        
-        .svg-wrapper {
-            position: relative;
-            top: -150px;
-            margin-bottom: -150px;
-            @include media-breakpoint-down(sm) {
-                top: -100px;
-                margin-bottom: -100px;
-            }
-            #webdevelopment {
-                width: 100%;
-            }
+    }
+
+    background-color: #b1e9f2;
+    .svg-wrapper {
+        background-image: url(../images/ecommerce_background_spring.svg);
+        background-repeat: no-repeat;
+        background-position: center bottom;
+        background-size: auto 100%;
+    }
+    #street {
+        width: 100%;
+    }
+}
+
+#web {
+    background-color: #b1e9f2;
+    
+    .content-image, .files-image, .responsive-image, .code-image {
+        max-height: 300px;
+    }
+    
+    .svg-wrapper {
+        position: relative;
+        // top: -150px;
+        // margin-bottom: -150px;
+        @include media-breakpoint-down(sm) {
+            // top: -100px;
+            // margin-bottom: -100px;
+        }
+        #webdevelopment {
+            width: 100%;
         }
     }
 }

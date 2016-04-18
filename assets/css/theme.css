@@ -4467,7 +4467,7 @@ a.bg-danger:focus, a.bg-danger:hover {
   padding-right: 1.5rem !important;
   padding-left: 1.5rem !important; }
 
-.p-y-2, .home .description .container, #top #header_svg {
+.p-y-2, #top #header_svg {
   padding-top: 1.5rem !important;
   padding-bottom: 1.5rem !important; }
 
@@ -9912,17 +9912,19 @@ select[name="locale"] {
 .fa.fa-mobile {
   color: white; }
 
-.fadeInLeftOnViewport, .fadeInRightOnViewport {
+.fadeInLeftOnViewport,
+.fadeInRightOnViewport {
   opacity: 0; }
-  .fadeInLeftOnViewport.animationDone, .fadeInRightOnViewport.animationDone {
+  .fadeInLeftOnViewport.animationDone,
+  .fadeInRightOnViewport.animationDone {
     opacity: 1; }
 
-.home .description {
-  background-color: #fff; }
-
-.home [data-target] {
+[data-target] {
   padding-top: 54px;
   margin-top: -54px; }
+
+.bg-body {
+  background-color: #fff; }
 
 #top {
   position: relative; }
@@ -9963,33 +9965,33 @@ select[name="locale"] {
 #about .peace-image {
   max-height: 300px; }
 
-#programming #apps {
+#apps {
   background-color: #b1e9f2;
   overflow-x: hidden; }
-  #programming #apps .appdesign-video, #programming #apps .crossplattform-image {
+  #apps .appdesign-video, #apps .crossplattform-image {
     max-height: 300px; }
-  #programming #apps .svg_apps_col {
+  #apps .svg_apps_col {
     background-image: url(../images/apps_background.svg);
     background-position: center bottom;
     background-repeat: repeat-x;
     height: 500px; }
-    #programming #apps .svg_apps_col .foreground, #programming #apps .svg_apps_col .foreground_finger {
+    #apps .svg_apps_col .foreground, #apps .svg_apps_col .foreground_finger {
       background-repeat: no-repeat;
       position: absolute;
       pointer-events: none; }
-    #programming #apps .svg_apps_col .foreground {
+    #apps .svg_apps_col .foreground {
       background-image: url(../images/apps_foreground.svg);
       background-position: center bottom;
       height: 500px;
       width: 100%;
       z-index: 2; }
-    #programming #apps .svg_apps_col .foreground_finger {
+    #apps .svg_apps_col .foreground_finger {
       background-image: url(../images/apps_foreground_finger.svg);
       background-position: center 200px;
       height: 500px;
       width: 100%;
       z-index: 3; }
-    #programming #apps .svg_apps_col .framewrapper {
+    #apps .svg_apps_col .framewrapper {
       position: relative;
       top: 16px;
       height: 450px;
@@ -10000,41 +10002,35 @@ select[name="locale"] {
       -o-transform: scale(0.55556);
       transform: scale(0.55556);
       background-color: white; }
-      #programming #apps .svg_apps_col .framewrapper .la-square-jelly-box {
+      #apps .svg_apps_col .framewrapper .la-square-jelly-box {
         position: absolute;
         margin: 70% 45%; }
-      #programming #apps .svg_apps_col .framewrapper iframe {
+      #apps .svg_apps_col .framewrapper iframe {
         position: relative;
         width: 100%;
         height: 100%;
         border: none;
         z-index: 1; }
 
-#programming #ecommerce {
+#ecommerce {
   background-color: #b1e9f2; }
-  #programming #ecommerce .description .bindings-image, #programming #ecommerce .description .markets-image, #programming #ecommerce .description .erp-image, #programming #ecommerce .description .custom-image {
+  #ecommerce .description .bindings-image, #ecommerce .description .markets-image, #ecommerce .description .erp-image, #ecommerce .description .custom-image {
     max-height: 300px; }
-  #programming #ecommerce .svg-wrapper {
+  #ecommerce .svg-wrapper {
     background-image: url(../images/ecommerce_background_spring.svg);
     background-repeat: no-repeat;
     background-position: center bottom;
     background-size: auto 100%; }
-  #programming #ecommerce #street {
+  #ecommerce #street {
     width: 100%; }
 
-#programming #web {
+#web {
   background-color: #b1e9f2; }
-  #programming #web .content-image, #programming #web .files-image, #programming #web .responsive-image, #programming #web .code-image {
+  #web .content-image, #web .files-image, #web .responsive-image, #web .code-image {
     max-height: 300px; }
-  #programming #web .svg-wrapper {
-    position: relative;
-    top: -150px;
-    margin-bottom: -150px; }
-    @media (max-width: 767px) {
-      #programming #web .svg-wrapper {
-        top: -100px;
-        margin-bottom: -100px; } }
-    #programming #web .svg-wrapper #webdevelopment {
+  #web .svg-wrapper {
+    position: relative; }
+    #web .svg-wrapper #webdevelopment {
       width: 100%; }
 
 #design header {

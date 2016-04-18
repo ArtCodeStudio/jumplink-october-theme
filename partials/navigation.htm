@@ -4,12 +4,16 @@
         &#9776;
     </button>
     <div class="container hidden-sm-down">
-        <a href="#programming" class="navbar-brand">JumpLink</a>
+        <a href="#top" class="navbar-brand">JumpLink</a>
         <ul class="nav navbar-nav">
-            <li class="nav-item"><a href="{% if this.page.id != 'home' %}{{'home'|page}}{% endif %}#about" class="nav-link">{{'Über'|_}}</a></li>
-            <li class="nav-item"><a href="{% if this.page.id != 'home' %}{{'home'|page}}{% endif %}#programming" class="nav-link">{{'Programmierung'|_}}</a></li>
-            <li class="nav-item"><a href="{% if this.page.id != 'home' %}{{'home'|page}}{% endif %}#design" class="nav-link">{{'Design'|_}}</a></li>
+            <li class="nav-item"><a href="{% if this.page.id != 'home' %}{{'home'|page}}{% endif %}#service" class="nav-link">{{'Tätigkeiten'|_}}</a></li>
+            <li class="nav-item"><a href="{% if this.page.id != 'home' %}{{'home'|page}}{% endif %}#about" class="nav-link">{{'Netzwerk'|_}}</a></li>
             <li class="nav-item"><a href="{% if this.page.id != 'home' %}{{'home'|page}}{% endif %}#contact" class="nav-link">{{'Kontakt'|_}}</a></li>
+            <!--<li class="nav-item"><a href="{{'app'|page}}" class="nav-link">{{'Apps'|_}}</a></li>
+            <li class="nav-item"><a href="{{'web'|page}}" class="nav-link">{{'Webseiten'|_}}</a></li>
+            <li class="nav-item"><a href="{{'ecommerce'|page}}" class="nav-link">{{'Onlineshops'|_}}</a></li>
+            <li class="nav-item"><a href="{{'design'|page}}" class="nav-link">{{'Design'|_}}</a></li>-->
+            <!--<li class="nav-item"><a href="{% if this.page.id != 'home' %}{{'home'|page}}{% endif %}#design" class="nav-link">{{'Design'|_}}</a></li>-->
             <li class="nav-item"><a href="{{'blog'|page}}" class="nav-link blog">Blog</a></li>
         </ul>
         <form class="form-inline pull-xs-right">
