@@ -83,3 +83,25 @@ L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={
 
 var marker = L.marker([53.87249480720694, 8.698151707649231]).addTo(map);
 
+/**
+ * Init service carousel
+ */
+$(function () {
+    $('#services_carousel').slick({
+        infinite: true, 
+        autoplay:false,
+        arrows:true,
+        centerMode: true,
+        slidesToShow:1,
+        slidesToScroll: 1,
+    });
+});
+
+/**
+ * App header animations
+ */
+// init variables for home
+var headerAnimateWrapper = $('#top .svg-wrapper');
+
+// run move finger function to start running this feature
+movingImageOnMousemove("#apps", '#apps .foreground_finger', 50, 200, true, false, 100);
