@@ -1,11 +1,23 @@
-<div class="media">
-  <div class="media-left media-middle">
-    <a href="#">
-      <img class="media-object bindings-image" src="{{ 'assets/images/services/german_market.svg' | theme }} " alt="bindings">
-    </a>
+<div class="row" class="service_german_market">
+  <div class="col-xs-12 col-sm-10 col-sm-offset-1">
+    <div class="hidden-lg-up card">
+      <img class="card-img-top center-block img-fluid" src="{{ 'assets/images/services/german_market.svg' | theme }}" alt="german_market">
+      <div class="card-block">
+        <h4 class="card-title">{{'Fit für den deutschen Markt'|_}}</h4>
+        <p class="card-text">{% content 'services/german_market.md' %}</p>
+      </div>
+    </div>
+    <div class="hidden-md-down media">
+      <div class="media-left media-middle">
+        <a href="#">
+          <img class="media-object bindings-image" src="{{ 'assets/images/services/german_market.svg' | theme }}" alt="german_market">
+        </a>
+      </div>
+      <div class="media-body">
+        <h4 class="media-heading">{{'Fit für den deutschen Markt'|_}}</h4>
+        <p>{% content 'services/german_market.md' %}</p>
+      </div>
+    </div>
   </div>
-  <div class="media-body">
-    <h4 class="media-heading">{{'Fit für den deutschen Markt'|_}}</h4>
-    <p>{{'Wir bereiten deinen Shop für den deutschen Markt vor, dazu gehören z.B. Rechtssicherheit bei Rechtstexten, der Kaufabwicklungen, der Preisdarstellung und Steuerklassen.'|_}}</p>
-  </div>
+  <div class="col-sm-1"></div>
 </div>

@@ -37,14 +37,19 @@ $slick-opacity-not-active: 0.25 !default;
 }
 
 #services_carousel {
-    .media-object {
+    .card-img-top {
         max-height: 250px;
-        max-width: 250px;
+    }
+    .media-object {
+        // max-width: 250px;
+        max-height: 250px;
         vertical-align: middle;
         margin-right: 80px;
     }
     .media-body {
         vertical-align: middle;
     }
-    
+    .card {
+        border: none;
+    }
 }

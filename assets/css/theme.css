@@ -10042,14 +10042,19 @@ a.bg-danger:focus, a.bg-danger:hover {
 .slick-prev:before, .slick-next:before {
   color: black; }
 
+#services_carousel .card-img-top {
+  max-height: 250px; }
+
 #services_carousel .media-object {
   max-height: 250px;
-  max-width: 250px;
   vertical-align: middle;
   margin-right: 80px; }
 
 #services_carousel .media-body {
   vertical-align: middle; }
+
+#services_carousel .card {
+  border: none; }
 
 body {
   -webkit-font-smoothing: antialiased;

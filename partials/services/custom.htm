@@ -1,9 +1,23 @@
-<div class="media">
-  <div class="media-left media-middle">
-    <img class="media-object" src="{{ 'assets/images/services/custom.svg' | theme }} " alt="bindings">
+<div class="row" class="service_custom">
+  <div class="col-xs-12 col-sm-10 col-sm-offset-1">
+    <div class="hidden-lg-up card">
+      <img class="card-img-top center-block img-fluid" src="{{ 'assets/images/services/custom.svg' | theme }}" alt="custom">
+      <div class="card-block">
+        <h4 class="card-title">{{'Maßgeschneidert'|_}}</h4>
+        <p class="card-text">{% content 'services/custom.md' %}</p>
+      </div>
+    </div>
+    <div class="hidden-md-down media">
+      <div class="media-left media-middle">
+        <a href="#">
+          <img class="media-object bindings-image" src="{{ 'assets/images/services/custom.svg' | theme }}" alt="custom">
+        </a>
+      </div>
+      <div class="media-body">
+        <h4 class="media-heading">{{'Maßgeschneidert'|_}}</h4>
+        <p>{% content 'services/custom.md' %}</p>
+      </div>
+    </div>
   </div>
-  <div class="media-body">
-    <h4 class="media-heading">{{'Maßgeschneidert'|_}}</h4>
-    <p>{{'Ob großer Shop mit vielen idividuellen Funktionen und voller Kontroller oder unkompliziert und immer up to date, wir passen das für dich am besten geeignete System deinen Vorstellungen an.'|_}}</p>
-  </div>
+  <div class="col-sm-1"></div>
 </div>

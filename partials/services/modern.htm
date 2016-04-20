@@ -1,12 +1,27 @@
-<div class="media">
-  <div class="media-left media-middle">
-    <video width="250px" autoplay loop class="media-object modern-image">
-        <source src="{{ 'assets/images/services/modern.webm' | theme }}" type="video/webm" />
-        {{'Your browser does not support the video tag.'|_}}
-    </video>
+<div class="row" class="service_modern">
+  <div class="col-xs-12 col-sm-10 col-sm-offset-1">
+    <div class="hidden-lg-up card">
+        <video height="250px" autoplay loop class="card-img-top center-block img-fluid">
+            <source src="{{ 'assets/images/services/modern.webm' | theme }}" type="video/webm" />
+            {{'Your browser does not support the video tag.'|_}}
+        </video>
+      <div class="card-block">
+        <h4 class="card-title">{{'Modernes App-Design'|_}}</h4>
+        <p class="card-text">{% content 'services/modern.md' %}</p>
+      </div>
+    </div>
+    <div class="hidden-md-down media">
+      <div class="media-left media-middle">
+        <video height="250px" autoplay loop class="media-object">
+            <source src="{{ 'assets/images/services/modern.webm' | theme }}" type="video/webm" />
+            {{'Your browser does not support the video tag.'|_}}
+        </video>
+      </div>
+      <div class="media-body">
+        <h4 class="media-heading">{{'Modernes App-Design'|_}}</h4>
+        <p>{% content 'services/modern.md' %}</p>
+      </div>
+    </div>
   </div>
-  <div class="media-body">
-    <h4 class="media-heading">{{'Modernes App-Design'|_}}</h4>
-    <p>{% content 'apps/design.md' %}</p>
-  </div>
+  <div class="col-sm-1"></div>
 </div>

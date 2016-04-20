@@ -1,9 +1,21 @@
-<div class="media">
-  <div class="media-left media-middle">
-    <img class="media-object bindings-image" src="{{ 'assets/images/services/api.svg' | theme }} " alt="bindings">
+<div class="row" class="service_api">
+  <div class="col-xs-12 col-sm-10 col-sm-offset-1">
+    <div class="hidden-lg-up card">
+      <img class="card-img-top center-block img-fluid" src="{{ 'assets/images/services/api.svg' | theme }}" alt="api">
+      <div class="card-block">
+        <h4 class="card-title">{{'Anbindungen'|_}}</h4>
+        <p class="card-text">{% content 'services/api.md' %}</p>
+      </div>
+    </div>
+    <div class="hidden-md-down media">
+      <div class="media-left media-middle">
+        <img class="media-object" src="{{ 'assets/images/services/api.svg' | theme }}" alt="api">
+      </div>
+      <div class="media-body">
+        <h4 class="media-heading">{{'Anbindungen'|_}}</h4>
+        <p>{% content 'services/api.md' %}</p>
+      </div>
+    </div>
   </div>
-  <div class="media-body">
-    <h4 class="media-heading">{{'Anbindungen'|_}}</h4>
-    <p>{{'Binde deine Produkte automatisch an eBay, Amazon, Facebook und Apps an, so hast du mehrere potentielle Käuferquellen und brauchst nur den Warenbestand in deinem Shop zu pflegen.'|_}}</p>
-  </div>
+  <div class="col-sm-1"></div>
 </div>

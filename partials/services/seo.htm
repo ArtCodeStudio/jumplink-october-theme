@@ -1,9 +1,21 @@
-<div class="media">
-  <div class="media-left media-middle">
-    <img class="media-object" src="{{ 'assets/images/services/seo.svg' | theme }} " alt="bindings">
+<div class="row" class="service_seo">
+  <div class="col-xs-12 col-sm-10 col-sm-offset-1">
+    <div class="hidden-lg-up card">
+      <img class="card-img-top center-block img-fluid" src="{{ 'assets/images/services/seo.svg' | theme }}" alt="seo">
+      <div class="card-block">
+        <h4 class="card-title">{{'SEO'|_}} <small>{{'Suchmaschinen-Optimierung'|_}}</small></h4>
+        <p class="card-text">{% content 'services/seo.md' %}</p>
+      </div>
+    </div>
+    <div class="hidden-md-down media">
+      <div class="media-left media-middle">
+        <img class="media-object" src="{{ 'assets/images/services/seo.svg' | theme }}" alt="seo">
+      </div>
+      <div class="media-body">
+        <h4 class="media-heading">{{'SEO'|_}} <small>{{'Suchmaschinen-Optimierung'|_}}</small></h4>
+        <p>{% content 'services/seo.md' %}</p>
+      </div>
+    </div>
   </div>
-  <div class="media-body">
-    <h4 class="media-heading">{{'SEO'|_}} <small>Suchmaschinen-Optimierung</small></h4>
-    <p>{% content 'web/seo.md' %}</p>
-  </div>
+  <div class="col-sm-1"></div>
 </div>

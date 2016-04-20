@@ -1,10 +1,21 @@
-<div class="media">
-  <div class="media-left media-middle">
-    <img class="media-object" src="{{ 'assets/images/services/xxx.svg' | theme }} " alt="bindings">
-    <div style="width:250px"></div> Platzhalter
+<div class="row" class="service_selfcode">
+  <div class="col-xs-12 col-sm-10 col-sm-offset-1">
+    <div class="hidden-lg-up card">
+      <img class="card-img-top center-block img-fluid img-rounded img-thumbnail" src="{{ 'assets/images/services/selfcode.png' | theme }}" alt="selfcode">
+      <div class="card-block">
+        <h4 class="card-title">{{'Unternehmens-Prozesse Automatisieren'|_}}</h4>
+        <p class="card-text">{% content 'services/selfcode.md' %}</p>
+      </div>
+    </div>
+    <div class="hidden-md-down media">
+      <div class="media-left media-middle">
+        <img class="media-object img-rounded img-thumbnail" src="{{ 'assets/images/services/selfcode.png' | theme }}" alt="selfcode">
+      </div>
+      <div class="media-body">
+        <h4 class="media-heading">{{'Unternehmens-Prozesse Automatisieren'|_}}</h4>
+        <p>{% content 'services/selfcode.md' %}</p>
+      </div>
+    </div>
   </div>
-  <div class="media-body">
-    <h4 class="media-heading">{{'Unternehmens-Prozesse Automatisieren'|_}}</h4>
-    <p>{% content 'applications/processes.md' %}</p>
-  </div>
+  <div class="col-sm-1"></div>
 </div>
