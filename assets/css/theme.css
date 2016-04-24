@@ -9352,7 +9352,7 @@ a.bg-danger:focus, a.bg-danger:hover {
   z-index: 3000; }
   .navbar .navbar-brand {
     min-width: 40px;
-    background-image: url(../images/logo_inverse.svg);
+    background-image: url(../images/logos/logo_inverse.svg);
     background-repeat: no-repeat;
     background-position: left center;
     background-size: auto 100%;
@@ -10090,7 +10090,7 @@ body {
 select[name="locale"] {
   opacity: 0.5;
   border: none;
-  background-image: url(../images/select_inverse.png); }
+  background-image: url(../images/symbols/select_inverse.png); }
   select[name="locale"]:hover {
     opacity: 0.75; }
 
@@ -10171,7 +10171,7 @@ select[name="locale"] {
   #apps .appdesign-video, #apps .crossplattform-image {
     max-height: 300px; }
   #apps .svg_apps_col {
-    background-image: url(../images/apps_background.svg);
+    background-image: url(../images/header/apps_background.svg);
     background-position: center bottom;
     background-repeat: repeat-x;
     height: 500px; }
@@ -10180,13 +10180,13 @@ select[name="locale"] {
       position: absolute;
       pointer-events: none; }
     #apps .svg_apps_col .foreground {
-      background-image: url(../images/apps_foreground.svg);
+      background-image: url(../images/header/apps_foreground.svg);
       background-position: center bottom;
       height: 500px;
       width: 100%;
       z-index: 2; }
     #apps .svg_apps_col .foreground_finger {
-      background-image: url(../images/apps_foreground_finger.svg);
+      background-image: url(../images/header/apps_foreground_finger.svg);
       background-position: center 200px;
       height: 500px;
       width: 100%;
@@ -10214,7 +10214,7 @@ select[name="locale"] {
   #ecommerce .description .bindings-image, #ecommerce .description .markets-image, #ecommerce .description .erp-image, #ecommerce .description .custom-image {
     max-height: 300px; }
   #ecommerce .svg-wrapper {
-    background-image: url(../images/ecommerce_background_spring.svg);
+    background-image: url(../images/header/ecommerce_background_spring.svg);
     background-repeat: no-repeat;
     background-position: center bottom;
     background-size: auto 100%; }

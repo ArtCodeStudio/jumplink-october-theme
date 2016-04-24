@@ -99,7 +99,7 @@ select[name="locale"] {
     }
 
     border: none;
-    background-image: url(../images/select_inverse.png);
+    background-image: url(../images/symbols/select_inverse.png);
 }
 
 .fa {
@@ -221,7 +221,7 @@ select[name="locale"] {
         max-height: 300px;
     }
     .svg_apps_col {
-        background-image: url(../images/apps_background.svg);
+        background-image: url(../images/header/apps_background.svg);
         background-position: center bottom;
         background-repeat:repeat-x;
         height: 500px;
@@ -231,14 +231,14 @@ select[name="locale"] {
             pointer-events: none;
         }
         .foreground {
-            background-image: url(../images/apps_foreground.svg);
+            background-image: url(../images/header/apps_foreground.svg);
             background-position: center bottom;
             height: 500px;
             width: 100%;
             z-index: 2;
         }
         .foreground_finger {
-            background-image: url(../images/apps_foreground_finger.svg);
+            background-image: url(../images/header/apps_foreground_finger.svg);
             background-position: center 200px; 
             height: 500px;
             width: 100%;
@@ -279,7 +279,7 @@ select[name="locale"] {
 
     background-color: #b1e9f2;
     .svg-wrapper {
-        background-image: url(../images/ecommerce_background_spring.svg);
+        background-image: url(../images/header/ecommerce_background_spring.svg);
         background-repeat: no-repeat;
         background-position: center bottom;
         background-size: auto 100%;
