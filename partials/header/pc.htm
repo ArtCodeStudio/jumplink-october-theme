@@ -1,0 +1,30 @@
+==
+<header id="top" class="bg-inverse p-b-3" data-target="#top">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 svg-wrapper">
+                {% partial 'header/pc.svg.htm' %}
+            </div>
+        </div>
+    </div>
+    
+    <div id="top-header-subtext-container">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-4 left">
+                    <h1 class="m-t-3 text-xs-center jumplink-subtext">{{'Leidenschaftlich'|_}}</h1>
+                </div>
+                <div class="col-xs-4 middle">
+                    <h1 class="m-t-3 text-xs-center jumplink-subtext">{{'Software'|_}}</h1>
+                </div>
+                <div class="col-xs-4 right">
+                    <h1 class="m-t-3 text-xs-center jumplink-subtext">{{'entwickeln'|_}}</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+{% put scripts %}
+    <script type="text/javascript" src="{{ 'assets/javascript/header/pc.js' |theme }}"></script>
+{% endput %}
