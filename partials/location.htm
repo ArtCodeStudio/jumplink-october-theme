@@ -2,19 +2,29 @@
 <div id="location" data-target="#location">
     <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 card card-block route">
         <div class="">
-            <h6 class="card-title">{{'Anfahrt'|_}}</h6>
+            <h6 class="card-title">Anfahrt</h6>
             <div class="card-text">
                 <div class="row">
                     <div class="col-xs-8">
                         <address>
-                            <strong>JumpLink</strong>
-                            <br>Kasernenstraße 8, 27472 Cuxhaven
+                            <strong>
+                                {{ this.theme.location_name_line_1 }}
+                                {% if this.theme.location_name_line_2 %}
+                                    <br>{{ this.theme.location_name_line_2 }}
+                                {% endif %}
+                            </strong>
+                            {% if this.theme.location_address_line_1 %}
+                                <br>{{ this.theme.location_address_line_1 }}
+                            {% endif %}
+                            {% if this.theme.location_address_line_2 %}
+                                <br>{{ this.theme.location_address_line_2 }}
+                            {% endif %}
                         </address>
                     </div>
                     <div class="col-xs-4">
-                            <a class="btn btn-secondary" data-toggle="tooltip" data-placement="top" title="{{'Routenplaner'|_}}", target="_blank", href="https://www.google.de/maps/place/JumpLink/@53.8725552,8.6976976,18z/data=!4m15!1m12!4m11!1m3!2m2!1d8.6981214!2d53.8725078!1m6!1m2!1s0x47b4046c8fdcaae5:0x812e1ff4ad919f08!2sJumpLink,+27472,+Cuxhaven,+Kasernenstra%C3%9Fe+8,+27472+Cuxhaven!2m2!1d8.698122!2d53.872515!3m1!1s0x0:0x812e1ff4ad919f08">
-                                <img src="{{ 'assets/images/symbols/route.svg' | theme }}" alt="{{'Routenplaner'|_}}">
-                            </a>
+                        <a class="btn btn-secondary" id="navigation_link" data-toggle="tooltip" data-placement="top" title="Routenplaner", target="_blank">
+                            <img src="{{ 'assets/images/symbols/route.svg' | theme }}" alt="Routenplaner">
+                        </a>
                     </div>
                 </div>
             </div>
@@ -22,3 +32,7 @@
     </div>
     <div id="map"></div>
 </div>
+
+{% put scripts %}
+    <script type="text/javascript" src="{{ 'assets/javascript/partials/location.js' |theme }}"></script>
+{% endput %}

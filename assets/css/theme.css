@@ -4524,7 +4524,7 @@ a.bg-danger:focus, a.bg-danger:hover {
   padding-right: 1.5rem !important;
   padding-left: 1.5rem !important; }
 
-.p-y-2, #top #header_svg {
+.p-y-2, #header_svg {
   padding-top: 1.5rem !important;
   padding-bottom: 1.5rem !important; }
 
@@ -4547,7 +4547,7 @@ a.bg-danger:focus, a.bg-danger:hover {
   padding-right: 3rem !important;
   padding-left: 3rem !important; }
 
-.p-y-3, #top #top-header-subtext-container .jumplink-subtext {
+.p-y-3, #top-header-subtext-container .jumplink-subtext {
   padding-top: 3rem !important;
   padding-bottom: 3rem !important; }
 
@@ -10056,6 +10056,71 @@ a.bg-danger:focus, a.bg-danger:hover {
 #services_carousel .card {
   border: none; }
 
+.jumplink-subtext {
+  font-weight: 300;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  opacity: 0; }
+  .jumplink-subtext.animationDone {
+    opacity: 1; }
+
+#particles {
+  height: 100vh; }
+  #particles[data-target] {
+    margin-top: 0; }
+  #particles #particles-subtext-container {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    /* align horizontal */
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    /* align vertical */
+    margin-top: -54px; }
+    #particles #particles-subtext-container .container {
+      vertical-align: middle; }
+
+#top-header-subtext-container {
+  position: absolute;
+  top: 6vw;
+  width: 100%; }
+  @media (max-width: 543px) {
+    #top-header-subtext-container .col-xs-4.left {
+      padding-right: 0; } }
+  @media (max-width: 543px) {
+    #top-header-subtext-container .col-xs-4.right {
+      padding-left: 0; } }
+  #top-header-subtext-container .jumplink-subtext {
+    font-weight: 300;
+    font-size: 2.5vw;
+    opacity: 0; }
+    @media (min-width: 1200px) {
+      #top-header-subtext-container .jumplink-subtext {
+        font-size: 2vw; } }
+    #top-header-subtext-container .jumplink-subtext > span > span > span {
+      -webkit-transition: -webkit-transform 100ms;
+      transition: -webkit-transform 100ms;
+      transition: transform 100ms;
+      transition: transform 100ms, -webkit-transform 100ms; }
+      #top-header-subtext-container .jumplink-subtext > span > span > span:hover {
+        -webkit-transform: scale3d(1.5, 1.5, 1.5);
+        transform: scale3d(1.5, 1.5, 1.5); }
+
+#header_svg {
+  max-width: 100%;
+  width: 100%;
+  height: auto; }
+
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -10127,40 +10192,6 @@ select[name="locale"] {
   position: relative; }
   #top[data-target] {
     margin-top: 0; }
-  #top #top-header-subtext-container {
-    position: absolute;
-    top: 6vw;
-    width: 100%; }
-    @media (max-width: 543px) {
-      #top #top-header-subtext-container .col-xs-4.left {
-        padding-right: 0; } }
-    @media (max-width: 543px) {
-      #top #top-header-subtext-container .col-xs-4.right {
-        padding-left: 0; } }
-    #top #top-header-subtext-container .jumplink-subtext {
-      font-weight: 300;
-      font-size: 2.5vw;
-      -webkit-animation-duration: 3s;
-      /* Chrome, Safari, Opera */
-      animation-duration: 3s;
-      opacity: 0; }
-      #top #top-header-subtext-container .jumplink-subtext.animationDone {
-        opacity: 1; }
-      @media (min-width: 1200px) {
-        #top #top-header-subtext-container .jumplink-subtext {
-          font-size: 2vw; } }
-      #top #top-header-subtext-container .jumplink-subtext > span > span > span {
-        -webkit-transition: -webkit-transform 100ms;
-        transition: -webkit-transform 100ms;
-        transition: transform 100ms;
-        transition: transform 100ms, -webkit-transform 100ms; }
-        #top #top-header-subtext-container .jumplink-subtext > span > span > span:hover {
-          -webkit-transform: scale3d(1.5, 1.5, 1.5);
-          transform: scale3d(1.5, 1.5, 1.5); }
-  #top #header_svg {
-    max-width: 100%;
-    width: 100%;
-    height: auto; }
 
 #about .peace-image {
   max-height: 300px; }

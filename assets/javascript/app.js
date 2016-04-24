@@ -65,7 +65,7 @@ $.fn.extend({
     };
  
     special.scrollstop = {
-        latency: 10, // default is 300
+        latency: 100, // default is 300
         setup: function() {
  
             var timer,
@@ -131,52 +131,6 @@ var movingImageOnMousemove = function (mouseSelector, backgroundSelector, xOffse
 };
 
 /**
- * Performs a smooth page scroll to an anchor on the same page.y
- * @see https://css-tricks.com/snippets/jquery/smooth-scrolling/
- */
-$(function() {
-  $('a[href*="#"]:not([href="#"])').click(function() {
-    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-      if (target.length) {
-        $('html, body').animate({
-          scrollTop: target.offset().top
-        }, 1000);
-        return false;
-      }
-    }
-  });
-});
-
-/**
- * @see http://dcdeiv.github.io/simpler-sidebar/
- */
-$('#sidebar').show();
-$('#sidebar').simplerSidebar({
-	opener: '.navbar-toggler',
-	animation: {
-		duration: 500,
-		easing: 'easeOutQuint'
-	},
-	sidebar: {
-		align: 'left',
-		width: 320,
-		closingLinks: 'a'
-	},
-	mask: {
-		display: true
-	}
-});
-
-/**
- * Leaflet initial stuff
- * @see http://leafletjs.com/
- */
-L.Icon.Default.imagePath = '/themes/jumplink/assets/vendor/leaflet/dist/images/'
-
-
-/**
  * Check if element is in viewport after scroll or resize, if it is, start animations
  * @see https://github.com/patik/within-viewport
  * @see https://github.com/daneden/animate.css
@@ -214,3 +168,48 @@ $(function () {
     });
     checkAnimations();
 })
+
+
+/**
+ * Play line draw animation
+ * @see https://github.com/maxwellito/vivus
+ */
+var playHeaderLineAnimation = function (cb) {
+    if(!headerAnimateWrapper) var headerAnimateWrapper = $('#top .svg-wrapper');
+    // if animation is not already played
+    if(!$(headerAnimateWrapper).hasClass( "white-pathes" )) {
+        // make all pathes white (before they are transparent) as a workaround for bad looking flipping effect
+        $(headerAnimateWrapper).addClass('white-pathes');
+        
+        // init
+        var headerLineAnimation = new Vivus('header_svg', {
+            type: 'delayed',
+            start: 'manual',
+        }, cb);
+        
+        headerLineAnimation.play(0.5);
+    }
+}
+
+/**
+ * Play subtext fadein animation
+ * @see https://github.com/daneden/animate.css
+ */
+var playSubtextAnimation = function (selector, cb) {
+    // Show subtext with fadein animation
+    $.each($('.jumplink-subtext'), function( index, value ) {
+        // if animation is not already played
+        if(!$(value).hasClass( "animationDone" )) {
+            $(value).animateCss('fadeIn', cb);
+        }
+    });
+}
+
+/**
+ * Start the subtext and line animation
+ */
+var playHeaderAnimation = function () {
+    playHeaderLineAnimation(function () {
+        playSubtextAnimation('.jumplink-subtext');
+    });
+}

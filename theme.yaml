@@ -8,6 +8,95 @@ form:
             label: Site name
             comment: The website name as it should appear on the front-end
             default: JumpLink
+        company_name:
+            label: Company name
+            type: text
+            comment: Company name of your site
+            default: JumpLink
+        phone_number:
+            label: phone
+            type: text
+            comment: Phone number
+            default: +49 152 54 09 01 89
+        email_address:
+            label: email
+            type: text
+            comment: E-mail address
+            default: info@jumplink.eu
+    tabs:
+        fields:
+            location_enabled:
+                label: Enabled
+                type: checkbox
+                tab: Location
+                comment: Enables the location map on the front-end
+                default: true
+            location_name_line_1:
+                label: Location name line 1
+                type: text
+                tab: Location
+                comment: Name of your location, e.g. the same as the company name
+                default: JumpLink
+            location_name_line_2:
+                label: Location name line 2
+                type: text
+                tab: Location
+                comment: Name of your location, e.g. the same as the company name
+                default: 
+            location_address_line_1:
+                label: Address line 1
+                type: text
+                tab: Location
+                comment: E.g. the street and street number
+                default: Kasernenstraße 8
+            location_address_line_2:
+                label: Address line 2
+                type: text
+                tab: Location
+                comment: E.g. the zip and city
+                default: 27472 Cuxhaven
+            location_mapbox_accessToken:
+                label: Mapbox access token
+                type: text
+                tab: Location
+                comment: Mapbox.com access token to show the location map
+                default: pk.eyJ1IjoianVtcGxpbmsiLCJhIjoiY2lsODd0MGx0MDAyYXdzbHoxNWRzendxZyJ9.6HrdtEXX7n5DhJMNW8PEWA
+            location_mapbox_id:
+                label: Mapbox ID
+                type: text
+                tab: Location
+                comment: Mapbox.com id to show the location map
+                default: jumplink.p9j2ob03
+            location_max_zoom:
+                label: Max zoom
+                type: number
+                tab: Location
+                comment: Max zoom of the location map
+                default: 18
+            location_longitude:
+                label: Longitude
+                type: number
+                tab: Location
+                comment: Longitude of your location
+                default: 53.87249480720694
+            location_latitude:
+                label: Latitude
+                type: number
+                tab: Location
+                comment: Latitude of your location
+                default: 8.698151707649231
+            location_zoom:
+                label: Zoom
+                type: number
+                tab: Location
+                comment: Zoom lavel of your location map
+                default: 15
+            location_navigation_link:
+                label: Navigation URL
+                type: number
+                tab: Location
+                comment: Location navigation link, e.g. to Google Maps
+                default: https://www.google.de/maps/place/JumpLink/@53.8725552,8.6976976,18z/data=!4m15!1m12!4m11!1m3!2m2!1d8.6981214!2d53.8725078!1m6!1m2!1s0x47b4046c8fdcaae5:0x812e1ff4ad919f08!2sJumpLink,+27472,+Cuxhaven,+Kasernenstra%C3%9Fe+8,+27472+Cuxhaven!2m2!1d8.698122!2d53.872515!3m1!1s0x0:0x812e1ff4ad919f08
 require:
     - RainLab.Translate
     - RainLab.Blog

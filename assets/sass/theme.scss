@@ -27,6 +27,7 @@ $navbar-height:             54px; // TODO get from bootstrap variables or calc t
 @import "./location.scss";
 @import "./card.scss";
 @import "./carousel.scss";
+@import "./header.scss";
 
 body {
 	-webkit-font-smoothing: antialiased;
@@ -147,64 +148,6 @@ select[name="locale"] {
     position: relative;
     &[data-target] {
         margin-top: 0;
-    }
-    
-    #top-header-subtext-container {
-        position: absolute;
-        top: 6vw;
-        width: 100%;
-        .col-xs-4 {
-            // padding: 0;
-            &.left {
-                @include media-breakpoint-down(xs) {
-                    padding-right: 0;
-                }
-            }
-            &.middle {
-
-            }
-            &.right {
-                @include media-breakpoint-down(xs) {
-                    padding-left: 0;
-                }
-            }
-        } 
-        .jumplink-subtext {
-            font-weight: 300; 
-            font-size: 2.5vw;
-            -webkit-animation-duration: 3s; /* Chrome, Safari, Opera */
-            animation-duration: 3s;
-            opacity: 0;
-            &.animationDone {
-                opacity: 1;
-            }
-            @include media-breakpoint-up(xl) {
-                font-size: 2vw;
-            }
-            @extend .p-y-3;
-            // textillate sentence
-            > span {
-                // textillate word
-                > span {
-                    // textillate char
-                    > span {
-                        transition: transform 100ms;
-                        &:hover {
-                            -webkit-transform: scale3d(1.5, 1.5, 1.5);
-                            transform: scale3d(1.5, 1.5, 1.5);
-                        }
-                    }
-                }
-            }
-        }
-    }
-
-    
-    #header_svg {
-        max-width: 100%;
-        width: 100%;
-        height: auto;
-        @extend .p-y-2;
     }
 }
 
