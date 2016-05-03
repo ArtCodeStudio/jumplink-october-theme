@@ -15,7 +15,7 @@ $(function () {
                 // Extra large devices (large desktops, 75em and up)
                 breakpoint: 900,
                 settings: {
-                    arrows: false,
+                    arrows: true,
                 }
             },
             {

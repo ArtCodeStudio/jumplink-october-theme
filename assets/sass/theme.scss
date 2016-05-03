@@ -59,6 +59,19 @@ body {
     }
 }
 
+.img-cover {
+  background-repeat: no-repeat; 
+  background-position: center center;
+  background-size: cover;
+}
+
+.network_person {
+    .img-cover {
+        width: 100%;
+        padding-top: 100%; // http://stackoverflow.com/questions/21537806/css-height-same-as-width
+    }
+}
+
 
 // hide svg pathes
 .hidden-pathes {

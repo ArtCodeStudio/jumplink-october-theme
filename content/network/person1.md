@@ -1,1 +1,0 @@
-Als studierter Medieninformatiker und in die Lage Programmierung mit Design zu kombinieren und in Einklang miteinadner zu bringen.

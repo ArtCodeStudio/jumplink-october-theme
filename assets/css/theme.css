@@ -10157,6 +10157,15 @@ body {
     color: #272822;
     font-size: 30px; }
 
+.img-cover {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover; }
+
+.network_person .img-cover {
+  width: 100%;
+  padding-top: 100%; }
+
 .hidden-pathes path {
   stroke: transparent !important; }
 
