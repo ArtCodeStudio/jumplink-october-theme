@@ -1,0 +1,31 @@
+==
+<div id="network" data-target="#network">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 text-xs-center">
+        <h2 class="m-b-3">{{'Netzwerk'|_}}</h2>
+        <p>{% content 'network/introduction.md' %}</p>
+      </div>
+      <div class="hidden-sm-up col-xs-12">
+        <img class="center-block" src="{{ 'assets/images/symbols/swipe.svg' | theme }}" alt="{'Netwerk'|_}}">
+      </div>
+      <div id="network_carousel" class="col-xs-12 p-t-3">
+        <div class="slick-slide">
+          {% partial 'network/person1' %}
+        </div>
+        <div class="slick-slide">
+          {% partial 'network/person2' %}
+        </div>
+        <div class="slick-slide">
+          {% partial 'network/person3' %}
+        </div>
+        <div class="slick-slide">
+          {% partial 'network/person4' %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% put scripts %}
+    <script type="text/javascript" src="{{ 'assets/javascript/partials/network_carousel.js' |theme }}"></script>
+{% endput %}

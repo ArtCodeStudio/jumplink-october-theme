@@ -10056,6 +10056,20 @@ a.bg-danger:focus, a.bg-danger:hover {
 #services_carousel .card {
   border: none; }
 
+.top-icon-circle {
+  border-radius: 50%;
+  border: none;
+  text-align: center;
+  width: 50px;
+  height: 50px;
+  line-height: 58px;
+  margin: 0 auto 20px;
+  top: -70px;
+  position: relative; }
+  .top-icon-circle .fa {
+    color: white;
+    font-size: 30px; }
+
 .jumplink-subtext {
   font-weight: 300;
   -webkit-animation-duration: 3s;
@@ -10130,6 +10144,18 @@ body {
   color: rgba(255, 255, 255, 0.5); }
   :not(nav).bg-inverse a:hover, #sidebar .sidebar-wrapper .list-group-item:not(nav) a:hover, .list-group-item.active-bg-inverse.active:not(nav) a:hover, select[name="locale"]:not(nav) a:hover, #WorkInProgress:not(nav) a:hover {
     color: white; }
+
+.icon-circle {
+  border-radius: 50%;
+  border: 1px #272822 solid;
+  text-align: center;
+  width: 70px;
+  height: 70px;
+  line-height: 78px;
+  margin: 0 auto 20px; }
+  .icon-circle .fa {
+    color: #272822;
+    font-size: 30px; }
 
 .hidden-pathes path {
   stroke: transparent !important; }

@@ -11,7 +11,7 @@ $(function() {
         $('html, body').animate({
           scrollTop: target.offset().top
         }, 1000);
-        return false;
+        return true;
       }
     }
   });
@@ -21,8 +21,9 @@ $(function() {
 /**
  * @see http://dcdeiv.github.io/simpler-sidebar/
  */
+var closingLinks = '.close-sidebar';
 $('#sidebar').show();
-$('#sidebar').simplerSidebar({
+var $sidebar = $('#sidebar').simplerSidebar({
 	opener: '.navbar-toggler',
 	animation: {
 		duration: 500,
@@ -30,8 +31,8 @@ $('#sidebar').simplerSidebar({
 	},
 	sidebar: {
 		align: 'left',
-		width: 320,
-		closingLinks: 'a'
+		width: 250,
+		closingLinks: closingLinks,
 	},
 	mask: {
 		display: true

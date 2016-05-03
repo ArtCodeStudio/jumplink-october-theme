@@ -30,9 +30,8 @@ $navbar-height:             54px; // TODO get from bootstrap variables or calc t
 @import "./header.scss";
 
 body {
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-    // overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
     position: relative;
 }
 
@@ -44,6 +43,22 @@ body {
         color: $navbar-dark-color;
     }
 }
+
+.icon-circle {
+    border-radius: 50%;
+    border: 1px $gray-dark solid;
+    
+    text-align: center;
+    width: 70px;
+    height: 70px;
+    line-height: 78px;
+    margin: 0 auto 20px;
+    .fa {
+        color: $gray-dark;
+        font-size: 30px;
+    }
+}
+
 
 // hide svg pathes
 .hidden-pathes {
