@@ -18,8 +18,7 @@ description = "Default layout"
         ]|theme }}" rel="stylesheet">
     </head>
     <body id="{{ str_studly(this.page.title) }}" data-spy="scroll">
-        {% partial 'navigation' %}
-
+        
         {# Content #}
         <section id="layout-content">
             {% page %}
@@ -65,6 +64,7 @@ description = "Default layout"
             'assets/vendor/textillate/jquery.textillate.js',
             'assets/vendor/slick-carousel/slick/slick.js',
             'assets/vendor/particles.js/particles.js',
+            'assets/javascript/affix.js',
             'assets/javascript/app.js',
         ]|theme }}"></script>
         {% framework extras %}

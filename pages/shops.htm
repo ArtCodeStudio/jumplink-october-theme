@@ -1,0 +1,11 @@
+title = "shops"
+url = "/shops"
+layout = "default"
+is_hidden = 0
+==
+<div class="shops">
+    {% partial 'shops' %}
+</div>
+{% put scripts %}
+    <script type="text/javascript" src="{{ 'assets/javascript/pages/shops.js' |theme }}"></script>
+{% endput %}

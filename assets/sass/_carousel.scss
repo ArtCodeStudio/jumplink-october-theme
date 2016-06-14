@@ -1,0 +1,55 @@
+/*
+ * Default Variables for slick
+ * @see https://github.com/kenwheeler/slick/
+ */
+$slick-font-path: "../fonts/" !default;
+$slick-font-family: "slick" !default;
+$slick-loader-path: "./" !default;
+$slick-arrow-color: white !default;
+$slick-dot-color: black !default;
+$slick-dot-color-active: $slick-dot-color !default;
+$slick-prev-character: "←" !default;
+$slick-next-character: "→" !default;
+$slick-dot-character: "•" !default;
+$slick-dot-size: 6px !default;
+$slick-opacity-default: 0.75 !default;
+$slick-opacity-on-hover: 1 !default;
+$slick-opacity-not-active: 0.25 !default;
+
+@import "../vendor/slick-carousel/slick/slick.scss";
+@import "../vendor/slick-carousel/slick/slick-theme.scss";
+
+.slick-list {
+    .slick-loading & {
+        background: #fff slick-image-url("../../images/ajax-loader.gif") center center no-repeat;
+    }
+    .slick-slide {
+        padding-left:  ($grid-gutter-width / 2);
+        padding-right: ($grid-gutter-width / 2);
+        // padding-left: 0.8rem;
+        // padding-right: 1rem;
+        // padding-left: $grid-gutter-width;
+        // padding-right: $grid-gutter-width;
+    }
+}
+.slick-prev:before, .slick-next:before {
+    color: black;
+}
+
+#services_carousel {
+    .card-img-top {
+        max-height: 250px;
+    }
+    .media-object {
+        // max-width: 250px;
+        max-height: 250px;
+        vertical-align: middle;
+        margin-right: 80px;
+    }
+    .media-body {
+        vertical-align: middle;
+    }
+    .card {
+        border: none;
+    }
+}

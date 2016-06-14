@@ -1,0 +1,33 @@
+.navbar-main {
+    z-index: 3000; // to make it over sidebar mask
+    .navbar-brand {
+        min-width: 40px;
+        background-image: url(../images/logos/logo_inverse.svg);
+        background-repeat: no-repeat;
+        background-position: left center;
+        background-size: auto 100%;
+        padding-left: 50px;
+        // opacity: 0;
+        transition: opacity 500ms ease-out;
+        height: 2.7rem;
+    }
+    &.affix--blw {
+        position: fixed;
+        top: 0;
+        @extend .navbar-fixed-top;
+    }
+    &.affix--abv {
+       @extend .navbar-static-top;
+    }
+    // border-bottom: 2px solid $brand-danger;
+}
+
+.navbar-nav {
+  .nav-link {
+    padding-top:    .6rem;
+    padding-bottom: .6rem;
+  }
+  &.bg-danger {
+      color: white;
+  }
+}

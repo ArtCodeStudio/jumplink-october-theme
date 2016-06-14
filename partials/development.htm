@@ -1,37 +1,58 @@
-<div id="development" data-target="#development">
-    <div class="bg-body p-y-3">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12 col-md-4">
-                    <div class="card card-primary-outline text-xs-center">
-                        <div class="card-block">
-                            <h4 class="card-title">Web-Entwicklung</h4>
-                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                            <a href="{{'web'|page}}" class="btn btn-primary">Mehr erfahren</a>
-                        </div>
+==
+<div id="development" data-target="#development" class="p-b-2">
+    <div class="container p-t-3">
+        <div class="row">
+            <div class="col-xs-12 text-xs-center">
+                <h1 class="m-b-3">{{'Entwicklung'|_}}</h1>
+            </div>
+            <div class="col-xs-12 hidden-md-down col-lg-3">
+                <div class="card card-primary-outline text-xs-center">
+                    <div class="card-block">
+                        <h2 class="card-title">{{'Web'|_}}</h2>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="{{'app'|page}}" class="btn btn-info">Mehr erfahren</a>
                     </div>
                 </div>
-                <div class="col-xs-12 col-md-4">
-                    <div class="card card-success-outline text-xs-center">
-                        <div class="card-block">
-                            <h4 class="card-title">App-Entwicklung</h4>
-                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                            <a href="{{'app'|page}}" class="btn btn-success">Mehr erfahren</a>
-                        </div>
+            </div>
+            <div class="col-xs-12 col-md-12 col-lg-6">
+                <div class="card card-primary-outline text-xs-center">
+                    <div class="card-block">
+                        <h2 class="card-title">{{'Shop'|_}}</h2>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="{{'app'|page}}" class="btn btn-danger">Mehr erfahren</a>
                     </div>
                 </div>
-                <div class="col-xs-12 col-md-4">
-                    <div class="card card-warning-outline text-xs-center">
-                        <div class="card-block">
-                            <h4 class="card-title">Onlineshop-Entwicklung</h4>
-                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                            <a href="{{'ecommerce'|page}}" class="btn btn-warning">Mehr erfahren</a>
-                        </div>
+            </div>
+            <div class="col-xs-12 hidden-lg-up col-md-6 col-lg-3">
+                <div class="card card-primary-outline text-xs-center">
+                    <div class="card-block">
+                        <h2 class="card-title">{{'Web'|_}}</h2>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="{{'app'|page}}" class="btn btn-info">Mehr erfahren</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-3">
+                <div class="card card-primary-outline text-xs-center">
+                    <div class="card-block">
+                        <h2 class="card-title">{{'App'|_}}</h2>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        
+                    </div>
+                    <div class="card-footer">
+                        <a href="{{'app'|page}}" class="btn btn-info">Mehr erfahren</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    
-
 </div>
+{% put scripts %}
+    <script type="text/javascript" src="{{ 'assets/javascript/partials/development.js' |theme }}"></script>
+{% endput %}

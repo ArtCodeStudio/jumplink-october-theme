@@ -1,0 +1,35 @@
+#development, #location {
+    .card-footer {
+        bottom: 0;
+        position: absolute;
+        left: 0;
+        right: 0;
+        background-color: transparent;
+        border: none;
+    }
+    
+    .card {
+        padding-bottom: 65px;
+    }
+}
+
+#service {
+    .card {
+        border: none;
+    }
+}
+
+#location {
+    .card {
+        min-height: 300px; // TODO use variable
+        margin-bottom: 0;
+    }
+}
+
+.card {
+    &.card-inverse {
+        .card-text {
+            color: #fff;
+        }
+    }
+}

@@ -1,36 +1,31 @@
 ==
-<div id="location" data-target="#location">
-    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 card card-block route">
-        <div class="">
-            <h6 class="card-title">Anfahrt</h6>
-            <div class="card-text">
-                <div class="row">
-                    <div class="col-xs-8">
-                        <address>
-                            <strong>
-                                {{ this.theme.location_name_line_1 }}
-                                {% if this.theme.location_name_line_2 %}
-                                    <br>{{ this.theme.location_name_line_2 }}
-                                {% endif %}
-                            </strong>
-                            {% if this.theme.location_address_line_1 %}
-                                <br>{{ this.theme.location_address_line_1 }}
-                            {% endif %}
-                            {% if this.theme.location_address_line_2 %}
-                                <br>{{ this.theme.location_address_line_2 }}
-                            {% endif %}
-                        </address>
-                    </div>
-                    <div class="col-xs-4">
-                        <a class="btn btn-secondary" id="navigation_link" data-toggle="tooltip" data-placement="top" title="Routenplaner", target="_blank">
-                            <img src="{{ 'assets/images/symbols/route.svg' | theme }}" alt="Routenplaner">
-                        </a>
-                    </div>
-                </div>
-            </div>
-       </div>
+<div id="location" data-target="#location" class="p-b-2">
+    
+    <div class="card card-inverse card-primary text-xs-center col-sm-12 col-md-4 col-lg-3 col-xl-2">
+      <div class="card-block">
+        <address class="card-text">
+            <strong>
+                {{ this.theme.location_name_line_1 }}
+                {% if this.theme.location_name_line_2 %}
+                    <br>{{ this.theme.location_name_line_2 }}
+                {% endif %}
+            </strong>
+            {% if this.theme.location_address_line_1 %}
+                <br>{{ this.theme.location_address_line_1 }}
+            {% endif %}
+            {% if this.theme.location_address_line_2 %}
+                <br>{{ this.theme.location_address_line_2 }}
+            {% endif %}
+        </address>
+        <div class="card-footer">
+            <a class="btn btn-primary" id="navigation_link" data-toggle="tooltip" data-placement="top" title="Routenplaner", target="_blank">
+                <img src="{{ 'assets/images/symbols/route.svg' | theme }}" alt="Routenplaner">
+            </a>
+        </div>
+
+      </div>
     </div>
-    <div id="map"></div>
+    <div class="col-sm-12 col-md-8 col-lg-9 col-xl-10" id="map"></div>
 </div>
 
 {% put scripts %}

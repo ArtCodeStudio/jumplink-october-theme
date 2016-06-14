@@ -1,10 +1,10 @@
 var particlesConfig = {
   "particles": {
     "number": {
-      "value": 80,
+      "value": 10,
       "density": {
         "enable": true,
-        "value_area": 800
+        "value_area": 80
       }
     },
     "color": {
@@ -111,6 +111,18 @@ var particlesConfig = {
 
 particlesJS('particles', particlesConfig);
 
+
+$(window).on('resize scrollstop', function() {
+    if(!$('#particles').is(':within-viewport')) {
+        pJSDom[0].pJS.particles.move.enable = false;
+        $('.particles-js-canvas-el').css('opacity', 0);
+    } else {
+        pJSDom[0].pJS.particles.move.enable = true;
+        pJSDom[0].pJS.fn.particlesRefresh();
+        $('.particles-js-canvas-el').css('opacity', 1);
+    }
+});
+
 var headerAnimateWrapper = $('#particles');
 
 /**
@@ -121,7 +133,6 @@ $(window).on('resize scrollstop', function() {
     if($(headerAnimateWrapper).is(':within-viewport')) {
         setTimeout(function(){
             playSubtextAnimation('.jumplink-subtext');
-            
         }, 500);
     }
 });

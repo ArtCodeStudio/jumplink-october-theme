@@ -1,12 +1,9 @@
-// bootstrap variables
-$link-hover-decoration:      none;
-$font-family-sans-serif:    "Ubuntu", "Source Sans Pro", "Helvetica Neue", "Roboto", Helvetica, Arial, sans-serif;
-$gray-dark:                 #272822 !default;
 
-// Pixel value used to responsively scale all typography. Applied to the `<html>` element.
-$font-size-root:             16px; //default 16px
-
+@import "./variables";
 @import "../vendor/bootstrap/scss/bootstrap.scss";
+
+// @import "../vendor/bootstrap-material-design/scss/bootstrap-material-design.scss";
+
 
 // font awesome variables
 $fa-font-path: '../vendor/font-awesome/fonts';
@@ -18,21 +15,41 @@ $apps-iframe-decrease:      1.8;
 $navbar-height:             54px; // TODO get from bootstrap variables or calc this
 
 @import "./animate";
-@import "./fonts.scss";
-@import "./load-awesome.scss";
-@import "./clouds.scss";
-@import "./navbar.scss";
-@import "./sidebar.scss";
-@import "./sticky.scss";
-@import "./location.scss";
-@import "./card.scss";
-@import "./carousel.scss";
-@import "./header.scss";
+@import "./fonts";
+@import "./load-awesome";
+@import "./clouds";
+@import "./navbar";
+@import "./sidebar";
+@import "./sticky";
+@import "./location";
+@import "./card";
+@import "./carousel";
+@import "./header";
+@import "./type";
+@import "./parts";
+@import "./buttons";
 
 body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     position: relative;
+    font-weight: $default-font-weight;
+    &.affix--blw {
+        padding-top: 61.12px
+    }
+}
+
+.bg-danger, .bg-info, .bg-primary {
+  color: white;
+  .navbar-nav .nav-link {
+      color: white;
+  }
+}
+
+.center-block {
+  margin-right: auto !important;
+  margin-left:  auto !important;
+  display: block;
 }
 
 :not(nav).bg-inverse {
@@ -65,11 +82,32 @@ body {
   background-size: cover;
 }
 
+.grayscale {
+     -moz-filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
+     -o-filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
+     -webkit-filter: grayscale(100%);
+     filter: gray;
+     filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
+     transition: all 500ms ease-in;
+}
+
 .network_person {
     .img-cover {
         width: 100%;
         padding-top: 100%; // http://stackoverflow.com/questions/21537806/css-height-same-as-width
+        @extend .grayscale;
+        &:hover {
+            -moz-filter: none;
+            -o-filter: none;
+            -webkit-filter: none;
+            filter: none;
+        }
     }
+}
+
+.learn-more {
+    position: relative;
+    bottom: 30vh;
 }
 
 
@@ -94,6 +132,12 @@ body {
 .bg-gray-light {
     background-color: $gray-light;
 }
+
+
+.bg-body {
+    background-color: $body-bg;
+}
+
 
 
 // javascript links
@@ -128,7 +172,6 @@ select[name="locale"] {
     }
 
     border: none;
-    background-image: url(../images/symbols/select_inverse.png);
 }
 
 .fa {
@@ -165,11 +208,7 @@ select[name="locale"] {
 // anker elements with padding with navbar height to avoid scroll position overlap
 [data-target] {
     padding-top: 54px;
-    margin-top: -54px;
-}
-
-.bg-body {
-    background-color: $body-bg;
+    margin-top: -70px;
 }
 
 #top {

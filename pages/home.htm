@@ -5,13 +5,16 @@ is_hidden = 0
 ==
 <div class="home">
     {% partial 'header/particles' %}
-    <a class="top-icon-circle center-block" href="#development" data-toggle="tooltip" data-placement="top" title="" data-original-title="Weiter">
+    {% partial 'navigation' navbarClass='navbar-full'%}
+    <!--<a class="top-icon-circle center-block" href="#development" data-toggle="tooltip" data-placement="top" title="" data-original-title="Weiter">
         <i class="fa fa-chevron-circle-down"></i>
-    </a>
+    </a>-->
+    <div class="learn-more center-block text-xs-center">
+        <a href="#development" class="btn btn-white-outline">{{'Mehr erfahren'|_}}</a>
+    </div>
     {% partial 'development' %}
-    {% partial 'services_carousel' %}
+    {% partial 'services_grid' %}
     {% partial 'network_carousel' %}
-    {% partial 'contact' %}
     {% partial 'location' %}
     {% partial 'imprint' %}
 </div>

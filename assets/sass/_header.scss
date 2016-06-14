@@ -28,6 +28,9 @@
 }
 
 #particles {
+    .particles-js-canvas-el {
+        transition: opacity 1s ease-in-out;
+    }
     height: 100vh;
     &[data-target] {
         margin-top: 0;

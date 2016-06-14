@@ -17,8 +17,7 @@
     "tests"
   ],
   "dependencies": {
-    "bootstrap": "v4.0.0-alpha.2",
-    "tether": "^1.1.1",
+    "tether": "^1.2.0",
     "vivus": "^0.3.0",
     "Snap.svg": "^0.4.1",
     "slideout.js": "^0.1.12",
@@ -32,6 +31,12 @@
     "within-viewport": "^1.0.0",
     "slick-carousel": "^1.5.9",
     "particles.js": "^2.0.0",
-    "simpler-sidebar": "master"
+    "simpler-sidebar": "master",
+    "jquery": "^2.2.3",
+    "bootstrap": "v4.0.0-alpha.2",
+    "Materialize": "materialize#^0.97.6"
+  },
+  "resolutions": {
+    "jquery": "^2.2.3"
   }
 }
