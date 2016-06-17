@@ -1,5 +1,7 @@
 $(function () {
     
+    var $body= $('body');
+    var $window = $(window);
     var $development = $('#development');
     var $network = $('#network');
     var $contact = $('#contact');
@@ -29,8 +31,7 @@ $(function () {
     // });
     // checkParts();
     
-    // TODO move to partial
     affix("navbar-main", function () {
-        return $(window).height();
+        return $window.height();
     });
 })

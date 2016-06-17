@@ -1,15 +1,16 @@
+==
 {% set posts = __SELF__.posts %}
 
 {% for post in posts %}
-    <div class="card">
-        <div class="card-header bg-inverse" onclick="window.open('{{ post.url }}', '_self', ''); return false;">
+    <div class="card card-primary-outline">
+        <div class="card-header bg-inverse bg-primary" onclick="window.open('{{ post.url }}', '_self', ''); return false;">
             {{ post.title }}
         </div>
         <div class="card-block">
             <h4 class="card-title">{{ post.title }}</h4>
             <p class="card-text">{{ post.summary }}</p>
         </div>
-        <div class="card-footer text-muted bg-inverse">
+        <div class="card-footer text-muted bg-inverse bg-primary">
             {{ 'Erstellt'|_ }}
             {% if post.categories.count %} in {% endif %}
             {% for category in post.categories %}

@@ -1,5 +1,5 @@
 .navbar-main {
-    z-index: 3000; // to make it over sidebar mask
+    // z-index: 3000; // to make it over sidebar mask
     .navbar-brand {
         min-width: 40px;
         background-image: url(../images/logos/logo_inverse.svg);
@@ -26,6 +26,9 @@
   .nav-link {
     padding-top:    .6rem;
     padding-bottom: .6rem;
+    &.active {
+        font-weight: bold;
+    }
   }
   &.bg-danger {
       color: white;

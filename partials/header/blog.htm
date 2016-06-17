@@ -1,0 +1,19 @@
+==
+<header id="blog-header" class="bg-info">
+    <canvas id="dust" class="bg-info"></canvas>
+    <div id="particles-subtext-container">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <h1 class="text-xs-center jumplink-subtext animationDone">Blog</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+{% partial 'navigation' navbarClass='navbar-full'%}
+
+{% put scripts %}
+    <script type="text/javascript" src="{{ 'assets/javascript/partials/header/dust.js' | theme }}"></script>
+{% endput %}

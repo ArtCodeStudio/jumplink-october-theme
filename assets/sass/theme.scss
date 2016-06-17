@@ -1,4 +1,3 @@
-
 @import "./variables";
 @import "../vendor/bootstrap/scss/bootstrap.scss";
 
@@ -14,7 +13,9 @@ $fa-font-path: '../vendor/font-awesome/fonts';
 $apps-iframe-decrease:      1.8;
 $navbar-height:             54px; // TODO get from bootstrap variables or calc this
 
+@import "./mixins";
 @import "./animate";
+@import "./shadow";
 @import "./fonts";
 @import "./load-awesome";
 @import "./clouds";
@@ -28,10 +29,20 @@ $navbar-height:             54px; // TODO get from bootstrap variables or calc t
 @import "./type";
 @import "./parts";
 @import "./buttons";
+@import "./images";
+@import "./modals";
+
+// http://stackoverflow.com/a/33455377
+html {
+    //overflow: hidden;
+    height: 100%;
+}
 
 body {
+    height: 100%;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    overflow-y: scroll;
     position: relative;
     font-weight: $default-font-weight;
     &.affix--blw {
@@ -76,11 +87,7 @@ body {
     }
 }
 
-.img-cover {
-  background-repeat: no-repeat; 
-  background-position: center center;
-  background-size: cover;
-}
+
 
 .grayscale {
      -moz-filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
@@ -89,20 +96,6 @@ body {
      filter: gray;
      filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
      transition: all 500ms ease-in;
-}
-
-.network_person {
-    .img-cover {
-        width: 100%;
-        padding-top: 100%; // http://stackoverflow.com/questions/21537806/css-height-same-as-width
-        @extend .grayscale;
-        &:hover {
-            -moz-filter: none;
-            -o-filter: none;
-            -webkit-filter: none;
-            filter: none;
-        }
-    }
 }
 
 .learn-more {
@@ -206,7 +199,7 @@ select[name="locale"] {
 
 
 // anker elements with padding with navbar height to avoid scroll position overlap
-[data-target] {
+div[data-target] {
     padding-top: 54px;
     margin-top: -70px;
 }
@@ -363,7 +356,7 @@ select[name="locale"] {
 
 #blogposts {
     header {
-        padding-top: $navbar-height;
+        // padding-top: $navbar-height;
         img.blogposts-header {
             width: 100%;
         }

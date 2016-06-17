@@ -15,15 +15,19 @@ var affix = function(elementSelectors, getScrollOffsetY) {
   /* ====================
    * private variables
    * ==================== */
-  var scrollPosY = 0,
-      busy = false,
-      onTop = true,
+  var $window = $(window);
+  var scrollPosY = $window.scrollTop();
+  var busy = false;
+  var onTop = true;
+  var $body = $('body');
+  
+  
 
       // toggle style / class when scrolling below this position (in px)
-      scrollOffsetY = getScrollOffsetY(),
+  var scrollOffsetY = getScrollOffsetY();
 
       // choose elements to apply style / class to
-      elements = document.getElementsByClassName(elementSelectors);
+  var elements = document.getElementsByClassName(elementSelectors);
 
 
   /* ====================
@@ -31,11 +35,12 @@ var affix = function(elementSelectors, getScrollOffsetY) {
    * ==================== */
   function onScroll() {
     scrollOffsetY = getScrollOffsetY();
+    
     // ensure that events don't stack
     if (!busy) {
       // get current scroll position from window
-      scrollPosY = window.pageYOffset;
-
+      scrollPosY = $window.scrollTop(); // window.pageYOffset
+      
       // if we were above, and are now below scroll position...
       if (onTop && scrollPosY > scrollOffsetY) {
         // suspend accepting scroll events
@@ -111,8 +116,8 @@ var affix = function(elementSelectors, getScrollOffsetY) {
       busy = true;
 
       // get current scroll position from window
-      scrollPosY = window.pageYOffset;
-
+      scrollPosY = $window.scrollTop(); // window.pageYOffset
+      
       // if we are below scroll position...
       if (scrollPosY > scrollOffsetY) {
         // remember that we are below scroll position
@@ -136,14 +141,12 @@ var affix = function(elementSelectors, getScrollOffsetY) {
   /* ====================
    * main initialization
    * ==================== */
-  // add initial style / class to elements when DOM is ready
-  document.addEventListener("DOMContentLoaded", function() {
-    // defer initialization to allow browser to restore scroll position
-    window.setTimeout(pub.init, 1);
-  });
-
+  // defer initialization to allow browser to restore scroll position
+  pub.init();
+  
   // register for window scroll events
   window.addEventListener("scroll", onScroll);
+  $body.on("scroll", onScroll);
 
 
   return pub;

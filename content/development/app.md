@@ -1,0 +1,1 @@
+Du hast eine Idee für eine App oder möchtest deinen Shop auch als App verfügbar machen?<br> Wir setzen die App gemeinsam mit dir um.

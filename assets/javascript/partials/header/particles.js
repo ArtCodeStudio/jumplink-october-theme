@@ -119,7 +119,7 @@ $(window).on('resize scrollstop', function() {
     } else {
         pJSDom[0].pJS.particles.move.enable = true;
         pJSDom[0].pJS.fn.particlesRefresh();
-        $('.particles-js-canvas-el').css('opacity', 1);
+        $('.particles-js-canvas-el').css('opacity', 0.99); // use 0.99 instead of 1 as workaround for mouse over effekt, I don't know why this is not working with opacity == 1
     }
 });
 

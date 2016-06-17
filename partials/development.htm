@@ -5,54 +5,95 @@
             <div class="col-xs-12 text-xs-center">
                 <h1 class="m-b-3">{{'Entwicklung'|_}}</h1>
             </div>
-            <div class="col-xs-12 hidden-md-down col-lg-3">
-                <div class="card card-primary-outline text-xs-center">
+            <div class="col-xs-12 col-md-6 col-lg-4">
+                <div class="card card-primary-outline text-xs-center z-depth-1">
                     <div class="card-block">
                         <h2 class="card-title">{{'Web'|_}}</h2>
-                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        <span class="card-text">{% content 'development/web.md' %}</span>
                     </div>
-                    <div class="card-footer">
-                        <a href="{{'app'|page}}" class="btn btn-info">Mehr erfahren</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xs-12 col-md-12 col-lg-6">
-                <div class="card card-primary-outline text-xs-center">
-                    <div class="card-block">
-                        <h2 class="card-title">{{'Shop'|_}}</h2>
-                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                    </div>
-                    <div class="card-footer">
-                        <a href="{{'app'|page}}" class="btn btn-danger">Mehr erfahren</a>
+                    <div class="card-footer hidden-xs-up">
+                        <a href="#" class="btn btn-info" data-toggle="modal" data-target="#webModal">Mehr erfahren</a>
                     </div>
                 </div>
             </div>
-            <div class="col-xs-12 hidden-lg-up col-md-6 col-lg-3">
-                <div class="card card-primary-outline text-xs-center">
-                    <div class="card-block">
-                        <h2 class="card-title">{{'Web'|_}}</h2>
-                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                    </div>
-                    <div class="card-footer">
-                        <a href="{{'app'|page}}" class="btn btn-info">Mehr erfahren</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xs-12 col-md-6 col-lg-3">
-                <div class="card card-primary-outline text-xs-center">
+            <div class="col-xs-12 col-md-6 col-lg-4">
+                <div class="card card-primary-outline text-xs-center z-depth-1">
                     <div class="card-block">
                         <h2 class="card-title">{{'App'|_}}</h2>
-                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        <span class="card-text">{% content 'development/app.md' %}</span>
                         
                     </div>
-                    <div class="card-footer">
-                        <a href="{{'app'|page}}" class="btn btn-info">Mehr erfahren</a>
+                    <div class="card-footer hidden-xs-up">
+                        <a href="#" class="btn btn-info" data-toggle="modal" data-target="#appModal">Mehr erfahren</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-12 col-lg-4">
+                <div class="card card-inverse card-primary text-xs-center z-depth-1">
+                    <div class="card-block">
+                        <h2 class="card-title">{{'Shop'|_}}</h2>
+                        <span class="card-text">{% content 'development/shop.md' %}</span>
+                    </div>
+                    <div class="card-footer hidden-xs-up">
+                        <a href="#" class="btn btn-danger" data-toggle="modal" data-target="#shopModal">Mehr erfahren</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
+
+<div class="modal fade" id="webModal" tabindex="-1" role="dialog" aria-labelledby="webModalLabel" aria-hidden="true">
+  <div class="modal-dialog z-depth-3 modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header bg-primary">
+        <button type="button" class="btn btn-danger pull-right" data-dismiss="modal">Close</button>
+        <h4 class="modal-title" id="webModalLabel">{{'Web-Entwicklung'|_}}</h4>
+      </div>
+      <div class="modal-body">
+        {% content 'development/web_more.md' %}
+      </div>
+      <div class="modal-footer bg-primary">
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="appModal" tabindex="-1" role="dialog" aria-labelledby="appModalLabel" aria-hidden="true">
+  <div class="modal-dialog z-depth-3 modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header bg-primary">
+        <button type="button" class="btn btn-danger pull-right" data-dismiss="modal">Close</button>
+        <h4 class="modal-title" id="appModalLabel">{{'App-Entwicklung'|_}}</h4>
+      </div>
+      <div class="modal-body">
+        {% content 'development/app_more.md' %}
+      </div>
+      <div class="modal-footer bg-primary">
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="shopModal" tabindex="-1" role="dialog" aria-labelledby="shopModalLabel" aria-hidden="true">
+  <div class="modal-dialog z-depth-3 modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header bg-primary">
+        <button type="button" class="btn btn-danger pull-right" data-dismiss="modal">Close</button>
+        <h4 class="modal-title" id="shopModalLabel">{{'Shop-Entwicklung'|_}}</h4>
+      </div>
+      <div class="modal-body">
+        {% content 'development/shop_more.md' %}
+      </div>
+      <div class="modal-footer bg-primary">
+        
+      </div>
+    </div>
+  </div>
+</div>
+
 {% put scripts %}
     <script type="text/javascript" src="{{ 'assets/javascript/partials/development.js' |theme }}"></script>
 {% endput %}

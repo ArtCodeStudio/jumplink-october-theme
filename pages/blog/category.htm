@@ -19,3 +19,6 @@ categoryPage = "blog/category"
 postPage = "blog/post"
 ==
 {% partial 'blogPosts/wrapper' %}
+{% put scripts %}
+    <script type="text/javascript" src="{{ 'assets/javascript/pages/blog.js' |theme }}"></script>
+{% endput %}

@@ -1,2 +1,2 @@
 Besondere Anforderungen benötigen besondere Fähigkeiten.
-JumpLink hat sich zu einem Netzwerk aus selbstständigen Programmierern und Designern entwickelt, gemeinsam sind wir in der Lage uns auf unsere Stärken zu konzentrieren.
+JumpLink hat sich zu einem Netzwerk aus selbstständigen Programmierern und Designern entwickelt, gemeinsam sind wir in der Lage, uns auf unsere Stärken zu konzentrieren.
