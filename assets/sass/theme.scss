@@ -1,17 +1,8 @@
 @import "./variables";
 @import "../vendor/bootstrap/scss/bootstrap.scss";
-
-// @import "../vendor/bootstrap-material-design/scss/bootstrap-material-design.scss";
-
-
-// font awesome variables
-$fa-font-path: '../vendor/font-awesome/fonts';
-
 @import "../vendor/font-awesome/scss/font-awesome.scss";
-
-// own variables
-$apps-iframe-decrease:      1.8;
-$navbar-height:             54px; // TODO get from bootstrap variables or calc this
+@import "../vendor/slick-carousel/slick/slick.scss";
+@import "../vendor/slick-carousel/slick/slick-theme.scss";
 
 @import "./mixins";
 @import "./animate";
