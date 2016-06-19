@@ -111,6 +111,9 @@ var particlesConfig = {
 
 particlesJS('particles', particlesConfig);
 
+var headerAnimateWrapper = $('#particles');
+var $window = $(window);
+
 
 $(window).on('resize scrollstop', function() {
     if(!$('#particles').is(':within-viewport')) {
@@ -123,7 +126,7 @@ $(window).on('resize scrollstop', function() {
     }
 });
 
-var headerAnimateWrapper = $('#particles');
+
 
 /**
  * Check if element is in viewport after scroll or resize, if it is, start animation
@@ -149,6 +152,6 @@ if($(headerAnimateWrapper).is(':within-viewport')) {
 }
 
 $(function () {
-
-    
+    // WORKAROUND um seiten sprünge zu verhindern wenn sich die Seitenhöhe ändert (z.B. wenn unter Android die adresseleißte verschwindet)
+    $('#particles, #particles-subtext-container, .particles-js-canvas-el').height($window.height());
 });

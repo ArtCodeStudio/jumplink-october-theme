@@ -1,6 +1,8 @@
 description = "Default layout"
 
 [localePicker]
+
+[googleTracker]
 ==
 <!DOCTYPE html>
 <html>
@@ -12,6 +14,30 @@ description = "Default layout"
         <meta name="author" content="Pascal Garber">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
+        
+        <link rel="apple-touch-icon" sizes="57x57" href="{{'/assets/favicons/apple-touch-icon-57x57.png' | theme }}">
+        <link rel="apple-touch-icon" sizes="60x60" href="{{'/assets/favicons/apple-touch-icon-60x60.png' | theme }}">
+        <link rel="apple-touch-icon" sizes="72x72" href="{{'/assets/favicons/apple-touch-icon-72x72.png' | theme }}">
+        <link rel="apple-touch-icon" sizes="76x76" href="{{'/assets/favicons/apple-touch-icon-76x76.png' | theme }}">
+        <link rel="apple-touch-icon" sizes="114x114" href="{{'/assets/favicons/apple-touch-icon-114x114.png' | theme }}">
+        <link rel="apple-touch-icon" sizes="120x120" href="{{'/assets/favicons/apple-touch-icon-120x120.png' | theme }}">
+        <link rel="apple-touch-icon" sizes="144x144" href="{{'/assets/favicons/apple-touch-icon-144x144.png' | theme }}">
+        <link rel="apple-touch-icon" sizes="152x152" href="{{'/assets/favicons/apple-touch-icon-152x152.png' | theme }}">
+        <link rel="apple-touch-icon" sizes="180x180" href="{{'/assets/favicons/apple-touch-icon-180x180.png' | theme }}">
+        <link rel="icon" type="image/png" href="{{'/assets/favicons/favicon-32x32.png" sizes="32x32' | theme }}">
+        <link rel="icon" type="image/png" href="{{'/assets/favicons/android-chrome-192x192.png' | theme }}" sizes="192x192">
+        <link rel="icon" type="image/png" href="{{'/assets/favicons/favicon-96x96.png' | theme }}" sizes="96x96">
+        <link rel="icon" type="image/png" href="{{'/assets/favicons/favicon-16x16.png' | theme }}" sizes="16x16">
+        <link rel="manifest" href="{{'/assets/favicons/manifest.json' | theme }}">
+        <link rel="mask-icon" href="{{'/assets/favicons/safari-pinned-tab.svg' | theme }}" color="#1e88e5">
+        <link rel="shortcut icon" href="{{'/assets/favicons/favicon.ico' | theme }}">
+        <meta name="apple-mobile-web-app-title" content="JumpLink">
+        <meta name="application-name" content="JumpLink">
+        <meta name="msapplication-TileColor" content="#1e88e5">
+        <meta name="msapplication-TileImage" content="{{'/assets/favicons/mstile-144x144.png' | theme }}">
+        <meta name="msapplication-config" content="{{'/assets/favicons/browserconfig.xml' | theme }}">
+        
+        <meta name="theme-color" content="#1E88E5">
         {% styles %}
         <link href="{{ [
             'assets/css/theme.css',
@@ -22,6 +48,7 @@ description = "Default layout"
         {# Content #}
         <section id="layout-content">
             {% page %}
+            {% component 'googleTracker' %}
         </section>
         
         {# Theme variables #}
@@ -50,18 +77,12 @@ description = "Default layout"
             'assets/vendor/within-viewport/withinviewport.js',
             'assets/vendor/jquery/dist/jquery.js',
             'assets/vendor/within-viewport/jquery.withinviewport.js',
-            'assets/vendor/svg/jquery.svg.js',
             'assets/vendor/jquery-ui/jquery-ui.js',
             'assets/vendor/tether/dist/js/tether.js',
             'assets/vendor/bootstrap/dist/js/bootstrap.js',
-            'assets/vendor/vivus/dist/vivus.js',
-            'assets/vendor/Snap.svg/dist/snap.svg.js',
             'assets/vendor/simpler-sidebar/dist/jquery.simpler-sidebar.js',
-            'assets/vendor/Stickyfill/dist/stickyfill.js',
             'assets/vendor/bootstrap-validator/dist/validator.js',
             'assets/vendor/leaflet/dist/leaflet.js',
-            'assets/vendor/letteringjs/jquery.lettering.js',
-            'assets/vendor/textillate/jquery.textillate.js',
             'assets/vendor/slick-carousel/slick/slick.js',
             'assets/vendor/particles.js/particles.js',
             'assets/javascript/affix.js',

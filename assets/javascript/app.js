@@ -65,7 +65,7 @@ $.fn.extend({
     };
  
     special.scrollstop = {
-        latency: 100, // default is 300
+        latency: 300, // default is 300
         setup: function() {
  
             var timer,
@@ -129,45 +129,6 @@ var movingImageOnMousemove = function (mouseSelector, backgroundSelector, xOffse
         move(e.pageX, e.pageY);
     });
 };
-
-/**
- * Check if element is in viewport after scroll or resize, if it is, start animations
- * @see https://github.com/patik/within-viewport
- * @see https://github.com/daneden/animate.css
- */
-$(function () {
-    
-    var fadeInLeftOnViewports = $('.fadeInLeftOnViewport');
-    var fadeInRightOnViewports = $('.fadeInRightOnViewport');
-    
-    var checkAnimations = function () {
-        
-        $.each(fadeInLeftOnViewports, function( index, value ) {
-            value = $(value);
-            if(value.find('img, video').is(':within-viewport')) {
-                if(!value.hasClass( "animationDone" )) {
-                    value.animateCss('fadeInLeft', function(){});
-                }
-                
-            }
-        });
-        
-        $.each(fadeInRightOnViewports, function( index, value ) {
-            value = $(value);
-            if(value.find('img, video').is(':within-viewport')) {
-                if(!value.hasClass( "animationDone" )) {
-                    value.animateCss('fadeInRight', function(){});
-                }
-                
-            }
-        });
-    }
-    
-    $(window).on('resize scrollstop scrollstart', function() {
-        checkAnimations();
-    });
-    checkAnimations();
-})
 
 
 /**

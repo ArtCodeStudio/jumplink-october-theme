@@ -1,6 +1,8 @@
 description = "Info layout"
 
 [localePicker]
+
+[googleTracker]
 ==
 <!DOCTYPE html>
 <html>
@@ -20,6 +22,7 @@ description = "Info layout"
     <body id="{{ str_studly(this.page.title) }}">
         <section id="layout-content">
             {% page %}
+            {% component 'googleTracker' %}
         </section>
 
         {% scripts %}

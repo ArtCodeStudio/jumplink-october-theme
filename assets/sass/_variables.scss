@@ -360,14 +360,14 @@ $dropdown-header-color:          $gray-light !default;
 // Warning: Avoid customizing these values. They're used for a bird's eye view
 // of components dependent on the z-axis and are designed to all work together.
 
-$zindex-navbar:            1000 !default;
-$zindex-dropdown:          1000 !default;
-$zindex-popover:           1060 !default;
-$zindex-tooltip:           1070 !default;
-$zindex-navbar-fixed:      1030 !default;
-$zindex-navbar-sticky:     1030 !default;
-$zindex-modal-bg:          1040 !default;
-$zindex-modal:             1050 !default;
+$zindex-navbar:            3001; // simpler sidebar has an z-index of 3000
+$zindex-dropdown:          3001;
+$zindex-popover:           3060;
+$zindex-tooltip:           3070;
+$zindex-navbar-fixed:      3030;
+$zindex-navbar-sticky:     3030;
+$zindex-modal-bg:          3040;
+$zindex-modal:             3050;
 
 
 // Navbar

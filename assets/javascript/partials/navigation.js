@@ -3,7 +3,7 @@
  * @see https://css-tricks.com/snippets/jquery/smooth-scrolling/
  */
 $(function() {
-  $('a[href*="#"]:not([href="#"])').click(function() {
+  /*$('a[href*="#"]:not([href="#"])').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
       var target = $(this.hash);
       target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
@@ -14,27 +14,36 @@ $(function() {
         return true;
       }
     }
-  });
+  });*/
+  
+    $('a[href*="#"]:not([href="#"])').click(function() {
+        $('html, body').animate({
+            scrollTop: $( $.attr(this, 'href') ).offset().top
+        }, 500);
+        return true;
+    });
+    
+    
+    /**
+     * @see http://dcdeiv.github.io/simpler-sidebar/
+     */
+    var closingLinks = '.close-sidebar';
+    $('#sidebar').show();
+    var $sidebar = $('#sidebar').simplerSidebar({
+    	opener: '.navbar-toggler',
+    	animation: {
+    		duration: 500,
+    		easing: 'easeOutQuint'
+    	},
+    	sidebar: {
+    		align: 'left',
+    		width: 250,
+    		closingLinks: closingLinks,
+    	},
+    	mask: {
+    		display: true
+    	}
+    });
+  
 });
 
-
-/**
- * @see http://dcdeiv.github.io/simpler-sidebar/
- */
-var closingLinks = '.close-sidebar';
-$('#sidebar').show();
-var $sidebar = $('#sidebar').simplerSidebar({
-	opener: '.navbar-toggler',
-	animation: {
-		duration: 500,
-		easing: 'easeOutQuint'
-	},
-	sidebar: {
-		align: 'left',
-		width: 250,
-		closingLinks: closingLinks,
-	},
-	mask: {
-		display: true
-	}
-});

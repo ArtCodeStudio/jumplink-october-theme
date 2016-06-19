@@ -1,5 +1,13 @@
 .navbar-main {
     // z-index: 3000; // to make it over sidebar mask
+    
+    -webkit-transition: opacity 250ms ease-in-out;
+    -moz-transition: opacity 250ms ease-in-out;
+    -ms-transition: opacity 250ms ease-in-out;
+    -o-transition: opacity 250ms ease-in-out;
+    transition: opacity 250ms ease-in-out;
+    opacity: 1;
+    
     .navbar-brand {
         min-width: 40px;
         background-image: url(../images/logos/logo_inverse.svg);
@@ -7,9 +15,8 @@
         background-position: left center;
         background-size: auto 100%;
         padding-left: 50px;
-        // opacity: 0;
-        transition: opacity 500ms ease-out;
         height: 2.7rem;
+        opacity: 1;
     }
     &.affix--blw {
         position: fixed;
@@ -19,6 +26,12 @@
     &.affix--abv {
        @extend .navbar-static-top;
     }
+    
+    &.hidden {
+        opacity: 0;
+        //visibility: hidden;
+    }
+    
     // border-bottom: 2px solid $brand-danger;
 }
 
@@ -33,4 +46,10 @@
   &.bg-danger {
       color: white;
   }
+}
+
+.navbar-dark {
+    .navbar-toggler {
+        color: #fff;
+    }
 }
