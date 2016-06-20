@@ -9707,11 +9707,11 @@ a.bg-danger:focus, a.bg-danger:hover {
 #sidebar {
   display: none; }
   #sidebar .sidebar-wrapper {
-    top: 54px;
+    padding-top: 54px;
+    top: 0;
     position: relative;
     height: 100%;
-    overflow: auto;
-    background-color: #1E88E5; }
+    overflow: auto; }
     #sidebar .sidebar-wrapper .list-group-item {
       border: none;
       border-radius: 0;

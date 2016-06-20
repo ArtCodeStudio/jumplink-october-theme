@@ -1,11 +1,12 @@
 #sidebar {
     display: none;
     .sidebar-wrapper {
-        top: $navbar-height;
+        padding-top: $navbar-height;
+        top: 0;
         position: relative;
         height: 100%;
         overflow: auto;
-        background-color: $brand-primary;
+        // background-color: $brand-primary;
         .list-group-item {
             @extend .bg-inverse;
             border: none;
