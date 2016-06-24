@@ -1,1 +1,1 @@
-Binde deine Produkte automatisch an eBay, Amazon, Facebook und Apps an, so hast du mehrere potentielle Käuferquellen und brauchst nur den Warenbestand in deinem Shop zu pflegen.
+Binde Deine Produkte automatisch an eBay, Amazon, Facebook und Apps an. So hast Du mehrere potentielle Käuferquellen und brauchst nur den Warenbestand in Deinem Shop zu pflegen.

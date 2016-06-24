@@ -1,1 +1,1 @@
-Wenn du deine Produkte online verkaufen und dabei einen hochwerigen Eindruck hinterlassen möchtest, dann würden wir uns freuen, den Shop gemeinsam mit dir entwickeln zu dürfen.
+Produkte online verkaufen und dabei einen hochwertigen Eindruck hinterlassen? Es erwartet Dich ein individueller Onlineshop mit leichter Verwaltung.

@@ -1,1 +1,1 @@
-Ich baue deine eigene App für alle Geräteplattformen, darunter Android, Apple iOS, Windows Phone, Sailfish OS und Ubuntu Touch. Es gibt unterschiedliche Möglichkeiten, wie dies realisiert werden kann, gerne bespreche wir mit dir die Details persönlich.
+Deine eigene App für alle Geräteplattformen, darunter Android, Apple iOS, Windows Phone, Sailfish OS und Ubuntu Touch. Es gibt unterschiedliche Möglichkeiten, wie dies realisiert werden kann, gerne besprechen wir mit dir die Details persönlich.

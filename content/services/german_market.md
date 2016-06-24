@@ -1,1 +1,1 @@
-Wir bereiten deinen Shop für den deutschen Markt vor, dazu gehören z.B. Rechtssicherheit bei Rechtstexten, der Kaufabwicklung, der Preisdarstellung und Steuerklassen.
+Wir bereiten Deinen Webauftritt für den deutschen Markt vor. Dazu gehört z.B. die Rechtssicherheit bei Rechtstexten, der Kaufabwicklung, der Preisdarstellung und Steuerklassen.

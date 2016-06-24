@@ -6,6 +6,8 @@ $bold-font-weight: 400;
 $apps-iframe-decrease:      1.8;
 $navbar-height:             54px; // TODO get from bootstrap variables or calc this
 
+$location-height: 18rem;
+
 // Variables
 //
 // Copy settings from this file into the provided `_custom.scss` to override
@@ -40,11 +42,11 @@ $gray-light:                #818a91 !default;
 $gray-lighter:              #eceeef !default;
 $gray-lightest:             #f7f7f9 !default;
 
-$brand-primary:             #1E88E5 !default;
+$brand-primary:             #1E88E5;
 $brand-success:             #5cb85c !default;
-$brand-info:                #2196F3 !default;
+$brand-info:                #2196F3;
 $brand-warning:             #f0ad4e !default;
-$brand-danger:              #C62828 !default;
+$brand-danger:              #C62828;
 
 
 // Options
@@ -599,7 +601,7 @@ $progress-bar-info-bg:        $brand-info !default;
 // List group
 
 $list-group-bg:                 #fff !default;
-$list-group-border-color:       #ddd !default;
+$list-group-border-color:       $brand-primary;
 $list-group-border-width:       $border-width !default;
 $list-group-border-radius:      $border-radius !default;
 

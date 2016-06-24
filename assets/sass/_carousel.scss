@@ -84,6 +84,11 @@
     }
     // sub carousels
     #chou-chou-berlin_carousel, #jewelberry_carousel {
+        @extend .z-depth-1;
+        @extend .hoverable;
+        &:hover {
+            @extend .z-depth-2;
+        }
         .slick-list {
              .slick-slide {
                  padding: 0;
@@ -91,6 +96,8 @@
         }
     }
 }
+
+
 
 $project-jewelberry-color: #ffa29f;
 

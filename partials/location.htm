@@ -1,14 +1,15 @@
 ==
-<div id="location" data-target="#location" class="p-b-3">
+<div id="location" class="m-y-3">
     <div class="card card-inverse card-primary text-xs-center col-sm-12 col-md-4 col-lg-3 col-xl-2">
       <div class="card-block">
+        <p class="card-text">
+            <strong>{{ 'Anfahrt' | _ }}</strong>
+        </p>
         <address class="card-text">
-            <strong>
-                {{ this.theme.location_name_line_1 }}
-                {% if this.theme.location_name_line_2 %}
-                    <br>{{ this.theme.location_name_line_2 }}
-                {% endif %}
-            </strong>
+            {{ this.theme.location_name_line_1 }}
+            {% if this.theme.location_name_line_2 %}
+                <br>{{ this.theme.location_name_line_2 }}
+            {% endif %}
             {% if this.theme.location_address_line_1 %}
                 <br>{{ this.theme.location_address_line_1 }}
             {% endif %}

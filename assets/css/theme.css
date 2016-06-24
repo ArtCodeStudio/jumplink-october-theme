@@ -534,7 +534,7 @@ mark,
   content: "\00A0 \2014"; }
 
 .img-fluid, .carousel-inner > .carousel-item > img,
-.carousel-inner > .carousel-item > a > img {
+.carousel-inner > .carousel-item > a > img, #blogpost .content img {
   display: block;
   max-width: 100%;
   height: auto; }
@@ -3467,7 +3467,7 @@ a.label:focus, a.label:hover {
   padding: .75rem 1.25rem;
   margin-bottom: -1px;
   background-color: #fff;
-  border: 1px solid #ddd; }
+  border: 1px solid #1E88E5; }
   .list-group-item:first-child {
     border-top-right-radius: 0rem;
     border-top-left-radius: 0rem; }
@@ -4322,18 +4322,18 @@ a.text-warning:focus, a.text-warning:hover {
 a.text-danger:focus, a.text-danger:hover {
   color: #9c1f1f; }
 
-.bg-inverse, #sidebar .sidebar-wrapper .list-group-item, .list-group-item.active-bg-inverse.active, .list-group-item.active-bg-inverse.active:hover, select[name="locale"], #WorkInProgress {
+.bg-inverse, #sidebar .sidebar-wrapper .list-group-item, #SideInMaintenanceMode, .list-group-item.active-bg-inverse.active, .list-group-item.active-bg-inverse.active:hover, select[name="locale"] {
   color: #eceeef;
   background-color: #373a3c; }
 
 .bg-faded {
   background-color: #f7f7f9; }
 
-.bg-primary {
+.bg-primary, #SideInMaintenanceMode {
   color: #fff !important;
   background-color: #1E88E5 !important; }
 
-a.bg-primary:focus, a.bg-primary:hover {
+a.bg-primary:focus, a#SideInMaintenanceMode:focus, a.bg-primary:hover, a#SideInMaintenanceMode:hover {
   background-color: #166dba; }
 
 .bg-success {
@@ -9366,13 +9366,13 @@ a.bg-danger:focus, a.bg-danger:hover {
 .z-depth-0 {
   box-shadow: none !important; }
 
-.z-depth-1, .btn {
+.z-depth-1, #location, #development .card, #blogposts .card, #credentials_carousel #chou-chou-berlin_carousel, #credentials_carousel #jewelberry_carousel, .btn, .category-list {
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12); }
 
 .z-depth-1-half, .btn:hover {
   box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15); }
 
-.z-depth-2 {
+.z-depth-2, #location:hover, #development .card:hover, #blogposts .card:hover, #credentials_carousel #chou-chou-berlin_carousel:hover, #credentials_carousel #jewelberry_carousel:hover, .category-list:hover {
   box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
 
 .z-depth-3 {
@@ -9383,6 +9383,16 @@ a.bg-danger:focus, a.bg-danger:hover {
 
 .z-depth-5 {
   box-shadow: 0 27px 24px 0 rgba(0, 0, 0, 0.2), 0 40px 77px 0 rgba(0, 0, 0, 0.22); }
+
+.hoverable, #location, #development .card, #blogposts .card, #credentials_carousel #chou-chou-berlin_carousel, #credentials_carousel #jewelberry_carousel, .category-list {
+  -webkit-transition: box-shadow .25s;
+  transition: box-shadow .25s;
+  box-shadow: 0; }
+
+.hoverable:hover, #location:hover, #development .card:hover, #blogposts .card:hover, #credentials_carousel #chou-chou-berlin_carousel:hover, #credentials_carousel #jewelberry_carousel:hover, .category-list:hover {
+  -webkit-transition: box-shadow .25s;
+  transition: box-shadow .25s;
+  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
 
 @font-face {
   font-family: 'Ubuntu';
@@ -10173,7 +10183,7 @@ a.bg-danger:focus, a.bg-danger:hover {
   border: 1px solid #666; }
 
 #location #map {
-  height: 300px; }
+  height: 18rem; }
 
 #development .card-footer, #location .card-footer {
   bottom: 0;
@@ -10187,8 +10197,12 @@ a.bg-danger:focus, a.bg-danger:hover {
   border: none; }
 
 #location .card {
-  min-height: 300px;
+  min-height: 18rem;
   margin-bottom: 0; }
+
+@media (max-width: 767px) {
+  #location .card {
+    min-height: 13rem; } }
 
 .card.card-inverse .card-text {
   color: #fff; }
@@ -10472,9 +10486,9 @@ body {
   body.affix--blw {
     padding-top: 61.12px; }
 
-.bg-danger, .bg-info, .bg-primary {
+.bg-danger, .bg-info, .bg-primary, #SideInMaintenanceMode {
   color: white; }
-  .bg-danger .navbar-nav .nav-link, .bg-info .navbar-nav .nav-link, .bg-primary .navbar-nav .nav-link {
+  .bg-danger .navbar-nav .nav-link, .bg-info .navbar-nav .nav-link, .bg-primary .navbar-nav .nav-link, #SideInMaintenanceMode .navbar-nav .nav-link {
     color: white; }
 
 .center-block {
@@ -10482,9 +10496,9 @@ body {
   margin-left: auto !important;
   display: block; }
 
-:not(nav).bg-inverse a, #sidebar .sidebar-wrapper .list-group-item:not(nav) a, .list-group-item.active-bg-inverse.active:not(nav) a, .list-group-item.active-bg-inverse.active:not(nav):hover a, select[name="locale"]:not(nav) a, #WorkInProgress:not(nav) a {
+:not(nav).bg-inverse a, #sidebar .sidebar-wrapper .list-group-item:not(nav) a, #SideInMaintenanceMode:not(nav) a, .list-group-item.active-bg-inverse.active:not(nav) a, .list-group-item.active-bg-inverse.active:not(nav):hover a, select[name="locale"]:not(nav) a {
   color: rgba(255, 255, 255, 0.5); }
-  :not(nav).bg-inverse a:hover, #sidebar .sidebar-wrapper .list-group-item:not(nav) a:hover, .list-group-item.active-bg-inverse.active:not(nav) a:hover, select[name="locale"]:not(nav) a:hover, #WorkInProgress:not(nav) a:hover {
+  :not(nav).bg-inverse a:hover, #sidebar .sidebar-wrapper .list-group-item:not(nav) a:hover, #SideInMaintenanceMode:not(nav) a:hover, .list-group-item.active-bg-inverse.active:not(nav) a:hover, select[name="locale"]:not(nav) a:hover {
     color: white; }
 
 .icon-circle {

@@ -1,1 +1,1 @@
-Wir optimieren dein Projekt für die Online-Suchmaschine, damit du auch gefunden wirst.
+Damit Du auch gefunden wirst optimieren wir Dein Projekt für die Online-Suchmaschine.

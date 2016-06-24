@@ -1,4 +1,3 @@
-
 // $('.navbar-brand').css('opacity', 1);
 
 $(function () {
@@ -10,7 +9,7 @@ $(function () {
     $('.nav-link.blog').addClass( "active" );
 
     
-    affix("navbar-main", function () {
+    affix(function () {
         return $blogHeader.height();
     });
 })

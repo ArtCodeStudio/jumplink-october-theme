@@ -1,1 +1,1 @@
-Ob großer Shop mit vielen idividuellen Funktionen und voller Controller oder unkompliziert und immer up to date, wir passen das für dich am besten geeignete System deinen Vorstellungen an.
+Ob großer Shop mit vielen spezifischen Funktionen oder unkompliziert und minimiert - wir halten Dich immer up to date und passen das System an Deine Vorstellungen an.

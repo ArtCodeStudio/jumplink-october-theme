@@ -1,1 +1,1 @@
-Du benötigst eine Internetpräsenz oder einen frischen Anstrich? Wir zerbrechen uns gerne den Kopf für dich.
+Eine neue Webseite ist schon lange fällig? Gemeinsam entwickeln wir ein modernes Konzept und realisieren einen originellen Webauftritt für Dich.

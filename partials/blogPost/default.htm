@@ -2,21 +2,23 @@
 {% set post = __SELF__.post %}
 
 <h2 class="title">{{ post.title }}</h2>
-<div class="content">{{ post.content_html|raw }}</div>
 
 {% if post.featured_images.count %}
-    <div class="featured-images text-center">
+    <div class="featured-images text-center center-block">
         {% for image in post.featured_images %}
             <p>
                 <img
                     data-src="{{ image.filename }}"
                     src="{{ image.path }}"
                     alt="{{ image.description }}"
-                    style="max-width: 100%" />
+                    class="img-fluid"
+                    />
             </p>
         {% endfor %}
     </div>
 {% endif %}
+
+<div class="content">{{ post.content_html|raw }}</div>
 
 <p class="info">
     {{ 'Erstellt'|_ }}

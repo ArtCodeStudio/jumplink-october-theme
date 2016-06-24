@@ -1,1 +1,1 @@
-Du möchtest deine Produkte weltweit verkaufen? Oder dein Unternehmen ist international aufgestellt? Wir machen dein Projekt unkompliziert mehrsprachig.
+Ein weltweiter Verkauf Deiner Produkte? Wir sorgen dafür, dass Dein Unternehmen und Dein Projekt international und mehrsprachig von überall unkompliziert verfügbar ist.

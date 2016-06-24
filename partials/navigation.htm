@@ -11,8 +11,8 @@
             <ul class="nav navbar-nav">
                 <li class="nav-item"><a href="{% if this.page.id != 'home' %}{{'home'|page}}{% endif %}#development" class="nav-link">{{'Entwicklung'|_}}</a></li>
                 <li class="nav-item"><a href="{% if this.page.id != 'home' %}{{'home'|page}}{% endif %}#network" class="nav-link">{{'Netzwerk'|_}}</a></li>
-                <li class="nav-item"><a href="{% if this.page.id != 'home' %}{{'home'|page}}{% endif %}#credentials" class="nav-link">{{'Referenzen'|_}}</a></li>
-                <li class="nav-item"><a href="{% if this.page.id != 'home' %}{{'home'|page}}{% endif %}#imprint" class="nav-link">{{'Impressum'|_}}</a></li>
+                <li class="nav-item"><a href="{% if this.page.id != 'home' %}{{'home'|page}}{% endif %}#credentials" class="nav-link">{{'Projekte'|_}}</a></li>
+                <li class="nav-item"><a href="{% if this.page.id != 'home' %}{{'home'|page}}{% endif %}#imprint" class="nav-link">{{'Kontakt'|_}}</a></li>
             </ul>
             <!-- <form class="m-l-1 form-inline pull-xs-right">
                 {% component 'localePicker' %}
@@ -24,7 +24,7 @@
     </nav>
 </div>
 
-<nav class="navbar navbar-main navbar-full navbar-fixed-top navbar-dark bg-primary z-depth-2 hidden" id="navbar-main-fixed">
+<nav class="navbar navbar-main navbar-full navbar-fixed-top navbar-dark bg-primary z-depth-1 hidden" id="navbar-main-fixed">
     <button class="navbar-toggler hidden-md-up" type="button">
         &#9776;
     </button>
@@ -33,8 +33,8 @@
         <ul class="nav navbar-nav">
             <li class="nav-item"><a href="{% if this.page.id != 'home' %}{{'home'|page}}{% endif %}#development" class="nav-link">{{'Entwicklung'|_}}</a></li>
             <li class="nav-item"><a href="{% if this.page.id != 'home' %}{{'home'|page}}{% endif %}#network" class="nav-link">{{'Netzwerk'|_}}</a></li>
-            <li class="nav-item"><a href="{% if this.page.id != 'home' %}{{'home'|page}}{% endif %}#credentials" class="nav-link">{{'Referenzen'|_}}</a></li>
-            <li class="nav-item"><a href="{% if this.page.id != 'home' %}{{'home'|page}}{% endif %}#imprint" class="nav-link">{{'Impressum'|_}}</a></li>
+            <li class="nav-item"><a href="{% if this.page.id != 'home' %}{{'home'|page}}{% endif %}#credentials" class="nav-link">{{'Projekte'|_}}</a></li>
+            <li class="nav-item"><a href="{% if this.page.id != 'home' %}{{'home'|page}}{% endif %}#imprint" class="nav-link">{{'Kontakt'|_}}</a></li>
         </ul>
         <!-- <form class="m-l-1 form-inline pull-xs-right">
             {% component 'localePicker' %}
@@ -55,8 +55,8 @@
         <div class="list-group">
             <a href="{% if this.page.id != 'home' %}{{'home'|page}}{% endif %}#development" class="close-sidebar list-group-item">{{'Entwicklung'|_}}</a></li>
             <a href="{% if this.page.id != 'home' %}{{'home'|page}}{% endif %}#network" class="close-sidebar list-group-item">{{'Netzwerk'|_}}</a></li>
-            <a href="{% if this.page.id != 'home' %}{{'home'|page}}{% endif %}#credentials" class="close-sidebar list-group-item">{{'Referenzen'|_}}</a>
-            <a href="{% if this.page.id != 'home' %}{{'home'|page}}{% endif %}#imprint" class="close-sidebar list-group-item">{{'Impressum'|_}}</a>
+            <a href="{% if this.page.id != 'home' %}{{'home'|page}}{% endif %}#credentials" class="close-sidebar list-group-item">{{'Projekte'|_}}</a>
+            <a href="{% if this.page.id != 'home' %}{{'home'|page}}{% endif %}#imprint" class="close-sidebar list-group-item">{{'Kontakt'|_}}</a>
             <hr>
             <a href="{{'blog'|page}}" class="close-sidebar list-group-item blog">Blog</a>
         </div>
@@ -65,7 +65,7 @@
 
 <div class="fixed-action-btn">
   <a class="btn btn-danger btn-fab" data-toggle="tooltip" data-placement="left" title="Kontakt aufnehmen" href="mailto:info@jumplink.eu">
-    <i class="fa fa-comment" aria-hidden="true"></i>
+    <i class="fa fa-envelope-o" aria-hidden="true"></i>
   </a>
 </div>
 

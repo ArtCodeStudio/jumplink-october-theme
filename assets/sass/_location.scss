@@ -1,6 +1,12 @@
+
 #location {
     overflow: auto;
     width: 100%;
+    @extend .z-depth-1;
+    @extend .hoverable;
+    &:hover {
+        @extend .z-depth-2;
+    }
 }
 
 /* required styles */
@@ -486,6 +492,6 @@
 
 #location {
     #map {
-        height: 300px;
+        height: $location-height;
     }
 }

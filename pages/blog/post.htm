@@ -3,10 +3,17 @@ url = "/blog/post/:slug"
 layout = "default"
 description = "Viewing a single blog post"
 is_hidden = 0
+meta_title = "JumpLink Blog Artikel"
+meta_description = "Artikel über E-Commerce, E-Business, Marketing, Webdesign, Hardware und vieles mehr."
+robot_index = "index"
+robot_follow = "follow"
 
 [blogPost]
 slug = "{{ :slug }}"
 categoryPage = "blog/category"
+
+[SeoBlogPost]
+post = "post"
 ==
 <div id="blogpost">
     {% partial 'header/blog' %}
@@ -14,6 +21,7 @@ categoryPage = "blog/category"
         <div class="row">
             <div class="col-lg-12">
                 {% component 'blogPost' %}
+                {% component 'SeoBlogPost' %}
             </div>
         </div>
     </div>

@@ -1,1 +1,1 @@
-Deine App soll sich gut und geschmeidig anfühlen. Dezente Animationen, ein übersichtliches Layout und Anlehnung an die Designsprache der jeweiligen Plattformen sorgen für angenehmes und störungsfreies Bedienen deiner App. Gemeinsam entwickeln wir für dich den letzten Feinschliff.
+Dein Projekt soll leicht und geschmeidig wirken? Dezente Animationen, ein übersichtliches Layout mit Anlehnung an die Designsprache der jeweiligen Plattformen sorgen für angenehmes und störungsfreies Bedienen Deiner App oder Webanwendung. Wir kreieren den letzten Feinschliff.

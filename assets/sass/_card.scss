@@ -1,4 +1,5 @@
 #development, #location {
+    
     .card-footer {
         bottom: 0;
         position: absolute;
@@ -13,6 +14,16 @@
     }
 }
 
+#development, #blogposts {
+    .card {
+        @extend .z-depth-1;
+        @extend .hoverable;
+        &:hover {
+            @extend .z-depth-2;
+        }
+    }
+}
+
 #service {
     .card {
         border: none;
@@ -21,8 +32,16 @@
 
 #location {
     .card {
-        min-height: 300px; // TODO use variable
+        min-height: $location-height;
         margin-bottom: 0;
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    #location {
+        .card {
+            min-height: 13rem;
+        }
     }
 }
 

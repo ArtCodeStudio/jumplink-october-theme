@@ -22,6 +22,7 @@
 @import "./buttons";
 @import "./images";
 @import "./modals";
+@import "./blog";
 
 // http://stackoverflow.com/a/33455377
 html {
@@ -183,11 +184,6 @@ select[name="locale"] {
         opacity: 1;
     } 
 }
-
-#WorkInProgress {
-    @extend .bg-inverse;
-}
-
 
 // anker elements with padding with navbar height to avoid scroll position overlap
 div[data-target] {
