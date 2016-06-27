@@ -100,3 +100,7 @@ form:
 require:
     - RainLab.Translate
     - RainLab.Blog
+    - RainLab.Translate
+    - RainLab.GoogleAnalytics
+    - RainLab.Sitemap
+    - AnandPatel.SeoExtension

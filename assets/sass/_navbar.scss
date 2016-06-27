@@ -24,7 +24,7 @@
         @extend .navbar-fixed-top;
     }
     &.affix--abv {
-       @extend .navbar-static-top;
+       //@extend .navbar-static-top;
     }
     
     &.hidden {
