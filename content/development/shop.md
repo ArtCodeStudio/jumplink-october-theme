@@ -1,1 +1,1 @@
-Produkte online verkaufen und dabei einen hochwertigen Eindruck hinterlassen? Es erwartet Dich ein individueller Onlineshop mit leichter Verwaltung.
+Produkte online verkaufen und dabei einen hochwertigen Eindruck hinterlassen? Es erwartet Dich ein individueller und sorgenfreier Onlineshop mit einfacher Handhabung.
