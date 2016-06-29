@@ -1,0 +1,22 @@
+==
+<div itemscope itemtype="http://schema.org/Service" class="row" class="service_{{ handle }}">
+  <div class="col-xs-12 col-sm-10 col-sm-offset-1">
+    <div class="hidden-lg-up card">
+      <img itemprop="image" class="card-img-top center-block img-fluid" src="{{ 'assets/images/services'| theme }}/{{handle}}.svg" alt="{{ title|_ }}">
+      <div class="card-block">
+        <h3 itemprop="name" class="card-title">{{ title|_ }} <small>{{ subtitle|_ }}</small></h3>
+        <p itemprop="description" class="card-text">{% content content %}</p>
+      </div>
+    </div>
+    <div class="hidden-md-down media">
+      <div class="media-left media-middle">
+        <img itemprop="image" class="media-object" src="{{ 'assets/images/services'| theme }}/{{handle}}.svg" alt="{{ title|_ }}">
+      </div>
+      <div class="media-body media-middle">
+        <h3 itemprop="name" class="media-heading">{{ title|_ }} <small>{{ subtitle|_ }}</small></h3>
+        <p itemprop="description">{% content content %}</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-1"></div>
+</div>

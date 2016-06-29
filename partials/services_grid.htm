@@ -1,17 +1,17 @@
 ==
 <div id="service" data-target="#service" class="p-b-3">
     <div class="container">
-        {% partial 'services/responsive' %}
-        {% partial 'services/seo' %}
-        {% partial 'services/modern' %}
-        {% partial 'services/multilingual' %}
-        {% partial 'services/custom' %}
-        {% partial 'services/api' %}
-        {% partial 'services/erp' %}
-        {% partial 'services/maintainable' %}
-        <!-- {% partial 'services/crossplatform' %} -->
-        <!-- {% partial 'services/backend' %} -->
-        <!-- {% partial 'services/german_market' %} -->
-        <!-- {% partial 'services/selfcode' %} -->
+        {% partial 'service_grid_item' title='Responsive Design' subtitle='' handle='responsive' content='services/responsive.md' %}
+        {% partial 'service_grid_item' title='SEO' subtitle='Suchmaschinenoptimierung' handle='seo' content='services/seo.md' %}
+        {% partial 'service_grid_item' title='Modernes Design' subtitle='' handle='modern' content='services/modern.md' %}
+        {% partial 'service_grid_item' title='Mehrsprachig' subtitle='' handle='multilingual' content='services/multilingual.md' %}
+        {% partial 'service_grid_item' title='Maßgeschneidert' subtitle='' handle='custom' content='services/custom.md' %}
+        {% partial 'service_grid_item' title='Anbindungen' subtitle='' handle='api' content='services/api.md' %}
+        {% partial 'service_grid_item' title='ERP' subtitle='Warenwirtschaft' handle='erp' content='services/erp.md' %}
+        {% partial 'service_grid_item' title='Wartbar' subtitle='' handle='maintainable' content='services/maintainable.md' %}
+        <!-- {% partial 'service_grid_item' title='Plattformunabängig' subtitle='' handle='crossplatform' content='services/crossplatform.md' %} -->
+        <!-- {% partial 'service_grid_item' title='Modernes Backend' subtitle='' handle='backend' content='services/backend.md' %} -->
+        <!-- {% partial 'service_grid_item' title='Deutscher Markt' subtitle='' handle='german_market' content='services/german_market.md' %} -->
+        {% partial 'service_grid_item' title='Unternehmens-Prozesse Automatisieren' subtitle='' handle='selfcode' content='services/selfcode.md' %}
     </div>
 </div>

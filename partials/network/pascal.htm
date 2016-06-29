@@ -1,11 +1,15 @@
 ==
-<div class="network_person">
+<div itemscope itemtype="http://schema.org/Person" class="network_person">
     <div class="img-hover-wrapper">
-        <img class="img-circle img-thumbnail img-fluid center-block" src="{{ 'assets/images/network/pascal.jpg' | theme }}">
-        <img class="img-circle img-thumbnail img-fluid center-block" src="{{ 'assets/images/network/pascal_hover.jpg' | theme }}">
+        <img itemprop="image" class="img-circle img-thumbnail img-fluid center-block" src="{{ 'assets/images/network/pascal.jpg' | theme }}" alt="Pascal Garber">
+        <img class="img-circle img-thumbnail img-fluid center-block" src="{{ 'assets/images/network/pascal_hover.jpg' | theme }}" alt="Pascal Garber">
     </div>
     <h3 class="p-x-1 p-y-1 text-xs-center">
-         Pascal Garber
-         <br><small class="lead">{{'Gründer'|_}}, {{'Entwickler'|_}}, {{'Designer'|_}}</small>
+         <span itemprop="name">Pascal Garber</span>
+         <br>
+         <small itemprop="jobTitle" class="lead">{{'Gründer'|_}}, {{'Entwickler'|_}}, {{'Designer'|_}}</small>
+         <br>
+         <br>
+         <small><a href="mailto:pascal@jumplink.me" itemprop="email">pascal@jumplink.me</a></small>
     </h3>
 </div>

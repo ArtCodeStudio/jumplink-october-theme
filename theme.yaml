@@ -31,30 +31,42 @@ form:
                 tab: Location
                 comment: Enables the location map on the front-end
                 default: true
-            location_name_line_1:
-                label: Location name line 1
+            location_name:
+                label: Location name
                 type: text
                 tab: Location
                 comment: Name of your location, e.g. the same as the company name
                 default: JumpLink
-            location_name_line_2:
-                label: Location name line 2
+            location_description:
+                label: Location description
                 type: text
                 tab: Location
-                comment: Name of your location, e.g. the same as the company name
-                default: 
-            location_address_line_1:
-                label: Address line 1
+                comment: Description of your location
+                default: '< Softwareentwicklung />'
+            location_street_address:
+                label: Street address
                 type: text
                 tab: Location
-                comment: E.g. the street and street number
+                comment: The street and street number
                 default: Kasernenstraße 8
-            location_address_line_2:
-                label: Address line 2
+            location_postal_code:
+                label: Postal code
                 type: text
                 tab: Location
-                comment: E.g. the zip and city
-                default: 27472 Cuxhaven
+                comment: The postal code
+                default: 27472
+            location_address_locality:
+                label: Address locality
+                type: text
+                tab: Location
+                comment: E.g. the city
+                default: Cuxhaven
+            location_address_region:
+                label: Address region
+                type: text
+                tab: Location
+                comment: E.g. the country
+                default: DE
             location_mapbox_accessToken:
                 label: Mapbox access token
                 type: text

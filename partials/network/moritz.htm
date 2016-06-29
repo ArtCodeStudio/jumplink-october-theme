@@ -1,11 +1,15 @@
 ==
-<div class="network_person">
+<div  itemscope itemtype="http://schema.org/Person" class="network_person">
     <div class="img-hover-wrapper">
-        <img class="img-circle img-thumbnail img-fluid center-block" src="{{ 'assets/images/network/moritz.jpg' | theme }}">
-        <img class="img-circle img-thumbnail img-fluid center-block" src="{{ 'assets/images/network/moritz_hover.jpg' | theme }}">
+        <img itemprop="image" class="img-circle img-thumbnail img-fluid center-block" src="{{ 'assets/images/network/moritz.jpg' | theme }}" alt="Moritz Raguschat">
+        <img class="img-circle img-thumbnail img-fluid center-block" src="{{ 'assets/images/network/moritz_hover.jpg' | theme }}" alt="Moritz Raguschat">
     </div>
     <h3 class="p-x-1 p-y-1 text-xs-center">
-         Moritz Raguschat
-         <br><small class="lead">{{'Dipl.-Mathematiker'|_}}, {{'Backend-Entwickler'|_}}</small>
+         <span itemprop="name">Moritz Raguschat</span>
+         <br>
+         <small itemprop="jobTitle" class="lead">{{'Dipl.-Mathematiker'|_}}, {{'Backend-Entwickler'|_}}</small>
+         <br>
+         <br>
+         <small><a href="mailto:moritz@jumplink.me" itemprop="email">moritz@jumplink.me</a></small>
     </h3>
 </div>

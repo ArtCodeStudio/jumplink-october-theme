@@ -1,11 +1,15 @@
 ==
-<div class="network_person">
+<div  itemscope itemtype="http://schema.org/Person" class="network_person">
     <div class="img-hover-wrapper">
-        <img class="img-circle img-thumbnail img-fluid center-block" src="{{ 'assets/images/network/marc.jpg' | theme }}">
-        <img class="img-circle img-thumbnail img-fluid center-block" src="{{ 'assets/images/network/marc_hover.jpg' | theme }}">
+        <img itemprop="image" class="img-circle img-thumbnail img-fluid center-block" src="{{ 'assets/images/network/marc.jpg' | theme }}" alt="Marc Wensauer">
+        <img class="img-circle img-thumbnail img-fluid center-block" src="{{ 'assets/images/network/marc_hover.jpg' | theme }}" alt="Marc Wensauer">
     </div>
     <h3 class="p-x-1 p-y-1 text-xs-center">
-         Marc Wensauer
-         <br><small class="lead">{{'M.Sc. Digital Media'|_}}, {{'Entwickler'|_}}</small>
+         <span itemprop="name">Marc Wensauer</span>
+         <br>
+         <small itemprop="jobTitle" class="lead">{{'M.Sc. Digital Media'|_}}, {{'Entwickler'|_}}</small>
+         <br>
+         <br>
+         <small><a href="mailto:marc@jumplink.me" itemprop="email">marc@jumplink.me</a></small>
     </h3>
 </div>
