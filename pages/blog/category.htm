@@ -5,6 +5,8 @@ description = "Viewing blog posts in a specific category"
 is_hidden = 0
 meta_title = "JumpLink Blog"
 meta_description = "Artikel über E-Commerce, E-Business, Marketing, Webdesign, Hardware und vieles mehr."
+robot_index = "index"
+robot_follow = "follow"
 
 [blogCategories]
 slug = "{{ :slug }}"
@@ -13,7 +15,7 @@ categoryPage = "blog/category"
 
 [blogPosts]
 pageNumber = "{{ :page }}"
-categoryFilter = ":slug"
+categoryFilter = "{{ :slug }}"
 postsPerPage = 10
 noPostsMessage = "No posts found"
 sortOrder = "published_at desc"

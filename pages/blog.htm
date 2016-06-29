@@ -5,6 +5,8 @@ description = "Artikel über E-Commerce, E-Business, Marketing, Webdesign, Hardw
 is_hidden = 0
 meta_title = "JumpLink Blog"
 meta_description = "Artikel über E-Commerce, E-Business, Marketing, Webdesign, Hardware und vieles mehr."
+robot_index = "index"
+robot_follow = "follow"
 
 [blogPosts]
 pageNumber = "{{ :page }}"
@@ -15,8 +17,8 @@ categoryPage = "blog/category"
 postPage = "blog/post"
 
 [blogCategories]
-slug = ":slug"
-displayEmpty = 0
+slug = "{{ :slug }}"
+displayEmpty = "{{ false }}"
 categoryPage = "blog/category"
 ==
 {% partial 'blogPosts/wrapper' %}
