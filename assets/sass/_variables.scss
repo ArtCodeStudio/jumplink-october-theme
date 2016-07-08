@@ -4,7 +4,7 @@ $font-path:        "./fonts";
 $default-font-weight: 300;
 $bold-font-weight: 400;
 $apps-iframe-decrease:      1.8;
-$navbar-height:             54px; // TODO get from bootstrap variables or calc this
+$navbar-height:             3.6rem;
 
 $location-height: 18rem;
 
@@ -376,7 +376,7 @@ $zindex-modal:             3050;
 
 $navbar-border-radius:              $border-radius !default;
 $navbar-padding-horizontal:         $spacer !default;
-$navbar-padding-vertical:           ($spacer / 2) !default;
+$navbar-padding-vertical:           0;//($spacer / 2) !default;
 
 $navbar-dark-color:                 rgba(255,255,255,.5) !default;
 $navbar-dark-hover-color:           rgba(255,255,255,.75) !default;
@@ -391,7 +391,7 @@ $navbar-light-disabled-color:       rgba(0,0,0,.15) !default;
 
 // Navs
 
-$nav-link-padding:                          .5em 1em !default;
+$nav-link-padding:                          .6em 1em;
 $nav-link-hover-bg:                         $gray-lighter !default;
 
 $nav-disabled-link-color:                   $gray-light !default;

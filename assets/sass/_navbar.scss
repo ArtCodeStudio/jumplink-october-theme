@@ -1,3 +1,13 @@
+.navbar {
+
+}
+
+.navbar-toggler {
+    line-height: $navbar-height;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
 .navbar-main {
     // z-index: 3000; // to make it over sidebar mask
     
@@ -15,8 +25,10 @@
         background-position: left center;
         background-size: auto 100%;
         padding-left: 50px;
-        height: 2.7rem;
+        height: $navbar-height - 1rem;
         opacity: 1;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
     }
     &.affix--blw {
         position: fixed;
@@ -36,16 +48,36 @@
 }
 
 .navbar-nav {
-  .nav-link {
-    padding-top:    .6rem;
-    padding-bottom: .6rem;
-    &.active {
-        font-weight: bold;
+    .list-group-item {
+        display: none;
     }
-  }
-  &.bg-danger {
-      color: white;
-  }
+    .nav-item {
+        border-bottom: 2px solid transparent;
+        // margin-bottom: -2px;
+        
+        &.nav-item-divider {
+            margin-left: 0.3rem;
+            margin-right: -0.7rem;
+        }
+    }
+  
+    .nav-link {
+        padding-top: 0;
+        padding-bottom: 0;
+        line-height: $navbar-height;
+        border-bottom: 2px solid transparent;
+        margin-bottom: -2px;
+        &.active, &:active, &:hover, &:focus {
+            border-bottom-color: #fff;
+            &.nav-item-divider {
+                border-bottom: 2px solid transparent;
+            }
+        }
+    }
+    
+    &.bg-danger {
+        color: white;
+    }
 }
 
 .navbar-dark {
@@ -53,3 +85,4 @@
         color: #fff;
     }
 }
+

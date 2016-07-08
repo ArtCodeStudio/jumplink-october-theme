@@ -1,0 +1,25 @@
+==
+{% for code, name in locales %}
+    <li class="nav-item {{ code == activeLocale ? 'active' }}">
+        <a class="nav-link nav-link-locale-{{ code }} {{ code == activeLocale ? 'active' }}" href="" data-request="onSwitchLocale" data-request-data="locale: '{{ code }}'">{{ name }}</a>
+    </li>
+    {% if loop.index < loop.length %}
+        <li class="nav-item nav-item-divider">
+            <a class="nav-link nav-link-divider">/</a>
+        </li>
+    {% endif %}
+{% endfor %}
+
+
+
+<div class="list-group-item list-group-item-locale">
+    <span class="lang-label">{{'Sprache'|_}}</span>
+    <span class="pull-right">
+        {% for code, name in locales %}
+            <a class="locale-{{ code }} {{ code == activeLocale ? 'active' }}" href="" data-request="onSwitchLocale" data-request-data="locale: '{{ code }}'">{{ name }}</a>
+            {% if loop.index < loop.length %}
+                <div class="list-group-item-divider">/</div>
+            {% endif %}
+        {% endfor %}
+    </span>
+</div>

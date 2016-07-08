@@ -56,14 +56,7 @@ body {
   display: block;
 }
 
-:not(nav).bg-inverse {
-    a {
-        &:hover {
-            color: $navbar-dark-active-color;
-        }
-        color: $navbar-dark-color;
-    }
-}
+
 
 .icon-circle {
     border-radius: 50%;
@@ -131,22 +124,7 @@ body {
     cursor: pointer;
 }
 
-// List group
-// black list-group-items
-.list-group-item {
-    &.active-bg-inverse {
-        &.active {
-            @extend .bg-inverse;
-            border-color: $gray-dark;
-            &:hover {
-                @extend .bg-inverse;
-            }
-        }
-        &:hover {
-            background-color: $gray-lighter;
-        }
-    }
-}
+
 
 select[name="locale"] {
     @extend .c-select;

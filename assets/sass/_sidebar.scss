@@ -8,10 +8,14 @@
         overflow: auto;
         // background-color: $brand-primary;
         .list-group-item {
-            @extend .bg-inverse;
+            //@extend .bg-inverse;
+            color: #fff;
             border: none;
             border-radius: 0;
             background-color: $brand-primary;
+            .active {
+                font-weight: bold;
+            }
         }
         .sidebar-brand {
             padding-left: 1.25rem; // TODO get variable of left list-group-item padding
@@ -22,4 +26,18 @@
     }
 }
 
-    
+.list-group-item-divider {
+    display: inline-block;
+}
+
+.list-group {
+    .nav-item {
+        display: none;
+    }
+}
+
+.list-group-item-locale {
+    a {
+        color: #fff;
+    }
+}
