@@ -1,1 +1,1 @@
-Produkte online verkaufen und dabei einen hochwertigen Eindruck hinterlassen? Es erwartet Dich ein individueller und sorgenfreier Onlineshop mit einfacher Handhabung.
+Du suchst jemanden der dich dabei unterstützt deinen Onlineshop zu entwickeln und legst dabei besonderen Wert darauf, dass dein Shop hochwertig und individuell an deine Bedürfnisse ausgerichtet ist?
