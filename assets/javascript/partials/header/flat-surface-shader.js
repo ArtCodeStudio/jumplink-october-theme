@@ -50,8 +50,8 @@ $(function () {
     xRange: 0.8,
     yRange: 0.1,
     zRange: 1.0,
-    ambient: '#555555',
-    diffuse: '#FFFFFF',
+    ambient: '#5f5c39',
+    diffuse: '#e8e27f',
     speed: 0.001
   };
 
@@ -62,8 +62,8 @@ $(function () {
     count: 2,
     xyScalar: 1,
     zOffset: 100,
-    ambient: '#880066',
-    diffuse: '#FF8800',
+    ambient: '#efe200',
+    diffuse: '#6b6502',
     speed: 0.001,
     gravity: 1200,
     dampening: 0.15,
