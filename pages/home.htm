@@ -2,15 +2,23 @@ title = "Startseite"
 url = "/"
 layout = "default"
 description = "Entwicklung erstklassiger und individueller Onlineshops"
-is_hidden = 0
 meta_title = "Startseite"
 meta_description = "Entwicklung erstklassiger und individueller Onlineshops"
+is_hidden = 0
 seo_keywords = "Web.App,Shop,Online,Internet,Cuxhaven,Entwicklung,Programmierung"
 robot_index = "index"
 robot_follow = "follow"
 ==
 <div class="home">
-    {% partial 'header/particles' %}
+    {% if this.theme.home_header_animation == 'particles' %}
+        {% partial 'header/particles' %}
+     {% elseif this.theme.home_header_animation == 'dust' %}
+        {% partial 'header/dust' %}
+    {% elseif this.theme.home_header_animation == 'flat-surface-shader' %}
+        {% partial 'header/flat-surface-shader' %}
+    {% else %}
+        {% partial 'header/particles' %}
+    {% endif %}
     {% partial 'navigation' %}
     <div class="learn-more center-block text-xs-center">
         <a href="#development" class="btn btn-white-outline">{{'Mehr erfahren'|_}}</a>

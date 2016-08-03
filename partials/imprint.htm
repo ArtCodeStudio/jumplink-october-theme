@@ -11,7 +11,9 @@
             </div>
         </div>
     </div>
-    {% partial 'location' %}
+    {% if this.theme.location_enabled %}
+        {% partial 'location' %}
+    {% endif %}
     <div class="container">
         <div class="row">
             <div class="col-xs-12 col-md-offset-6 col-md-6 col-lg-offset-8 col-lg-4">

@@ -109,10 +109,21 @@ form:
                 tab: Location
                 comment: Location navigation link, e.g. to Google Maps
                 default: https://www.google.de/maps/place/JumpLink/@53.8725552,8.6976976,18z/data=!4m15!1m12!4m11!1m3!2m2!1d8.6981214!2d53.8725078!1m6!1m2!1s0x47b4046c8fdcaae5:0x812e1ff4ad919f08!2sJumpLink,+27472,+Cuxhaven,+Kasernenstra%C3%9Fe+8,+27472+Cuxhaven!2m2!1d8.698122!2d53.872515!3m1!1s0x0:0x812e1ff4ad919f08
+            home_header_animation:
+                label: Header Animation
+                type: dropdown
+                tab: Home
+                comment: Choose your header animation effekt
+                options:
+                    none: none
+                    particles: Particles
+                    dust: Dust
+                    flat-surface-shader: Flat Surface Shader
+                default: particles
 require:
     - RainLab.Translate
     - RainLab.Blog
     - RainLab.Translate
     - RainLab.GoogleAnalytics
     - RainLab.Sitemap
-    - AnandPatel.SeoExtension
+    - JumpLink.SeoExtension
