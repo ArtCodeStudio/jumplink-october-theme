@@ -7,31 +7,12 @@ forceUrl = 0
 
 [SeoCmsPage]
 ==
-<?php
-function onStart()
-{
-    if((!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off') || $_SERVER['SERVER_PORT'] == 443) {
-        $this["https"] = true;
-    } else {
-        $this["https"] = false;
-    }
-    
-}
-?>
-==
 <!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8">
         
         {% component 'SeoCmsPage' %}
-        
-        {% if https == true %}
-            <meta property="og:image:secure_url" content="{{ 'assets/images/logos/logo_blue_white_fb.png' | theme }}" >
-            <meta property="og:image" content="{{ 'assets/images/logos/logo_blue_white_fb.png' | theme }}" >
-        {% else %}
-            <meta property="og:image" content="{{ 'assets/images/logos/logo_blue_white_fb.png' | theme }}" >
-        {% endif %}
         
         <meta property="og:type" content="website" />
                 

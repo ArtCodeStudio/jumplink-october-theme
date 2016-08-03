@@ -23,7 +23,7 @@ $(function () {
         $cards.each(function () {
             $this = $(this);
             if($this.outerHeight() != t) {
-                $this.css('min-height',t);
+                $this.css('min-height', t);
             }
         });
     }
