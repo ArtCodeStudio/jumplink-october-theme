@@ -7,3 +7,20 @@
   user-select: none;           /* Non-prefixed version, currently
                                   not supported by any browser */
 }
+
+.background-vignette {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    pointer-events: none;
+    // background-image: -webkit-radial-gradient(rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 0.8) 100%);
+    // background-image: radial-gradient(rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 0.8) 100%);
+    background-image: -webkit-radial-gradient(rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.5) 100%);
+    background-image: radial-gradient(rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.5) 100%);
+
+    /* IE9 workaround */
+    -webkit-box-shadow: inset 0 0 600px #000 \9;
+    box-shadow: inset 0 0 600px #000 \9;
+}
