@@ -1,32 +1,39 @@
 ==
 <div id="imprint" data-target="#imprint">
-    <div class="container p-t-3">
-        <div class="row">
-            <div class="col-xs-12 text-xs-center">
-                <h1>{{'Kontakt'|_}}</h1>
-            </div>
-            <div class="col-xs-12 text-xs-center p-y-3">
-                <p>{{'Haben wir Dein Interesse geweckt?'|_}}</p>
-                <a href="mailto:info@jumplink.eu" type="button" class="btn btn-danger text-xs-center">{{'Kontakt aufnehmen'|_}}</a>
-            </div>
-        </div>
-    </div>
-    {% partial 'location' %}
     <div class="container">
         <div class="row">
-            <div class="col-xs-12 col-md-offset-6 col-md-6 col-lg-offset-8 col-lg-4">
-                <dl itemscope itemtype="http://schema.org/Organization" class="text-truncate">
-                    <dt class="col-xs-12"><h2>Impressum</h2></dt>
-                    <dt class="col-xs-4">Name</dt>
-                    <dd itemprop="name" class="col-xs-8">JumpLink</dd>
-                    <dt class="col-xs-4">Telefon</dt>
-                    <dd class="col-xs-8"><a itemprop="telephone" href="tel:+4915254090189">+49 152 54 09 01 89</a></dd>
-                    <dt class="col-xs-4">Fax</dt>
-                    <dd class="col-xs-8"><a itemprop="faxNumber" href="fax:+494721664319">+49 4721­ 664319</a></dd>
-                    <dt class="col-xs-4">E-Mail</dt>
-                    <dd class="col-xs-8"><a itemprop="email" href="mailto:info@jumplink.eu">info@jumplink.eu</a></dd>
-                    <dt class="col-xs-4">USt-IdNr.</dt>
-                    <dd itemprob="vatID" class="col-xs-8">DE277453808</dd>
+            <div class="col-xs-12 text-xs-center p-t-2">
+                <h2>Impressum</h2>
+            </div>
+            <div class="col-xs-12 col-md-6 p-y-2">
+                <dl itemscope itemtype="http://schema.org/Organization">
+                    <dt class="col-xs-12"><p>Angaben gem. § 5 TMG</p></dt>
+                    <dt class="col-xs-12">Betreiber und Kontakt</dt>
+                    <dd itemprop="name" class="col-xs-12">Pascal Garber</dd>
+                    <dd class="col-xs-12">Kasernenstraße 8</dd>
+                    <dd class="col-xs-12">27472 Cuxhaven DE</dd>
+                    <dt class="col-xs-12"><p> </p></dt>
+                    <dt class="col-xs-5">Telefon</dt>
+                    <dd class="col-xs-7"><a itemprop="telephone" href="tel:+4915254090189">+49 152 54 09 01 89</a></dd>
+                    <dt class="col-xs-5">Fax</dt>
+                    <dd class="col-xs-7"><a itemprop="faxNumber" href="fax:+494721664319">+49 4721­ 664319</a></dd>
+                    <dt class="col-xs-5">E-Mail</dt>
+                    <dd class="col-xs-7"><a itemprop="email" href="mailto:info@jumplink.eu">info@jumplink.eu</a></dd>
+                    <dt class="col-xs-5">USt-IdNr.</dt>
+                    <dd itemprob="vatID" class="col-xs-7">DE277453808</dd>
+                </dl>
+            </div>
+            <div class="col-xs-12 col-md-6  p-y-2">
+                <dl>
+                    <dt class="col-xs-12">JumpLink</dt>
+                    <dd class="col-xs-12">
+                        <p>JumpLink ist ein Netwerk aus selbstständigen Designern und Programmierern.</p>
+                    </dd>
+                    <dt class="col-xs-12">Datenschutz</dt>
+                    <dd class="col-xs-12">Die Datenschutzerklärung findest Du unter <a href="{{ 'privacy-policy'|page }}">{{ 'privacy-policy'|page }}</a></dd>
+                    <dt class="col-xs-12"><p> </p></dt>
+                    <dt class="col-xs-12">Online-Streitbeilegung gemäß Art. 14 Abs. 1 ODR-VO</dt>
+                    <dd class="col-xs-12">Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit, die Du unter <a href='http://ec.europa.eu/consumers/odr/'>ec.europa.eu/consumers/odr/</a> findest.</dd>
                 </dl>
             </div>
         </div>
