@@ -8,14 +8,13 @@
         @extend .z-depth-1-half;
     }
     
-    &.btn-white-outline {
-        @extend .btn-info-outline;
+    &.btn-outline-white {
+        @extend .btn-outline-info;
         color: white;
         border-color: white;
         &:hover {
             color: white;
             border-color: white;
-            // background-color: lighten($brand-primary, 8%);
         }
     }
     

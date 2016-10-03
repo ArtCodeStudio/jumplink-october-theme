@@ -15,7 +15,7 @@ var affix = function(getScrollOffsetY) {
     * private variables
     * ==================== */
     var $window = $(window);
-    var navbarStatic = $('#navbar-main-static');
+    //var navbarStatic = $('#navbar-main-static');
     var navbarFixed = $('#navbar-main-fixed');
     var scrollPosY = $window.scrollTop();
     var scrollOffsetY = getScrollOffsetY();
@@ -52,16 +52,14 @@ var affix = function(getScrollOffsetY) {
     * private function to style elements when above scroll position
     * ==================== */
     function aboveScrollPos() {
-        navbarStatic.removeClass('hidden');
-        navbarFixed.addClass('hidden');
+        navbarFixed.removeClass('bg-primary z-depth-1').addClass('bg-transparent');
     }
     
     /* ====================
     * private function to style elements when below scroll position
     * ==================== */
     function belowScrollPos() {
-        navbarStatic.addClass('hidden');
-        navbarFixed.removeClass('hidden');
+        navbarFixed.removeClass('bg-transparent').addClass('bg-primary z-depth-1');
     }
 
 

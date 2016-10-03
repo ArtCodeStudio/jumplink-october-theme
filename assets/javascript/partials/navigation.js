@@ -27,23 +27,46 @@ $(function() {
     /**
      * @see http://dcdeiv.github.io/simpler-sidebar/
      */
+    var sidebarTrigger = '.navbar-toggler';
     var closingLinks = '.close-sidebar';
+    
     $('#sidebar').show();
-    var $sidebar = $('#sidebar').simplerSidebar({
-    	opener: '.navbar-toggler',
+    $( "#sidebar" ).simplerSidebar( {
+        align: "left",
+        selectors: {
+            trigger: sidebarTrigger,
+            quitter: closingLinks,
+        },
     	animation: {
     		duration: 500,
     		easing: 'easeOutQuint'
     	},
-    	sidebar: {
-    		align: 'left',
-    		width: 250,
-    		closingLinks: closingLinks,
-    	},
-    	mask: {
-    		display: true
-    	}
-    });
+        sidebar: {
+            width: '250px',
+            
+        },
+        mask: {
+            display: true,
+        },
+        events: {
+          on: {
+            animation: {
+              open: function() {
+                // icon animation for open
+                //transformicons.transform($(sidebarTrigger+'.tcon')[ 0 ]);
+              },
+              close: function() {
+                // icon animation for close
+                //transformicons.revert($(sidebarTrigger+'.tcon')[ 0 ]);
+              },
+              both: function() {
+    
+              },
+            }
+          },
+        },
+    } ); 
+    
   
 });
 

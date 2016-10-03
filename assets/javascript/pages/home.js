@@ -9,6 +9,6 @@ $(function () {
     
     
     affix(function () {
-        return $window.height();
+        return 500;
     });
 })

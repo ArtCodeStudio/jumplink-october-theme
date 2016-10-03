@@ -29,7 +29,8 @@
     "particles.js": "^2.0.0",
     "simpler-sidebar": "master",
     "jquery": "^2.2.3",
-    "bootstrap": "v4.0.0-alpha.2",
+    "jumplink-components": "JumpLinkNetwork/jumplink-components",
+    "bootstrap-backward": "JumpLinkNetwork/bootstrap-backward#v4-0-0-alpha-4-scss-backward",
     "flat-surface-shader": "shellthor/flat-surface-shader#^1.0.0"
   },
   "resolutions": {

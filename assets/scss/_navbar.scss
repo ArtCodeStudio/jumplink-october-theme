@@ -1,5 +1,5 @@
-.navbar {
-
+.navbar-dark .navbar-toggler {
+    color: $navbar-dark-color;
 }
 
 .navbar-toggler {
@@ -8,14 +8,12 @@
     padding-bottom: 0;
 }
 
-.navbar-main {
-    // z-index: 3000; // to make it over sidebar mask
-    
-    -webkit-transition: opacity 250ms ease-in-out;
-    -moz-transition: opacity 250ms ease-in-out;
-    -ms-transition: opacity 250ms ease-in-out;
-    -o-transition: opacity 250ms ease-in-out;
-    transition: opacity 250ms ease-in-out;
+.navbar-main {    
+    -webkit-transition: background 250ms ease-in-out;
+    -moz-transition: background 250ms ease-in-out;
+    -ms-transition: background 250ms ease-in-out;
+    -o-transition: background 250ms ease-in-out;
+    transition: background 250ms ease-in-out;
     opacity: 1;
     
     .navbar-brand {
@@ -30,21 +28,6 @@
         margin-top: 0.5rem;
         margin-bottom: 0.5rem;
     }
-    &.affix--blw {
-        position: fixed;
-        top: 0;
-        @extend .navbar-fixed-top;
-    }
-    &.affix--abv {
-       //@extend .navbar-static-top;
-    }
-    
-    &.hidden {
-        opacity: 0;
-        //visibility: hidden;
-    }
-    
-    // border-bottom: 2px solid $brand-danger;
 }
 
 .navbar-nav {
@@ -79,10 +62,3 @@
         color: white;
     }
 }
-
-.navbar-dark {
-    .navbar-toggler {
-        color: #fff;
-    }
-}
-

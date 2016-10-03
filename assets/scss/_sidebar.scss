@@ -1,5 +1,7 @@
 #sidebar {
-    display: none;
+    width: 250px;
+    left: -250px;
+    z-index: 999 !important;
     .sidebar-wrapper {
         padding-top: $navbar-height;
         top: 0;
@@ -25,6 +27,11 @@
         }
     }
 }
+
+[data-simplersidebar="mask"] {
+    z-index: 998 !important;
+}
+
 
 .list-group-item-divider {
     display: inline-block;

@@ -1,10 +1,10 @@
 var particlesConfig = {
   "particles": {
     "number": {
-      "value": 10,
+      "value": 3,
       "density": {
         "enable": true,
-        "value_area": 80
+        "value_area": 90
       }
     },
     "color": {
@@ -153,5 +153,5 @@ if($(headerAnimateWrapper).is(':within-viewport')) {
 
 $(function () {
     // WORKAROUND um seiten sprünge zu verhindern wenn sich die Seitenhöhe ändert (z.B. wenn unter Android die adresseleißte verschwindet)
-    $('#particles, #particles-subtext-container, .particles-js-canvas-el').height($window.height());
+    //$('#particles, #particles-subtext-container, .particles-js-canvas-el').height($window.height());
 });
