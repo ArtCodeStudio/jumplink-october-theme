@@ -5,7 +5,7 @@
 $(function () {
   $('[data-toggle="tooltip"]').tooltip()
   $('[data-toggle="tooltip"][data-show="always"]').tooltip('show')
-})
+});
 
 /**
  * @see https://github.com/daneden/animate.css
@@ -174,3 +174,18 @@ var playHeaderAnimation = function () {
         playSubtextAnimation('.jumplink-subtext');
     });
 }
+
+/**
+ * Init support Chat
+ */
+$(function () {
+    sChat.init('EYee4kQNwKftpfm3z', {
+        ssl: true,
+        welcomeMessage: 'Hallo, hier kannst du direkt mit uns schreiben und Fragen stellen.',
+        hostName: 'www.simplechat.support',
+        labels: {
+            sendPlaceholder: 'Deine Nachricht..',
+            headerTitle: 'JumpLink Support'
+        }
+    });
+});

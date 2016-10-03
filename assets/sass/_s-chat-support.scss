@@ -1,0 +1,209 @@
+// see https://www.simplechat.support/apps
+
+/* =========================================================================== */
+/* main box container */
+/* =========================================================================== */
+
+.s-chat-box {
+  * {
+    box-sizing: border-box;
+    font-family: arial;
+  }
+  position: fixed;
+  bottom: 5px;
+  right: 20px;
+  z-index: 99999;
+  background-color: #edeff1;
+  width: 300px;
+  -webkit-transform: translateY(103%);
+  transform: translateY(103%);
+  -webkit-transition: transform .3s;
+  transition: transform .3s;
+  -webkit-box-shadow: 3px 7px 20px -4px rgba(0, 0, 0, 0.35);
+  box-shadow: 3px 7px 20px -4px rgba(0, 0, 0, 0.35);
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  &.opened {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+.s-chat-box-admin-is-online .s-chat-presence-indicator {
+  display: inline-block;
+  vertical-align: middle;
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  margin-right: 3px;
+}
+
+.s-chat-box-admin-is-offline .s-chat-presence-indicator {
+  display: inline-block;
+  vertical-align: middle;
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  margin-right: 3px;
+  background-color: $brand-warning;
+}
+
+.s-chat-box-admin-is-online .s-chat-presence-indicator {
+  background-color: $brand-success;
+}
+
+/* =========================================================================== */
+/* box header */
+/* =========================================================================== */
+
+.s-chat-box-header {
+  width: 100%;
+  height: 55px;
+  line-height: 55px;
+  background-color: $brand-primary;
+  border: 1px solid $brand-primary;
+  color: #fff;
+  cursor: pointer;
+  font-size: 14px;
+  position: relative;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  &:before {
+    position: absolute;
+    right: 12px;
+    color: #fff;
+    font-size: 20px;
+    content: "✖";
+  }
+  .s-chat-header-title {
+    padding-left: 12px;
+  }
+}
+
+/* =========================================================================== */
+/* box messages container */
+/* =========================================================================== */
+
+.s-chat-messages {
+  background-color: #edeff1;
+  font-size: 13px;
+  padding: 10px;
+  height: 300px;
+  border: 1px solid #cdcdcd;
+  border-bottom: 0;
+  overflow-y: auto;
+  &:after, &:before {
+    display: table;
+    content: " ";
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+.s-chat-message-item {
+  background-color: transparent;
+  width: 100%;
+  margin-top: 3px;
+  margin-bottom: 3px;
+  word-wrap: break-word;
+  &:after, &:before {
+    display: table;
+    content: " ";
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+.s-chat-message-item-avatar {
+  float: left;
+  margin-right: 5px;
+  width: 23px;
+  height: 23px;
+  line-height: 23px;
+  text-align: center;
+  /*you can place your icon here (as a background) or font icon in content*/
+  //background-color: #000;
+    background-image: url(../images/logos/logo.svg);
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: auto 100%;
+  &:after {
+    // content: "S";
+    // color: #fff;
+    // font-weight: bold;
+  }
+}
+
+.s-chat-message-item .message {
+  border-radius: 15px;
+  padding: 5px 8px 4px;
+  max-width: 80%;
+  width: auto;
+  background-color: #fff;
+  color: #424242;
+  float: left;
+}
+
+.s-chat-message-item-client .message {
+  float: right;
+}
+
+/* =========================================================================== */
+/* main submit input text */
+/* =========================================================================== */
+
+.s-chat-submit-input {
+  width: 100%;
+  border: 1px solid #cdcdcd;
+  border-top: 0;
+  padding: 10px;
+  outline: none;
+  resize: none;
+  font-size: 13px;
+  margin: 0;
+  display: block;
+}
+
+/* ios input zoom bug */
+
+.s-chat-submit-input-ios {
+  font-size: 16px;
+}
+
+/* =========================================================================== */
+/* sChat 'opener' icon trigger */
+/* =========================================================================== */
+/*you can provide your own icon or font icon for chat box open trigger element*/
+
+.s-chat-box-opener {
+  @extend .btn;
+  @extend .btn-danger;
+  @extend .btn-fab;
+  @extend .fixed-action-btn;
+  position: fixed !important;
+  
+  @extend .fa;
+  @extend .fa-comment-o;
+   
+  &.hidden {
+    display: none;
+  }
+}
+
+/* =========================================================================== */
+/* box powered by statement */
+/* =========================================================================== */
+
+.s-chat-powered-by {
+  color: #cdcdcd;
+  font-size: 10px;
+  text-align: right;
+  border-left: 1px solid #cdcdcd;
+  border-right: 1px solid #cdcdcd;
+  padding: 0 5px;
+  a {
+    color: #cdcdcd;
+  }
+}
