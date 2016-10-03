@@ -1,6 +1,7 @@
 description = "Info layout"
 
 [localePicker]
+forceUrl = 0
 
 [googleTracker]
 ==
@@ -18,11 +19,11 @@ description = "Info layout"
         <link href="{{ [
             'assets/css/theme.css',
         ]|theme }}" rel="stylesheet">
+        {% component 'googleTracker' %}
     </head>
     <body id="{{ str_studly(this.page.title) }}">
         <section id="layout-content">
             {% page %}
-            {% component 'googleTracker' %}
         </section>
 
         {% scripts %}
