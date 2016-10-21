@@ -157,7 +157,7 @@ form:
             bs4-brand-primary:
                 type: colorpicker
                 label: brand-primary
-                default: '#0275d8'
+                default: '#1e88e5'
                 tab: 'Bootstrap 4.0.0-alpha.4'
                 assetVar: brand-primary
             bs4-brand-success:
@@ -169,7 +169,7 @@ form:
             bs4-brand-info:
                 type: colorpicker
                 label: brand-info
-                default: '#5bc0de'
+                default: '#2196f3'
                 tab: 'Bootstrap 4.0.0-alpha.4'
                 assetVar: brand-info
             bs4-brand-warning:
@@ -273,7 +273,7 @@ form:
             bs4-border-width:
                 type: text
                 label: border-width
-                default: 1px
+                default: 2px
                 tab: 'Bootstrap 4.0.0-alpha.4'
                 assetVar: border-width
             bs4-body:
@@ -317,7 +317,7 @@ form:
             bs4-link-hover-decoration:
                 type: text
                 label: link-hover-decoration
-                default: underline
+                default: none
                 tab: 'Bootstrap 4.0.0-alpha.4'
                 assetVar: link-hover-decoration
             bs4-grid_breakpoints:
@@ -405,7 +405,7 @@ form:
             bs4-font-family-sans-serif:
                 type: text
                 label: font-family-sans-serif
-                default: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif'
+                default: '"Ubuntu", "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif'
                 tab: 'Bootstrap 4.0.0-alpha.4'
                 assetVar: font-family-sans-serif
             bs4-font-family-serif:
@@ -562,7 +562,7 @@ form:
             bs4-headings-font-weight:
                 type: text
                 label: headings-font-weight
-                default: '500'
+                default: '300'
                 tab: 'Bootstrap 4.0.0-alpha.4'
                 assetVar: headings-font-weight
             bs4-headings-line-height:
@@ -1641,7 +1641,7 @@ form:
             bs4-navbar-padding-y:
                 type: text
                 label: navbar-padding-y
-                default: '($spacer / 2)'
+                default: '0'
                 tab: 'Bootstrap 4.0.0-alpha.4'
                 assetVar: navbar-padding-y
             bs4-navbar-brand-padding-y:
@@ -1653,7 +1653,7 @@ form:
             bs4-navbar-dark-color:
                 type: text
                 label: navbar-dark-color
-                default: 'rgba(255,255,255,.5)'
+                default: 'rgba(255,255,255,255)'
                 tab: 'Bootstrap 4.0.0-alpha.4'
                 assetVar: navbar-dark-color
             bs4-navbar-dark-hover-color:
@@ -1717,7 +1717,7 @@ form:
             bs4-nav-link-padding:
                 type: text
                 label: nav-link-padding
-                default: '.5em 1em'
+                default: '.6em 1em'
                 tab: 'Bootstrap 4.0.0-alpha.4'
                 assetVar: nav-link-padding
             bs4-nav-link-hover-bg:
