@@ -1,0 +1,27 @@
+title = "JumpLink Network Docs"
+url = "/intern/network-docs"
+layout = "default"
+is_hidden = 0
+robot_index = "index"
+robot_follow = "follow"
+
+[viewBag]
+localeUrl[en] = "/jumplink-network-docs"
+
+[session]
+security = "user"
+redirect = "home"
+==
+<div class="home">
+    {% partial 'header/color-info' headerText='Network Docs'%}
+    {% partial 'navigation' %}
+    <div class="container m-t-1" data-target="#intern-network-docs">
+        <div class="col-xs-12">
+            {% if can('network_docs') %}
+                {% content 'intern-network/shopify-apps' %}
+            {% else %}
+                {{'Du bist für diese Seite nicht freigeschaltet'|_}}
+            {% endif %}
+        </div>
+    </div>
+</div>

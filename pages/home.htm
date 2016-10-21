@@ -11,13 +11,13 @@ robot_follow = "follow"
 ==
 <div class="home">
     {% if this.theme.home_header_animation == 'particles' %}
-        {% partial 'header/particles' %}
+        {% partial 'header/particles' headerText='Entwicklung erstklassiger und individueller Onlineshops' %}
      {% elseif this.theme.home_header_animation == 'dust' %}
-        {% partial 'header/dust' %}
+        {% partial 'header/dust' headerText='Entwicklung erstklassiger und individueller Onlineshops' %}
     {% elseif this.theme.home_header_animation == 'flat-surface-shader' %}
-        {% partial 'header/flat-surface-shader' %}
+        {% partial 'header/flat-surface-shader' headerText='Entwicklung erstklassiger und individueller Onlineshops' %}
     {% else %}
-        {% partial 'header/particles' %}
+        {% partial 'header/particles' headerText = 'Entwicklung erstklassiger und individueller Onlineshops' %}
     {% endif %}
     {% partial 'navigation' %}
     {% partial 'development' %}

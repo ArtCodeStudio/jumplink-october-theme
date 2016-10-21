@@ -1,3 +1,13 @@
+$(function () {
+    var $header = $('header');    
+    
+    playSubtextAnimation('.jumplink-subtext');
+    
+    affix(function () {
+        return $header.height();
+    });
+})
+
 //Dust Particles Simulation by bionicoz based on
 //Basic Particle Animation
 //Author: Brandon John-Freso
@@ -172,25 +182,21 @@ $(function () {
       mouse.delta  =   (this.now-this.then)/1000;  
       this.then   =   this.now;  
     }
-    function update() {  
- 
-    if(isNaN(mouse.delta) || mouse.delta <= 0) { return; }  
- 
-    var distX   =   mouse.x - (mouse.rx),  
-        distY   =   mouse.y - (mouse.ry);  
-
-    if(distX !== 0 && distY !== 0) {          
- 
-        mouse.rx -=  ((mouse.rx - mouse.x) / mouse.speed); 
-        mouse.ry -=  ((mouse.ry - mouse.y) / mouse.speed); 
-         
-    }   
-  
-};  
     
-
-
-
-
+    function update() {
+     
+        if(isNaN(mouse.delta) || mouse.delta <= 0) {
+            return;
+        }  
+     
+        var distX   =   mouse.x - (mouse.rx),  
+            distY   =   mouse.y - (mouse.ry);  
+    
+        if(distX !== 0 && distY !== 0) {        
+            mouse.rx -=  ((mouse.rx - mouse.x) / mouse.speed); 
+            mouse.ry -=  ((mouse.ry - mouse.y) / mouse.speed); 
+        }   
+      
+    };
 
 });

@@ -1,5 +1,9 @@
-.navbar-dark .navbar-toggler {
-    color: $navbar-dark-color;
+.navbar-dark {
+    .navbar-toggler,
+    .navbar-text {
+        color: $navbar-dark-color;
+    }
+    
 }
 
 .navbar-toggler {
@@ -44,7 +48,7 @@
         }
     }
   
-    .nav-link {
+    .nav-link, .navbar-text {
         padding-top: 0;
         padding-bottom: 0;
         line-height: $navbar-height;

@@ -1,5 +1,5 @@
 title = "Datenschutzerklärung"
-url = "/datenschutz"
+url = "/privacy"
 layout = "default"
 is_hidden = 0
 robot_index = "index"
@@ -9,7 +9,11 @@ robot_follow = "follow"
 localeUrl[en] = "/datenschutzerklarung"
 ==
 <div class="home">
+    {% partial 'header/color-info' headerText='Datenschutzerklärung'%}
     {% partial 'navigation' %}
     {% partial 'privacy-policy' %}
     {% partial 'imprint' %}
 </div>
+{% put scripts %}
+    <script type="text/javascript" src="{{ 'assets/javascript/pages/privacy.js' |theme }}"></script>
+{% endput %}

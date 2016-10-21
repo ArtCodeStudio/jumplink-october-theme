@@ -1,1 +1,1 @@
-Du suchst jemanden der dich dabei unterstützt deinen Onlineshop zu entwickeln und legst dabei besonderen Wert darauf, dass dein Shop hochwertig und individuell an deine Bedürfnisse ausgerichtet ist?
+Du suchst jemanden der deinen Onlineshop konzeptioniert und legst dabei besonderen Wert darauf, dass dein Shop hochwertig und individuell an deine Bedürfnisse ausgerichtet ist? Als <a href="https://www.shopify.com/?utm_source=jumplink.eu" target="_blank" title="Shopify">Shopify Partner</a> sind wir in der Lage diese Ansprüchen für Dich zu erfüllen.

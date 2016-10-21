@@ -1,0 +1,27 @@
+title = "Kundenbereich"
+url = "/intern"
+layout = "default"
+is_hidden = 0
+robot_index = "index"
+robot_follow = "follow"
+
+[viewBag]
+localeUrl[en] = "/kundenbereich"
+
+[session]
+security = "user"
+redirect = "home"
+==
+<div class="home">
+    {% partial 'header/color-info' headerText='Kundenbereich'%}
+    {% partial 'navigation' %}
+    <div class="container m-t-1" data-target="#intern">
+        <div class="col-xs-12">
+            {% content 'intern-customer/home.md' %}
+        </div>
+    </div>
+    
+</div>
+{% put scripts %}
+    <script type="text/javascript" src="{{ 'assets/javascript/pages/intern.js' |theme }}"></script>
+{% endput %}

@@ -1,0 +1,25 @@
+title = "Kundenkonto"
+url = "/account"
+layout = "default"
+is_hidden = 0
+robot_index = "index"
+robot_follow = "follow"
+
+[viewBag]
+localeUrl[en] = "/sign"
+
+[account]
+redirect = "intern-customer/home"
+paramCode = "{{ code }}"
+==
+<div id="imprint" >
+    
+    {% partial 'header/color-info' headerText='Kundenkonto'%}
+    {% partial 'navigation' %}
+    <div class="container m-t-1" data-target="#account">
+        {% component 'account' %}
+    </div>
+</div>
+{% put scripts %}
+    <script type="text/javascript" src="{{ 'assets/javascript/pages/account.js' |theme }}"></script>
+{% endput %}

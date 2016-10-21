@@ -158,7 +158,7 @@ var playHeaderLineAnimation = function (cb) {
  */
 var playSubtextAnimation = function (selector, cb) {
     // Show subtext with fadein animation
-    $.each($('.jumplink-subtext'), function( index, value ) {
+    $.each($(selector), function( index, value ) {
         // if animation is not already played
         if(!$(value).hasClass( "animationDone" )) {
             $(value).animateCss('fadeIn', cb);
