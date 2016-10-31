@@ -36,3 +36,9 @@
         max-width: 250px;
     }
 }
+
+.markdown {
+    img {
+        @extend .img-fluid;
+    }
+}

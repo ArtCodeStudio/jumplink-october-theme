@@ -1,3 +1,4 @@
+[viewBag]
 ==
 {% set post = __SELF__.post %}
 
@@ -17,8 +18,7 @@
         {% endfor %}
     </div>
 {% endif %}
-
-<div class="content">{{ post.content_html|raw }}</div>
+<div class="markdown content">{{ post.content_html|raw }}</div>
 
 <p class="info">
     {{ 'Erstellt'|_ }}
