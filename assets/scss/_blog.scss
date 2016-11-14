@@ -1,13 +1,3 @@
-#blogpost {
-    .content {
-        img {
-            @extend .img-fluid;
-        }
-    }
-}
-
-#blogposts {}
-
 .category-list {
     @extend .z-depth-1;
     @extend .hoverable;

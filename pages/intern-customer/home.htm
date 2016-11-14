@@ -35,7 +35,10 @@ function onStart()
     {% partial 'navigation' %}
     <div class="container m-t-1" data-target="#intern">
         <div class="col-xs-12">
-            {% content 'intern-customer/home.md' %}
+            <div class="markdown content">
+                {% content 'intern-customer/home.md' %}
+            </div>
+            
         </div>
     </div>
     
