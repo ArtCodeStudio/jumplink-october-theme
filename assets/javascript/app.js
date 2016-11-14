@@ -1,4 +1,30 @@
 /**
+ * Set each card to the height of the heightest card to get all cards with the same height 
+ */
+var sameHeightCards = function ($cards) {
+    var t = 0;
+    var t_elem;
+    // get heightest height
+    $cards.each(function () {
+        $this = $(this);
+        // reset height
+        $this.css('min-height', 'auto');
+        if ( $this.outerHeight() > t ) {
+            t_elem=this;
+            t=$this.outerHeight();
+        }
+    });
+    
+    // set all smaller cards to the height of the heightest card
+    $cards.each(function () {
+        $this = $(this);
+        if($this.outerHeight() != t) {
+            $this.css('min-height', t);
+        }
+    });
+}
+
+/**
  * Enable tooltips everywhere
  * @see http://v4-alpha.getbootstrap.com/components/tooltips/#example-enable-tooltips-everywhere
  */ 

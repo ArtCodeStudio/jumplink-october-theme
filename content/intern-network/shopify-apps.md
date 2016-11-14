@@ -140,7 +140,7 @@ Das Backend der Apps wird mit OctoberCMS als Theme entwickelt
  * October Theme Repo: [tagged-images-october-theme](https://git.mediamor.de/jumplink.eu/tagged-images-october-theme)
  * Firebase [tagged-images.firebaseio.com](https://console.firebase.google.com/project/tagged-images/database/data~2F)
 
-#### Shopify App Settings
+**Shopify App Settings**
 
 * App name: Tagged Images
 * Handle: tagged-images
@@ -153,19 +153,29 @@ Das Backend der Apps wird mit OctoberCMS als Theme entwickelt
 ### Reports Plus
 
  * [App Site / Backend](https://reports-plus.jumplink.eu/) ([Admin](https://reports-plus.jumplink.eu/backend)) damit der App Benutzer ein Backend für die App hat.
- * [Shopify Demo Store](https://tagged-images-demo.myshopify.com) ([Admin](https://tagged-images-demo.myshopify.com/admin)) zum präsentieren und um die App zu testen.
+ * [Shopify Demo Store](https://anita-hass-2.myshopify.com) ([Admin](https://anita-hass-2.myshopify.com/admin)) um die App zu testen.
  * October Theme Repo: [reports-plus-october-theme](https://git.mediamor.de/jumplink.eu/reports-plus-october-theme)
  * Firebase [reports-plus.firebaseio.com](https://console.firebase.google.com/project/reports-plus/)
 
-#### Shopify App Settings
+**App Settings**
+* Handle: reports-plus
+
+**Shopify App Settings**
 
 * App name: Reports Plus
-* Handle: reports-plus
 * App / Callback URL: https://reports-plus.jumplink.eu/shopify
 * Preferences URL: https://reports-plus.jumplink.eu/preferences
 * Support URL: https://reports-plus.jumplink.eu/help
 * Redirection URL: https://auth.api.jumplink.eu/shopify-callback/reports-plus
 * API key: 33aa83f12622f14dbd8839f685888dfc
+
+**Firebase App Settings**
+
+* apiKey: AIzaSyBygClTIUALH6cQT5WRR8BVUO_g0J6yUyQ
+* authDomain: reports-plus.firebaseapp.com
+* databaseURL: https://reports-plus.firebaseio.com
+* storageBucket: reports-plus.appspot.com
+* messagingSenderId: 71871191395
 
 ### Exclusive Collections
 
@@ -174,15 +184,25 @@ Das Backend der Apps wird mit OctoberCMS als Theme entwickelt
  * October Theme Repo: [exclusive-collections-october-theme](https://git.mediamor.de/jumplink.eu/exclusive-collections-october-theme)
  * Firebase [exclusive-collections.firebaseio.com](https://console.firebase.google.com/project/exclusive-collections/)
 
-#### Shopify App Settings
+**App Settings**
+* Handle: exclusive-collections
+
+**Shopify App Settings**
 
 * App name: Exclusive Collections
-* Handle: exclusive-collections
 * App / Callback URL: https://exclusive-collections.jumplink.eu/shopify
 * Preferences URL: https://exclusive-collections.jumplink.eu/preferences
 * Support URL: https://exclusive-collections.jumplink.eu/help
 * Redirection URL: https://auth.api.jumplink.eu/shopify-callback/exclusive-collections
 * API key: 2c5d5cc9b577587cc15bc0dad718e5ea
+
+
+**Firebase App Settings**
+* apiKey: AIzaSyBj2Q7-EDcK-gh2NGyGB4Ij_9LqXSFOFkI
+* authDomain: exclusive-collections.firebaseapp.com
+* databaseURL: https://exclusive-collections.firebaseio.com
+* storageBucket: exclusive-collections.appspot.com
+* messagingSenderId: 93783703056
 
 ### Blog Snippets
 
@@ -191,7 +211,7 @@ Das Backend der Apps wird mit OctoberCMS als Theme entwickelt
  * October Theme Repo: [blog-snippets-october-theme](https://git.mediamor.de/jumplink.eu/blog-snippets-october-theme)
  * Firebase [blog-snippets.firebaseio.com](https://console.firebase.google.com/project/blog-snippets/)
 
-#### Shopify App Settings
+**Shopify App Settings**
 
 * App name: Blog Snippets
 * Handle: blog-snippets
