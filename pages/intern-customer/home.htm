@@ -12,6 +12,24 @@ localeUrl[en] = "/kundenbereich"
 security = "user"
 redirect = "home"
 ==
+<?php
+function onStart()
+{
+    // https://guzzle.readthedocs.io/en/latest/
+    $client = new GuzzleHttp\Client();
+    
+    // https://github.com/mail-in-a-box/mailinabox/blob/master/management/daemon.py#L147
+    $res = $client->get('https://jumplink.me/admin/mail/users?format=json', ['auth' =>  [$this->theme->mailinabox_admin_email, $this->theme->mailinabox_admin_password]]);
+    $status = $res->getStatusCode(); // 200
+    $contentType = $res->getHeader('content-type');
+    $body = $res->getBody(); // { "type": "User", ....
+    Debugbar::info();
+    Debugbar::info($status);
+    Debugbar::info($contentType);
+    Debugbar::info(json_decode($body));
+}
+?>
+==
 <div class="home">
     {% partial 'header/color-info' headerText='Kundenbereich'%}
     {% partial 'navigation' %}

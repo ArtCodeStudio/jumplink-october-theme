@@ -25,6 +25,18 @@ form:
             default: info@jumplink.eu
     tabs:
         fields:
+            mailinabox:
+                label: Admin
+                type: section
+                tab: 'Mail-in-a-Box'
+            mailinabox_admin_email:
+                label: Email
+                type: text
+                tab: 'Mail-in-a-Box'
+            mailinabox_admin_password:
+                label: Password
+                type: password
+                tab: 'Mail-in-a-Box'
             location_enabled:
                 label: Enabled
                 type: checkbox
