@@ -1,1 +1,3 @@
-Du hast eine Idee für eine App oder möchtest Deinen Shop auch als App verfügbar machen?<br> Wir setzen die App gemeinsam mit Dir um. Dabei setzen wir auch Techniken die als <a href="http://t3n.de/news/progressive-web-apps-739224/?utm_source=jumplink.eu" target="_blank" title="Progressive Web App">Progressive Web App</a> bekannt und gerade im Kommen sind.
+**spielerisch per Fingerdruck**
+
+Du hast die Vision einer erfolgreichen App? Angepasst an die Verhaltensweise Deiner Zielgruppe entwickeln wir gemeinsam **kreative Anwendungen**. Dabei setzen wir stets auf den **Fortschritt** und entwickeln auch **Progressive Web Apps.**

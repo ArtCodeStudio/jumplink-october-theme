@@ -1,1 +1,3 @@
-Du suchst jemanden der deinen Onlineshop konzeptioniert und legst dabei besonderen Wert darauf, dass dein Shop hochwertig und individuell an deine Bedürfnisse ausgerichtet ist? Als <a href="https://www.shopify.com/?ref=jumplink" target="_blank" title="Shopify">Shopify Partner</a> sind wir in der Lage diese Ansprüchen für Dich zu erfüllen.
+**erstklassig & individuell**
+
+Dein Onlineshop ist die **zukunftsorientierte Schnittstelle** zwischen Dir und Deinem Kunden. Als offizielle Shopify Partner erfüllen wir Deine Ansprüche zielsicher und erschaffen Dir **neue Möglichkeiten**.

@@ -1,1 +1,3 @@
-Eine neue Webseite ist schon lange fällig? Gemeinsam entwickeln wir ein modernes Konzept und realisieren einen originellen Webauftritt für Dich. Mit <a href="https://octobercms.com/?utm_source=jumplink.eu" target="_blank" title="OctoberCMS">OctoberCMS</a> hast du dabei ein modernes und einfach bedienbares CMS damit du deine Seite stressfrei anpassen kannst.
+**originell & optimiert**
+
+Dich erwartet ein nutzerfreundliches und modernes Konzept. Wir entwickeln auf Basis **modernster Technologien** und schaffen Dir eine leichtbedienbare Umgebung für stressfreies und **eigenes Anpassen** Deiner Seite.
