@@ -2,8 +2,6 @@
 ==
 {% set post = __SELF__.post %}
 
-<h2 class="title">{{ post.title }}</h2>
-
 {% if post.featured_images.count %}
     <div class="featured-images text-center center-block">
         {% for image in post.featured_images %}
