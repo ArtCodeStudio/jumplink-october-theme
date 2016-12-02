@@ -50,7 +50,10 @@ security = "all"
         
         <meta name="theme-color" content="#1E88E5">
         {% styles %}
-        <link href="{{ ['assets/scss/theme.scss'] | theme }}" rel="stylesheet">
+        <link href="{{ [
+            'assets/scss/theme.scss',
+            'assets/vendor/prism/themes/prism-okaidia.css'
+        ] | theme }}" rel="stylesheet">
         
         {% component 'googleTracker' %}
         
@@ -97,6 +100,7 @@ security = "all"
             'assets/vendor/slick-carousel/slick/slick.js',
             'assets/vendor/particles.js/particles.js',
             'assets/vendor/flat-surface-shader/deploy/fss.min.js',
+            'assets/vendor/prism/prism.js',
             'assets/javascript/s-chat-support.js',
             'assets/javascript/affix.js',
             'assets/javascript/app.js',
