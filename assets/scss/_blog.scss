@@ -5,3 +5,25 @@
         @extend .z-depth-2;
     }
 }
+
+.markdown {
+    img {
+        @extend .img-fluid;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+#blogpost {
+    h3, .h3 {
+        padding-top: 15px;
+    }
+}
+
+#blog-header {
+    position: relative;
+    #dust {
+        width: 100%;
+        height: 300px;
+    }
+}

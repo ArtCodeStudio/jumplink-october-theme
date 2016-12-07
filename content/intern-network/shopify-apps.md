@@ -10,11 +10,7 @@ Unsere Shopify Apps bestehen aus mehreren Microservices für die API und der Aut
 
 ### Server api@api.jumplink.eu (SSH / SFTP)
 
-Die Microservices laufen auf einem eigenen Server:
-
-* Host: api.jumplink.eu
-* Benutzer: api
-* Passwort: grant-Harvey
+Die Microservices laufen auf einem eigenen Server `api.jumplink.eu`.
 
 ### Forever
 
@@ -140,10 +136,11 @@ Das Backend der Apps wird mit OctoberCMS als Theme entwickelt
  * October Theme Repo: [tagged-images-october-theme](https://git.mediamor.de/jumplink.eu/tagged-images-october-theme)
  * Firebase [tagged-images.firebaseio.com](https://console.firebase.google.com/project/tagged-images/database/data~2F)
 
-**Shopify App Settings**
-
-* App name: Tagged Images
+**App Settings**
 * Handle: tagged-images
+
+**Shopify App Settings**
+* App name: Tagged Images
 * App / Callback URL: https://tagged-images.jumplink.eu/shopify
 * Preferences URL: https://tagged-images.jumplink.eu/preferences
 * Support URL: https://tagged-images.jumplink.eu/help
@@ -161,7 +158,6 @@ Das Backend der Apps wird mit OctoberCMS als Theme entwickelt
 * Handle: reports-plus
 
 **Shopify App Settings**
-
 * App name: Reports Plus
 * App / Callback URL: https://reports-plus.jumplink.eu/shopify
 * Preferences URL: https://reports-plus.jumplink.eu/preferences
@@ -170,7 +166,6 @@ Das Backend der Apps wird mit OctoberCMS als Theme entwickelt
 * API key: 33aa83f12622f14dbd8839f685888dfc
 
 **Firebase App Settings**
-
 * apiKey: AIzaSyBygClTIUALH6cQT5WRR8BVUO_g0J6yUyQ
 * authDomain: reports-plus.firebaseapp.com
 * databaseURL: https://reports-plus.firebaseio.com
@@ -188,7 +183,6 @@ Das Backend der Apps wird mit OctoberCMS als Theme entwickelt
 * Handle: exclusive-collections
 
 **Shopify App Settings**
-
 * App name: Exclusive Collections
 * App / Callback URL: https://exclusive-collections.jumplink.eu/shopify
 * Preferences URL: https://exclusive-collections.jumplink.eu/preferences
@@ -211,12 +205,45 @@ Das Backend der Apps wird mit OctoberCMS als Theme entwickelt
  * October Theme Repo: [blog-snippets-october-theme](https://git.mediamor.de/jumplink.eu/blog-snippets-october-theme)
  * Firebase [blog-snippets.firebaseio.com](https://console.firebase.google.com/project/blog-snippets/)
 
-**Shopify App Settings**
-
-* App name: Blog Snippets
+**App Settings**
 * Handle: blog-snippets
+
+**Shopify App Settings**
+* App name: Blog Snippets
 * App / Callback URL: https://blog-snippets.jumplink.eu/shopify
 * Preferences URL: https://blog-snippets.jumplink.eu/preferences
 * Support URL: https://blog-snippets.jumplink.eu/help
 * Redirection URL: https://auth.api.jumplink.eu/shopify-callback/blog-snippets
 * API key: abf78514bc638551cc9f43dc136a2631
+
+**Firebase App Settings**
+* apiKey: AIzaSyCvF2uYNIVxvisUcghmfp2kGQZY6aQmANY
+* authDomain: blog-snippets.firebaseapp.com
+* databaseURL: https://blog-snippets.firebaseio.com
+* storageBucket: blog-snippets.appspot.com
+* messagingSenderId: 1086142122428
+
+### Product Videos
+
+ * [App Site / Backend](https://product-videos.jumplink.eu/) ([Admin](https://product-videos.jumplink.eu/backend)) damit der App Benutzer ein Backend für die App hat.
+ * [Shopify Demo Store](https://anita-hass-2.myshopify.com) ([Admin](https://anita-hass-2.myshopify.com/admin)) um die App zu testen.
+ * October Theme Repo: [product-videos-october-theme](https://git.mediamor.de/jumplink.eu/product-videos-october-theme)
+ * Firebase [product-videos.firebaseio.com](https://console.firebase.google.com/project/product-videos/)
+
+**App Settings**
+* Handle: product-videos
+
+**Shopify App Settings**
+* App name: Product Videos
+* App / Callback URL: https://product-videos.jumplink.eu/shopify
+* Preferences URL: https://product-videos.jumplink.eu/preferences
+* Support URL: https://product-videos.jumplink.eu/help
+* Redirection URL: https://auth.api.jumplink.eu/shopify-callback/product-videos
+* API key: 58fa9edaf1ac9c2fa8c62c89d44a52de
+
+**Firebase App Settings**
+* apiKey: AIzaSyC9uwWhqxj-8-VYyVUmtjCQR7m_08WycRA
+* authDomain: product-videos-3c793.firebaseapp.com
+* databaseURL: https://product-videos-3c793.firebaseio.com
+* storageBucket: product-videos-3c793.appspot.com
+* messagingSenderId: 364570973683

@@ -2,7 +2,7 @@
  * Init service carousel
  */
 $(function () {
-    $('#jewelberry_carousel, #chou-chou-berlin_carousel').slick({
+    $('#jewelberry_carousel, #chou-chou-berlin_carousel, #feinfineart_carousel').slick({
         accessibility: false,
         autoplay: true,
         autoplaySpeed: 3000,
@@ -14,7 +14,7 @@ $(function () {
         infinite: true, 
         arrows: false,
         centerMode: true,
-        dots: true,
+        dots: false,
         dotsClass: 'slick-dots slick-dots-vertical',
         // appendDots: 'TODO', 
         slidesToShow:1,

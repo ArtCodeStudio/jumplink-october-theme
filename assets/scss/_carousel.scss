@@ -83,7 +83,7 @@
         // max-width: 75%; // because screenshots are zoomed screenshots with 150%;
     }
     // sub carousels
-    #chou-chou-berlin_carousel, #jewelberry_carousel {
+    #chou-chou-berlin_carousel, #jewelberry_carousel, #feinfineart_carousel {
         @extend .z-depth-1;
         @extend .hoverable;
         &:hover {
@@ -127,6 +127,23 @@ $project-chou-chou-berlin-color: #000;
             button {
                 &:before {
                     color: $project-chou-chou-berlin-color;
+                }
+            }
+        }
+    }
+}
+
+$project-feinfineart-color: #a6d2df;
+
+#feinfineart_carousel {
+    &.img-thumbnail {
+        border-color: $project-feinfineart-color;
+    }
+    .slick-dots {
+        li {
+            button {
+                &:before {
+                    color: $project-feinfineart-color;
                 }
             }
         }

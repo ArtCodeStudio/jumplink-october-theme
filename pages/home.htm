@@ -10,14 +10,15 @@ robot_index = "index"
 robot_follow = "follow"
 ==
 <div class="home">
+    {% set headerText='Entwicklung wundervoller Onlineshops' %}
     {% if this.theme.home_header_animation == 'particles' %}
-        {% partial 'header/particles' headerText='Entwicklung wundervoller Onlineshops' %}
+        {% partial 'header/particles' headerText=headerText %}
      {% elseif this.theme.home_header_animation == 'dust' %}
-        {% partial 'header/dust' headerText='Entwicklung erstklassiger und individueller Onlineshops' %}
-    {% elseif this.theme.home_header_animation == 'flat-surface-shader' %}
-        {% partial 'header/flat-surface-shader' headerText='Entwicklung erstklassiger und individueller Onlineshops' %}
+        {% partial 'header/dust' headerText=headerText %}
+    {% elseif this.theme.home_header_animation == headerText %}
+        {% partial 'header/flat-surface-shader' headerText=headerText %}
     {% else %}
-        {% partial 'header/particles' headerText = 'Entwicklung erstklassiger und individueller Onlineshops' %}
+        {% partial 'header/particles' headerText = headerText %}
     {% endif %}
     {% partial 'navigation' %}
     {% partial 'development' %}

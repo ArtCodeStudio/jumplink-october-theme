@@ -20,13 +20,18 @@ var affix = function(getScrollOffsetY) {
     var scrollPosY = $window.scrollTop();
     var scrollOffsetY = getScrollOffsetY();
     var onTop = true;
-    var scrollTimeout; 
-  
+    var scrollTimeout;
+    
+ 
     /* ====================
     * private funcion to check scroll position
     * ==================== */
-    function onScroll() {
+    function onScroll() {        
         scrollOffsetY = getScrollOffsetY();
+        
+        if(scrollOffsetY === 0) {
+            return belowScrollPos();
+        }
         
         // get current scroll position from window
         scrollPosY = $window.scrollTop(); // window.pageYOffset

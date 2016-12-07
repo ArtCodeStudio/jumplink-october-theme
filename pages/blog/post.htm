@@ -14,9 +14,13 @@ categoryPage = "blog/category"
 
 [SeoBlogPost]
 post = "post"
+
+[viewBag]
+localeUrl[en] = "/blog-post"
 ==
 <div id="blogpost">
-    {% partial 'header/dust' headerText=post.title %}
+    {#% partial 'header/dust' headerText=post.title %#}
+    {% partial 'navigation' offset=0 %}
     <div class="container m-t-3">
         <div class="row">
             <div class="col-lg-12">
@@ -28,4 +32,6 @@ post = "post"
 </div>
 {% put scripts %}
     <script type="text/javascript" src="{{ 'assets/javascript/pages/blog.js' |theme }}"></script>
+    <script type="text/javascript" src="{{ 'assets/javascript/pages/blog-post.js' |theme }}"></script>
+    
 {% endput %}

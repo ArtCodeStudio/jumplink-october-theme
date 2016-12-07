@@ -1,12 +1,13 @@
+[viewBag]
 ==
 <div id="blogposts">
     {% partial 'header/dust' headerText='Blog' %}
     <div class="container m-t-3">
         <div class="row">
-            <div class="col-lg-9">
+            <div class="col-xs-12 col-lg-12">
                 {% component 'blogPosts' %}
             </div>
-            <div class="col-lg-3 hidden-md-down">
+            <div class="col-lg-3 hidden-md-down TODO: hidden-xs-up">
                 {% component 'blogCategories' %}
             </div>
         </div>

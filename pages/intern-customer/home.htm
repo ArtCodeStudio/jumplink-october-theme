@@ -23,10 +23,12 @@ function onStart()
     $status = $res->getStatusCode(); // 200
     $contentType = $res->getHeader('content-type');
     $body = $res->getBody(); // { "type": "User", ....
-    Debugbar::info();
-    Debugbar::info($status);
-    Debugbar::info($contentType);
-    Debugbar::info(json_decode($body));
+    if(defined('Debugbar')) {
+        Debugbar::info();
+        Debugbar::info($status);
+        Debugbar::info($contentType);
+        Debugbar::info(json_decode($body));
+    }
 }
 ?>
 ==

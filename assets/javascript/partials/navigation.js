@@ -1,6 +1,5 @@
-
 $(function() {
-    
+       
     /**
      * Performs a smooth page scroll to an anchor on the same page.y
      * @see https://css-tricks.com/snippets/jquery/smooth-scrolling/
