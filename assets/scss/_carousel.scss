@@ -83,7 +83,7 @@
         // max-width: 75%; // because screenshots are zoomed screenshots with 150%;
     }
     // sub carousels
-    #chou-chou-berlin_carousel, #jewelberry_carousel, #feinfineart_carousel {
+    #chou-chou-berlin_carousel, #jewelberry_carousel, #feinfineart_carousel, #breb_carousel {
         @extend .z-depth-1;
         @extend .hoverable;
         &:hover {
@@ -144,6 +144,23 @@ $project-feinfineart-color: #a6d2df;
             button {
                 &:before {
                     color: $project-feinfineart-color;
+                }
+            }
+        }
+    }
+}
+
+$project-breb-color: #4053a4;
+
+#breb_carousel {
+    &.img-thumbnail {
+        border-color: $project-breb-color;
+    }
+    .slick-dots {
+        li {
+            button {
+                &:before {
+                    color: $project-breb-color;
                 }
             }
         }
