@@ -1,11 +1,13 @@
 [viewBag]
 ==
 {% set posts = __SELF__.posts %}
- 
-<div class="row">
+
+{% set postColumnClass = 'col-xs-12 col-lg-6' %}
+
+<div class="row grid">
+    
     {% for post in posts %}
-        
-        <div class="col-xs-12 col-lg-6">
+        <div class="{{postColumnClass}} grid-item">
             <div class="card card-outline-primary">
         
                 {% if post.featured_images.count %}
@@ -47,6 +49,7 @@
             {{ noPostsMessage }}
         </div>
     {% endfor %}
+    <div class="{{postColumnClass}} grid-sizer"></div>
  </div>
  
 {% if posts.lastPage > 1 %}
@@ -68,3 +71,29 @@
         </ul>
     </div>
 {% endif %}
+
+{% put scripts %}
+	<script>
+        $(function() {
+            
+            var $grid = $('.grid');
+            $grid.masonry({
+                // set itemSelector so .grid-sizer is not used in layout
+                itemSelector: '.grid-item',
+                // use element for option
+                columnWidth: '.grid-sizer',
+                percentPosition: true
+            });
+            
+            // layout Masonry after each image loads
+            $grid.imagesLoaded().progress( function(instance, image) {
+                var $image = $(image.img);
+                var $item = $image.closest('.grid-item');
+                $item.addClass('loaded');
+                $grid.masonry('layout');
+            });
+            
+        });
+
+	</script>
+{% endput %}
