@@ -1,3 +1,4 @@
+// s-chat-support.js v1.2.0
 (function (root, factory) {
     if (typeof define === 'function' && define.amd) {
         define([], factory);
@@ -138,7 +139,7 @@
             // ddp init
             var ddp = new sChatDDPClient(connectionOptions);
             // random userSessionId generator
-            var userSessionId = sChatRandom.id();
+            var userSessionId = sessionStorage.getItem('sChatUserSessionId') || sChatRandom.id();
             var submitMsg = function (e) {
                 var input = sChatBox().submitInput;
                 var key = e.keyCode || e.which;
@@ -195,6 +196,10 @@
                 console.log('SimpleChat.Support: Chat box connected!');
                 // create main chat box and append at the end of the 'body' tag
                 sChatBoxCreate();
+                // set session storage if don't exists
+                if (sessionStorage && !sessionStorage.getItem('sChatUserSessionId')) {
+                    sessionStorage.setItem('sChatUserSessionId', userSessionId);
+                }
                 // subscribe to the 'chat' publication
                 ddp.sub('Chat.messagesList', [clientAppId, userSessionId]);
                 ddp.sub('Meteor.users.adminStatus', [clientAppId]);
@@ -234,4 +239,3 @@
 
     }
 }));
-
