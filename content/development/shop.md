@@ -1,3 +1,3 @@
 **erstklassig & individuell**
 
-Dein Onlineshop ist die **zukunftsorientierte Schnittstelle** zwischen Dir und Deinem Kunden. Als offizielle Shopify Partner erfüllen wir Deine Ansprüche zielsicher und erschaffen Dir **neue Möglichkeiten**.
+Starte mit deinem eigenen Onlineshop ins **e-Commerce Business** und profitiere vom zukunftsorientierten Online-Handel. Als offizielle **Shopify Partner** erfüllen wir deine Ansprüche zielsicher und erschaffen dir **wundervolle Möglichkeiten**.
