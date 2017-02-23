@@ -20,10 +20,7 @@
                 {% partial 'network/person' handle='moritz' name='Moritz Raguschat' email='moritz@jumplink.me' %}
             </div>
             <div class="col-xs-12 col-md-6 col-lg-4 p-t-2">
-                {% set you %}
-                    {{'Du?'|_}}
-                {% endset %}
-                
+                {% set you %}{{'Du?'|_}}{% endset %}
                 {% partial 'network/person' handle='placeholder' name=you email=null %}
             </div>
         </div>
