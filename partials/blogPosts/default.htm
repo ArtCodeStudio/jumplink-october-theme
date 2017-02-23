@@ -18,20 +18,14 @@
                             alt="{{ post.featured_images[0].description }}"
                             class="card-img-top img-fluid center-block"
                         />    
-                    </a>
-                {% else %}
-                    <a href="{{ post.url }}" class="card-header" onclick="window.open('{{ post.url }}', '_self', ''); return false;">
-                        {{ post.title }}
-                    </a>
+                    </a> 
                 {% endif %}
                 <div class="card-block">
-                    {% if post.featured_images.count %}
-                        <p class="card-text markdown">
-                            <a href="{{ post.url }}">
-                                <strong>{{ post.title }}</strong>
-                            </a>
-                        </p>
-                    {% endif %}
+                    <p class="card-text markdown">
+                        <a href="{{ post.url }}">
+                            <strong>{{ post.title }}</strong>
+                        </a>
+                    </p>
                     <p class="card-text markdown">{{ post.summary }}</p>
                 </div>
                 <div class="card-footer bg-primary">
