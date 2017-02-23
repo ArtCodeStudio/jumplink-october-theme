@@ -1,0 +1,3 @@
+Hi, ich bin Pascal und habe schon als Vierzehnjähriger mit dem Programmieren begonnen. Damals nur aus reiner Neugierde und aus Spaß meine Lieblings-Videospiele nachzuprogrammieren. Ich habe es geliebt Dinge zu "erschaffen" und das hat sich bis heute nicht geändert. Inzwischen stehen Qualität und Schönheit in Kombination mit feinem Design ebenfalls im Fokus der Programmierung.
+
+Berufswunsch: Erfinder

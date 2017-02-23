@@ -8,19 +8,23 @@
                 <p>{% content 'network/introduction.md' %}</p>
             </div>
             <div class="col-xs-12 col-md-6 col-lg-4 p-t-2">
-                {% partial 'network/pascal' %}
+                {% partial 'network/person' handle='pascal' name='Pascal Garber' email='pascal@jumplink.me' %}
             </div>
             <div class="col-xs-12 col-md-6 col-lg-4 p-t-2">
-                {% partial 'network/maya' %}
+                {% partial 'network/person' handle='maya' name='Maya Philine Henze' email='artwork@jumplink.me' %}
             </div>
             <div class="col-xs-12 col-md-6 col-lg-4 p-t-2">
-                {% partial 'network/marc' %}
+                {% partial 'network/person' handle='marc' name='Marc Wensauer' email='marc@jumplink.me' %}
             </div>
             <div class="col-xs-12 col-md-6 col-lg-4 offset-lg-2 p-t-2">
-                {% partial 'network/moritz' %}
+                {% partial 'network/person' handle='moritz' name='Moritz Raguschat' email='moritz@jumplink.me' %}
             </div>
             <div class="col-xs-12 col-md-6 col-lg-4 p-t-2">
-                {% partial 'network/you' %}
+                {% set you %}
+                    {{'Du?'|_}}
+                {% endset %}
+                
+                {% partial 'network/person' handle='placeholder' name=you email=null %}
             </div>
         </div>
         <div class="row">

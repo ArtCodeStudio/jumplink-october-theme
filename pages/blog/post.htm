@@ -8,15 +8,15 @@ is_hidden = 0
 robot_index = "index"
 robot_follow = "follow"
 
+[viewBag]
+localeUrl[en] = "/blog-post"
+
 [blogPost]
 slug = "{{ :slug }}"
 categoryPage = "blog/category"
 
 [SeoBlogPost]
 post = "post"
-
-[viewBag]
-localeUrl[en] = "/blog-post"
 ==
 <div id="blogpost">
     {#% partial 'header/dust' headerText=post.title %#}
@@ -30,6 +30,7 @@ localeUrl[en] = "/blog-post"
         </div>
     </div>
 </div>
+{% partial 'imprint' %}
 {% put scripts %}
     <script type="text/javascript" src="{{ 'assets/javascript/pages/blog.js' |theme }}"></script>
     <script type="text/javascript" src="{{ 'assets/javascript/pages/blog-post.js' |theme }}"></script>

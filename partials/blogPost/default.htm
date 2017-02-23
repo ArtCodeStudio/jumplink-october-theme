@@ -25,5 +25,9 @@
             <a href="{{ category.url }}">{{ category.name }}</a>{% if not loop.last %}, {% endif %}
         {% endfor %}
     {% endif %}
-    {{ 'am'|_ }} {{ post.published_at|date('M d, Y') }}
+    {{ 'am'|_ }} {{ post.published_at|date('d M Y') }}
 </p>
+
+{% if post.user %}
+    {% partial 'blogPost/author' %}
+{% endif %}

@@ -34,7 +34,7 @@
                     {% for category in post.categories %}
                         <a href="{{ category.url }}">{{ category.name }}</a>{% if not loop.last %}, {% endif %}
                     {% endfor %}
-                    {{ 'am'|_ }} <a href="{{ post.url }}">{{ post.published_at|date('M d, Y') }}</a>
+                    {{ 'am'|_ }} <a href="{{ post.url }}">{{ post.published_at|date('d M Y') }} {% if post.user %} {{'von'|_}} {{ post.user.first_name }} {{ post.user.last_name }}  {% endif %}</a>
                 </div>
             </div>
         </div>
