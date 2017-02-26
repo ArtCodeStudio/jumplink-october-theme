@@ -16,8 +16,7 @@
         {% endfor %}
     </div>
 {% endif %}
-<div class="markdown content">{{ post.content_html|raw }}</div>
-
+<h1>{{post.title}}</h1>
 <p class="info">
     {{ 'Erstellt'|_ }}
     {% if post.categories.count %} in
@@ -27,6 +26,7 @@
     {% endif %}
     {{ 'am'|_ }} {{ post.published_at|date('d M Y') }}
 </p>
+<div class="markdown content">{{ post.content_html|raw }}</div>
 
 {% if post.user %}
     {% partial 'blogPost/author' %}
