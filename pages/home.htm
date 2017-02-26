@@ -10,7 +10,7 @@ robot_index = "index"
 robot_follow = "follow"
 
 [viewBag]
-localeUrl[en] = "/startseite"
+localeUrl[en] = "/"
 ==
 <div class="home">
     {% set headerText='Entwicklung wundervoller Onlineshops' %}
@@ -18,7 +18,7 @@ localeUrl[en] = "/startseite"
         {% partial 'header/particles' headerText=headerText %}
      {% elseif this.theme.home_header_animation == 'dust' %}
         {% partial 'header/dust' headerText=headerText %}
-    {% elseif this.theme.home_header_animation == headerText %}
+    {% elseif this.theme.home_header_animation == 'flat-surface-shader' %}
         {% partial 'header/flat-surface-shader' headerText=headerText %}
     {% else %}
         {% partial 'header/particles' headerText = headerText %}
