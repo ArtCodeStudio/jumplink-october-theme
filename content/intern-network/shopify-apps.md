@@ -3,9 +3,41 @@
 Unsere Shopify Apps bestehen aus mehreren Microservices für die API und der Authentifizierung.
 
 ## Microservices
+
+### Ports
+
+**auth**
+* **3010** - dev.auth.api.jumplink.eu
+* **3011** - v0-1.auth.api.jumplink.eu
+* **3012** - v0-2.auth.api.jumplink.eu
+
+**shopify**
+* **3040** - dev.shopify.api.jumplink.eu
+* **3041** - v0-1.shopify.api.jumplink.eu
+* **3042** - v0-2.shopify.api.jumplink.eu
+
+**instagram**
+* **3050** - dev.instagram.api.jumplink.eu
+* **3051** - dev.instagram.api.jumplink.eu
+
+**video**
+* **3070** - dev.video.api.jumplink.eu
+* **3071** - v0-1.video.api.jumplink.eu
+* **3072** - v0-2.video.api.jumplink.eu
+
+**playground**
+* **3999** - playground.api.jumplink.eu
+
+### Reverse Proxy
  * [reverse-proxy](https://git.mediamor.de/jumplink.eu/microservice-reverse-proxy) - Dient als Reverse Proxy um alle anderen Microservices über eigene Subdomnains verfügbar zu machen.
+
+### Auth
  * [auth](https://git.mediamor.de/jumplink.eu/microservice-auth) - Hilft bei der Shopify Authentifizierung über OAuth sowie Firebase. Speichert den Shopify Token in Firebase ab.
+
+### Shopify
  * [shopify](https://git.mediamor.de/jumplink.eu/microservice-shopify) - REST Shopify API
+
+### OctoberCMS
  * [OctoberCMS](https://octobercms.com/) - Zur Darstellung der HTML-Seiten der App-Backends
 
 ### Server api@api.jumplink.eu (SSH / SFTP)
