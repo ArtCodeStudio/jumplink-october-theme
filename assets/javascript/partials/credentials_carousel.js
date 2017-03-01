@@ -2,7 +2,7 @@
  * Init service carousel
  */
 $(function () {
-    $('#jewelberry_carousel, #chou-chou-berlin_carousel, #feinfineart_carousel, #breb_carousel').slick({
+    $('#anitahass_carousel, #jewelberry_carousel, #chou-chou-berlin_carousel, #feinfineart_carousel, #breb_carousel').slick({
         accessibility: false,
         autoplay: true,
         autoplaySpeed: 3000,
