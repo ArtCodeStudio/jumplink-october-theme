@@ -6,6 +6,9 @@ Unsere Shopify Apps bestehen aus mehreren Microservices für die API und der Aut
 
 ### Ports
 
+**reverse-proxy**
+* **9999** - lets encrypt
+
 **auth**
 * **3010** - dev.auth.api.jumplink.eu
 * **3011** - v0-1.auth.api.jumplink.eu
@@ -176,7 +179,7 @@ Das Backend der Apps wird mit OctoberCMS als Theme entwickelt
 * App / Callback URL: https://tagged-images.jumplink.eu/shopify
 * Preferences URL: https://tagged-images.jumplink.eu/preferences
 * Support URL: https://tagged-images.jumplink.eu/help
-* Redirection URL: https://auth.api.jumplink.eu/shopify-callback/tagged-images
+* Redirection URL: https://v0-1.auth.api.jumplink.eu/shopify-callback/tagged-images
 * API key: 08267a137ead223d3dedfc4fe9f6c466
 
 ### Reports Plus
@@ -194,7 +197,7 @@ Das Backend der Apps wird mit OctoberCMS als Theme entwickelt
 * App / Callback URL: https://reports-plus.jumplink.eu/shopify
 * Preferences URL: https://reports-plus.jumplink.eu/preferences
 * Support URL: https://reports-plus.jumplink.eu/help
-* Redirection URL: https://auth.api.jumplink.eu/shopify-callback/reports-plus
+* Redirection URL: https://v0-1.auth.api.jumplink.eu/shopify-callback/reports-plus
 * API key: 33aa83f12622f14dbd8839f685888dfc
 
 **Firebase App Settings**
@@ -210,6 +213,7 @@ Das Backend der Apps wird mit OctoberCMS als Theme entwickelt
  * [Shopify Demo Store](https://tagged-images-demo.myshopify.com) ([Admin](https://tagged-images-demo.myshopify.com/admin)) zum präsentieren und um die App zu testen.
  * October Theme Repo: [exclusive-collections-october-theme](https://git.mediamor.de/jumplink.eu/exclusive-collections-october-theme)
  * Firebase [exclusive-collections.firebaseio.com](https://console.firebase.google.com/project/exclusive-collections/)
+ * Angular [exclusive-collections-angular](https://git.mediamor.de/jumplink.eu/exclusive-collections-angular)
 
 **App Settings**
 * Handle: exclusive-collections
@@ -219,7 +223,7 @@ Das Backend der Apps wird mit OctoberCMS als Theme entwickelt
 * App / Callback URL: https://exclusive-collections.jumplink.eu/shopify
 * Preferences URL: https://exclusive-collections.jumplink.eu/preferences
 * Support URL: https://exclusive-collections.jumplink.eu/help
-* Redirection URL: https://auth.api.jumplink.eu/shopify-callback/exclusive-collections
+* Redirection URL: https://v0-1.auth.api.jumplink.eu/shopify-callback/exclusive-collections
 * API key: 2c5d5cc9b577587cc15bc0dad718e5ea
 
 
@@ -245,7 +249,7 @@ Das Backend der Apps wird mit OctoberCMS als Theme entwickelt
 * App / Callback URL: https://blog-snippets.jumplink.eu/shopify
 * Preferences URL: https://blog-snippets.jumplink.eu/preferences
 * Support URL: https://blog-snippets.jumplink.eu/help
-* Redirection URL: https://auth.api.jumplink.eu/shopify-callback/blog-snippets
+* Redirection URL: https://v0-1.auth.api.jumplink.eu/shopify-callback/blog-snippets
 * API key: abf78514bc638551cc9f43dc136a2631
 
 **Firebase App Settings**
@@ -270,7 +274,7 @@ Das Backend der Apps wird mit OctoberCMS als Theme entwickelt
 * App / Callback URL: https://product-videos.jumplink.eu/shopify
 * Preferences URL: https://product-videos.jumplink.eu/preferences
 * Support URL: https://product-videos.jumplink.eu/help
-* Redirection URL: https://auth.api.jumplink.eu/shopify-callback/product-videos
+* Redirection URL: https://v0-1.auth.api.jumplink.eu/shopify-callback/product-videos
 * API key: 58fa9edaf1ac9c2fa8c62c89d44a52de
 
 **Firebase App Settings**
@@ -278,4 +282,65 @@ Das Backend der Apps wird mit OctoberCMS als Theme entwickelt
 * authDomain: product-videos-3c793.firebaseapp.com
 * databaseURL: https://product-videos-3c793.firebaseio.com
 * storageBucket: product-videos-3c793.appspot.com
+* messagingSenderId: 364570973683
+
+### Legal Text Confirmation
+
+Vergleichebare App: [Terms and Conditions Confirmation](https://apps.shopify.com/terms-and-conditions-confirmation-xxl)
+Passende App: https://apps.shopify.com/it-recht-kanzlei-agb-service
+
+ * [App Site / Backend](https://legal-text-confirmation.jumplink.eu/) ([Admin](https://legal-text-confirmation.jumplink.eu/backend)) damit der App Benutzer ein Backend für die App hat.
+ * [Shopify Demo Store](https://anita-hass-2.myshopify.com) ([Admin](https://anita-hass-2.myshopify.com/admin)) um die App zu testen.
+ * Node.js Server Repo: [legal-text-confirmation-nodejs](https://git.mediamor.de/jumplink.eu/legal-text-confirmation-nodejs)
+ * Firebase [legal-text-confirmation.firebaseio.com](https://console.firebase.google.com/project/legal-text-confirmation/)
+
+**App Settings**
+* Handle: legal-text-confirmation
+
+**Shopify App Settings**
+* App name: Product Videos
+* App / Callback URL: https://legal-text-confirmation.appspot.com/
+* Preferences URL:  https://legal-text-confirmation.appspot.com/preferences
+* Support URL:  https://legal-text-confirmation.appspot.com/help
+* Redirection URLs
+ * https://dev.auth.api.jumplink.eu/shopify-callback/legal-text-confirmation
+ * https://v0-1.auth.api.jumplink.eu/shopify-callback/legal-text-confirmation
+ * https://v0-2.auth.api.jumplink.eu/shopify-callback/legal-text-confirmation
+ * https://v0-3.auth.api.jumplink.eu/shopify-callback/legal-text-confirmation
+ * https://legal-text-confirmation.appspot.com/shopify-callback
+* API key: 5af1739d6fe77f7bf8dbaed65bc5c519
+* Scopes: read_checkouts, write_checkouts, read_script_tags, write_script_tags, read_customers
+
+**Firebase App Settings**
+* apiKey: AIzaSyAkTigsrEdHCvmS3Hsad3corp_ZXTSM_jI
+* authDomain: legal-text-confirmation.firebaseapp.com
+* databaseURL: https://legal-text-confirmation.firebaseio.com
+* projectId: legal-text-confirmation
+* storageBucket: legal-text-confirmation.appspot.com
+* messagingSenderId: 636795143775
+
+### Easy GoBD
+
+ * [App Site / Backend](https://easy-gobd.jumplink.eu/) ([Admin](https://easy-gobd.jumplink.eu/backend)) damit der App Benutzer ein Backend für die App hat.
+ * [Shopify Demo Store](https://anita-hass-2.myshopify.com) ([Admin](https://anita-hass-2.myshopify.com/admin)) um die App zu testen.
+ * October Theme Repo: [easy-gobd-october-theme](https://git.mediamor.de/jumplink.eu/easy-gobd-october-theme)
+ * Firebase [product-videos.firebaseio.com](https://console.firebase.google.com/project/easy-gobd/)
+
+**App Settings**
+* Handle: easy-gobd
+
+**Shopify App Settings**
+* App name: Product Videos
+* App / Callback URL: https://easy-gobd.jumplink.eu/shopify
+* Preferences URL: https://easy-gobd.jumplink.eu/preferences
+* Support URL: https://easy-gobd.jumplink.eu/help
+* Redirection URL: https://dev.auth.api.jumplink.eu/shopify-callback/easy-gobd
+* API key: 21774b3ccec6e4a8a58df529c64d6d5b
+* Scopes: read_content, write_content, read_themes, write_themes, read_products, write_products, read_customers, write_customers, read_orders, write_orders, read_draft_orders, write_draft_orders, read_script_tags, write_script_tags, read_fulfillments, write_fulfillments, read_shipping, write_shipping, read_analytics, read_users, write_users, read_checkouts, write_checkouts
+
+**Firebase App Settings**
+* apiKey: AIzaSyC9uwWhqxj-8-VYyVUmtjCQR7m_08WycRA
+* authDomain: easy-gobd.firebaseapp.com
+* databaseURL: https://easy-gobd.firebaseio.com
+* storageBucket: easy-gobd.appspot.com
 * messagingSenderId: 364570973683

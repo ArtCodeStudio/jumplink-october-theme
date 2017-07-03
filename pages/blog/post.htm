@@ -10,14 +10,13 @@ robot_index = "index"
 robot_follow = "follow"
 
 [viewBag]
-localeUrl[en] = "/blog-post"
 
 [blogPost]
 slug = "{{ :slug }}"
 categoryPage = "blog/category"
 
 [SeoBlogPost]
-post = "post"
+post = "{{ blogPost }}"
 ==
 <div id="blogpost">
     {#% partial 'header/dust' headerText=post.title %#}

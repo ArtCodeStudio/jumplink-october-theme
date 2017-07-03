@@ -32,7 +32,7 @@
                     {{ 'Erstellt'|_ }}
                     {% if post.categories.count %} in {% endif %}
                     {% for category in post.categories %}
-                        <a href="{{ category.url }}">{{ category.name }}</a>{% if not loop.last %}, {% endif %}
+                        <a href="{{ category.url |_ }}">{{ category.name }}</a>{% if not loop.last %}, {% endif %}
                     {% endfor %}
                     {{ 'am'|_ }} <a href="{{ post.url }}">{{ post.published_at|date('d M Y') }} {% if post.user %} {{'von'|_}} {{ post.user.first_name }} {{ post.user.last_name }}  {% endif %}</a>
                 </div>
