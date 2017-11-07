@@ -5,17 +5,15 @@ forceUrl = 0
 
 [googleTracker]
 
-[SeoCmsPage]
-
-[session]
-security = "all"
+[seoTags]
 ==
 <!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8">
         
-        {% component 'SeoCmsPage' %}
+        
+        {% component 'seoTags' %}
         
         <meta property="og:type" content="website" />
                 
@@ -37,7 +35,7 @@ security = "all"
         
         {% component 'googleTracker' %}
         
-        {% partial 'facebook-pixel' %}
+        {#% partial 'facebook-pixel' %#}
         
     </head>
     <body id="{{ str_studly(this.page.title) }}" data-spy="scroll" data-target=".navbar-scrollspy">
@@ -68,7 +66,24 @@ security = "all"
             };
         </script>
 
-        {# Scripts #}
+        {# Scripts
+            'assets/javascript/s-chat-support.js'
+        #}
+        
+        <script> 
+            window.intergramId = '-226408651';
+            window.intergramCustomizations = {
+                titleClosed: 'Live Chat',
+                titleOpen: 'Live Chat',
+                introMessage: 'Hallo, hier kannst du uns direkt im Chat Fragen stellen, schreib einfach drauf los',
+                autoResponse: 'Wir werden über deine Nachricht benachrichtigt, bitte habe ein wenig Geduld bis dir jemand antwortet',
+                autoNoResponse: 'Scheinbar ist gerade niemand zu erreichen, du kannst uns stattdessen eine E-Mail schreiben: info@jumplink.me oder deine Kontaktdaten hier hinterlassen, wir werden uns dann bei dir melden',
+                mainColor: "#c62828", // Can be any css supported color 'red', 'rgb(255,87,34)', etc
+                alwaysUseFloatingButton: true // Use the mobile floating button also on large screens
+            };
+        </script>
+        <script id="intergram" type="text/javascript" src="https://www.intergram.xyz/js/widget.js"></script>
+        
         <script src="{{ [
             'assets/vendor/within-viewport/withinviewport.js',
             'assets/vendor/jquery/dist/jquery.js',
@@ -85,7 +100,6 @@ security = "all"
             'assets/vendor/particles.js/particles.js',
             'assets/vendor/flat-surface-shader/deploy/fss.min.js',
             'assets/vendor/prism/prism.js',
-            'assets/javascript/s-chat-support.js',
             'assets/javascript/affix.js',
             'assets/javascript/app.js',
         ]|theme }}"></script>

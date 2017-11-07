@@ -5,7 +5,6 @@ description = "Viewing a single blog post"
 meta_title = "<3 Blog News"
 meta_description = "Artikel über E-Commerce, E-Business, Marketing, Webdesign, Hardware und vieles mehr."
 is_hidden = 0
-seo_keywords = "E-Commerce Shopify Partner in Deutschland E-Business Marketing Webdesign Webseite OctoberCMS App Shop Onlineshop Entwicklung Programmierung Software erstellen Cuxhaven"
 robot_index = "index"
 robot_follow = "follow"
 
@@ -14,9 +13,6 @@ robot_follow = "follow"
 [blogPost]
 slug = "{{ :slug }}"
 categoryPage = "blog/category"
-
-[SeoBlogPost]
-post = "{{ blogPost }}"
 ==
 <div id="blogpost">
     {#% partial 'header/dust' headerText=post.title %#}
@@ -25,7 +21,7 @@ post = "{{ blogPost }}"
         <div class="row">
             <div class="col-lg-12">
                 {% component 'blogPost' %}
-                {% component 'SeoBlogPost' %}
+                
             </div>
         </div>
     </div>

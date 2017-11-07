@@ -22,7 +22,7 @@
                 <li class="nav-item">
                     <a href="{{'blog'|page}}" class="nav-link blog">{{'Blog'|_}}</a>
                 </li>
-                {% if user %}
+                {#% if user %}
                     <li class="nav-item">
                         <a href="{{'intern-customer/home'|page}}" class="nav-link intern">{{'Kundenbereich'|_}}</a>
                     </li>
@@ -31,12 +31,12 @@
                             <a href="{{'intern-network/docs'|page}}" class="nav-link docs">{{'Intern'|_}}</a>
                         </li>
                     {% endif %}
-                {% endif %}
+                {% endif %#}
             </ul>
             
             <ul class="nav navbar-nav pull-xs-right">
             
-                {% if user %}
+                {#% if user %}
                     <li class="nav-item">
                         <a href="{{'account'|page}}" class="nav-link account">{{'Hallo'|_}} {{ user.name }}</a>
                     </li>
@@ -47,7 +47,7 @@
                     <li class="nav-item">
                         <a href="{{'account'|page}}" class="nav-link account">{{'Kundenlogin'|_}}</a>
                     </li>
-                {% endif %}
+                {% endif %#}
                 
                 <li class="nav-item nav-item-empty">
                     <a class="nav-link nav-link-empty"></a>
@@ -70,32 +70,34 @@
             <a href="{% if this.page.id != 'home' %}{{'home'|page}}{% endif %}#network" class="close-sidebar list-group-item">{{'Netzwerk'|_}}</a></li>
             <a href="{% if this.page.id != 'home' %}{{'home'|page}}{% endif %}#contact" class="close-sidebar list-group-item">{{'Kontakt'|_}}</a>
             <a href="{{'blog'|page}}" class="close-sidebar list-group-item blog">Blog</a>
-            {% if user %}
+            {#% if user %}
                 <a href="{{'intern-customer/home'|page}}" class="close-sidebar list-group-item intern">{{'Kundenbereich'|_}}</a>
                 {% if can('network_docs') %}
                     <a href="{{'intern-network/docs'|page}}" class="nclose-sidebar list-group-item docs">{{'Intern'|_}}</a>
                 {% endif %}
-            {% endif %}
+            {% endif %#}
             <hr>
-            {% if user %}
+            {#% if user %}
                 <a href="{{'account'|page}}" class="lose-sidebar list-group-item account">{{'Hallo'|_}} {{ user.name }}</a>
                 <a data-request="onLogout" data-request-data="redirect: '/'" class="lose-sidebar list-group-item signout">{{'Abmelden'|_}}</a>
             {% else %}
                 <li class="nav-item">
                     <a href="{{'account'|page}}" class="lose-sidebar list-group-item account">{{'Kundenlogin'|_}}</a>
                 </li>
-            {% endif %}
+            {% endif %#}
             <hr>
             {% component 'localePicker' %}
         </div>
     </div>
 </div>
 
+{#
 <div class="fixed-action-btn">
   <a class="btn btn-danger btn-fab" data-toggle="tooltip" data-placement="left" title="Kontakt aufnehmen" href="mailto:info@jumplink.eu">
     <i class="fa fa-comment-o" aria-hidden="true"></i>
   </a>
 </div>
+#}
 
 {% put scripts %}
     <script type="text/javascript" src="{{ 'assets/javascript/partials/navigation.js' |theme }}"></script>

@@ -205,6 +205,7 @@ var playHeaderAnimation = function () {
  * Init support Chat
  */
 $(function () {
+    /*
     sChat.init('EYee4kQNwKftpfm3z', {
         ssl: true,
         welcomeMessage: 'Hallo, hier kannst du direkt mit uns schreiben und Fragen stellen.',
@@ -214,4 +215,5 @@ $(function () {
             headerTitle: 'JumpLink Support'
         }
     });
+    */
 });
