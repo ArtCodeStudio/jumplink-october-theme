@@ -2,36 +2,42 @@
 ==
 <div id="imprint" data-target="#imprint">
     <div class="container p-y-2">
-        <div class="row">
+        <div class="row" itemscope itemtype="http://schema.org/Organization">
             <div class="col-xs-12 text-xs-center">
                 <h2>Impressum</h2>
             </div>
             <div class="col-xs-12 col-md-6 p-t-2">
-                <dl class="row" itemscope itemtype="http://schema.org/Organization">
+                <dl class="row">
+                    <img itemprop="logo" class="img-fluid center-block p-x-2 m-b-1 hidden-xs-up" src="https://jumplink.eu/themes/jumplink/assets/images/logos/logo.svg" alt="JumpLink network logo">
+                    <meta itemprop="additionalType" href="http://schema.org/LocalBusiness">
+                    <a class="hidden-xs-up" href="https://jumplink.eu/" itemprop="url">jumplink.eu</a>
                     <dt class="col-xs-12"><p>Angaben gem. § 5 TMG</p></dt>
-                    <dt class="col-xs-12">Betreiber und Kontakt</dt>
-                    <dd itemprop="name" class="col-xs-12">Pascal Garber</dd>
-                    <dd class="col-xs-12">Kasernenstraße 8</dd>
-                    <dd class="col-xs-12">27472 Cuxhaven DE</dd>
-                    <dt class="col-xs-12"><p> </p></dt>
-                    <dt class="col-xs-5">Telefon</dt>
-                    <dd class="col-xs-7"><a itemprop="telephone" href="tel:+4915254090189">+49 152 54 09 01 89</a></dd>
-                    <dt class="col-xs-5">Fax</dt>
-                    <dd class="col-xs-7"><a itemprop="faxNumber" href="fax:+494721664319">+49 4721­ 664319</a></dd>
-                    <dt class="col-xs-5">E-Mail</dt>
-                    <dd class="col-xs-7"><a itemprop="email" href="mailto:info@jumplink.eu">info@jumplink.eu</a></dd>
-                    <dt class="col-xs-5">USt-IdNr.</dt>
-                    <dd itemprob="vatID" class="col-xs-7">DE277453808</dd>
-                    <dt class="col-xs-12"><p> </p></dt>
-                    <dt class="col-xs-12">Verantwortliche/r i.S.d. § 55 Abs. 2 RStV</dt>
-                    <dd class="col-xs-12">Pascal Garber, Bei der Kirche 12, 27476 Cuxhaven</dd>
+                    <span itemprop="contactPoint" itemscope itemtype="http://schema.org/ContactPoint">
+                        <meta itemprop="contactType" content="sales"/>
+                        <dt class="col-xs-12">Betreiber und Kontakt</dt>
+                        <dd class="col-xs-12">Pascal Garber</dd>
+                        <dd class="col-xs-12">Kasernenstraße 8</dd>
+                        <dd class="col-xs-12">27472 Cuxhaven DE</dd>
+                        <dt class="col-xs-12"><p> </p></dt>
+                        <dt class="col-xs-5">Telefon</dt>
+                        <dd class="col-xs-7"><a itemprop="telephone" content="+4915254090189" href="tel:+4915254090189">+49 152 54 09 01 89</a></dd>
+                        <dt class="col-xs-5">Fax</dt>
+                        <dd class="col-xs-7"><a itemprop="faxNumber" content="+494721664319" href="fax:+494721664319">+49 4721­ 664319</a></dd>
+                        <dt class="col-xs-5">E-Mail</dt>
+                        <dd class="col-xs-7"><a itemprop="email" content="info@jumplink.eu" href="mailto:info@jumplink.eu">info@jumplink.eu</a></dd>
+                        <dt class="col-xs-5">USt-IdNr.</dt>
+                        <dd itemprob="vatID" class="col-xs-7">DE277453808</dd>
+                        <dt class="col-xs-12"><p> </p></dt>
+                        <dt class="col-xs-12">Verantwortliche/r i.S.d. § 55 Abs. 2 RStV</dt>
+                        <dd class="col-xs-12">Pascal Garber, Bei der Kirche 12, 27476 Cuxhaven</dd>
+                    </span>
                 </dl>
             </div>
             <div class="col-xs-12 col-md-6 p-t-2">
                 <dl class="row">
-                    <dt class="col-xs-12">JumpLink</dt>
+                    <dt itemprop="name" class="col-xs-12">JumpLink</dt>
                     <dd class="col-xs-12">
-                        <p>JumpLink ist ein Netzwerk aus selbstständigen Designern und Programmierern.</p>
+                        <p itemprop="description">JumpLink ist ein Netzwerk aus selbstständigen Designern und Programmierern.</p>
                     </dd>
                     <dt class="col-xs-12">Datenschutz</dt>
                     <dd class="col-xs-12">Die Datenschutzerklärung findest Du unter <a href="{{ 'privacy-policy'|page }}">{{ 'privacy-policy'|page }}</a></dd>

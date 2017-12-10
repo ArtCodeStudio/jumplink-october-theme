@@ -1,11 +1,11 @@
 [viewBag]
 ==
-<div class="{{postColumnClass}} grid-item">
+<div itemscope itemtype="http://schema.org/Article" class="{{postColumnClass}} grid-item">
     <div class="card card-outline-primary">
-
         {% if post.featured_images.count %}
             <a href="{{ post.url }}">
                 <img
+                    itemprop="image"
                     data-src="{{ post.featured_images[0].filename }}"
                     src="{{ post.featured_images[0].path }}"
                     alt="{{ post.featured_images[0].description }}"
@@ -16,11 +16,11 @@
         <div class="card-block">
             <p class="card-text markdown">
                 <a href="{{ post.url }}">
-                    <strong>{{ post.title }}</strong>
+                    <strong itemprop="headline">{{ post.title }}</strong>
                 </a>
             </p>
             {% if show_excerption %}
-                <p class="card-text markdown">
+                <p itemprop="description" class="card-text markdown">
                 {{ post.summary | raw }}
                 <a href="{{ post.url }}">
                     Weiterlesen..
@@ -33,11 +33,35 @@
             <div class="card-footer no-border bg-body small">
                 {{ 'Erstellt'|_ }}
                 {% if post.categories.count %} in {% endif %}
-                {% for category in post.categories %}
-                    <a href="{{ category.url |_ }}">{{ category.name }}</a>{% if not loop.last %}, {% endif %}
-                {% endfor %}
-                {{ 'am'|_ }} <a href="{{ post.url }}">{{ post.published_at|date('d M Y') }} {% if post.user %} {{'von'|_}} {{ post.user.first_name }} {{ post.user.last_name }}  {% endif %}</a>
+                <span itemprob="articleSection">
+                    {% for category in post.categories %}
+                        <a href="{{ category.url |_ }}">{{ category.name }}</a>{% if not loop.last %}, {% endif %}
+                    {% endfor %}
+                </span>
+                {{ 'am'|_ }}
+                <a href="{{ post.url }}">
+                    {{ post.published_at | date('d M Y') }} {% if post.user %} {{'von'|_}} {{ post.user.first_name }} {{ post.user.last_name }}  {% endif %}
+                </a>
             </div>
         {% endif %}
+
+        {% if post.user %}
+            <meta itemprop="author" content="{{ post.user.first_name }} {{ post.user.last_name }}"/>
+        {% endif %}
+        
+        <meta itemprop="datePublished" content="{{ post.published_at | date('c') }}" />
+        <meta itemprop="dateModified" content="{{ post.updated_at | date('c') }}" />
+        <meta itemprop="mainEntityOfPage" itemType="https://schema.org/WebPage" itemid="{{ post.url }}"/>
+
+        <span itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+            <span itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
+                <meta itemprop="name" content="JumpLink logo"/>
+                <meta itemprop="url" content="https://jumplink.eu/themes/jumplink/assets/images/logos/logo.png"/>
+                <meta itemprop="height" content="60"/>
+                <meta itemprop="width" content="60"/>
+            </span>
+            <meta itemprop="name" content="JumpLink" />
+        </span>
+
     </div>
 </div>

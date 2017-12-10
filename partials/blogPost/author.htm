@@ -1,20 +1,32 @@
 [viewBag]
 ==
-<div class="card card-outline-primary">   
-  <div class="card-block">
-    <img class="card-img-left" src="{{ ('/assets/images/network/' ~ post.user.login ~ '.svg') | theme}}" alt="Card image cap">
+<div itemprop="author" itemscope itemtype="http://schema.org/Person" class="card card-outline-primary">   
+  <div class="card-block" >
+    <img itemprop="image" class="card-img-left" src="{{ ('/assets/images/network/' ~ post.user.login ~ '.svg') | theme}}" alt="{{ post.user.first_name }} {{ post.user.last_name }}">
     <h4 class="card-title">{{ 'Über den Autor'|_ }}</h4>
     <p class="card-subtitle mb-2">
-       {{ post.user.first_name }} {{ post.user.last_name }}
-       <br>
+        <span itemprop="name">
+           {{ post.user.first_name }} {{ post.user.last_name }}
+        </span>
+        <br>
        {% partial 'network/'~post.user.login~'-jobtitle' %}
     </p>
     <div class="card-text">
         <p>
-            <a href="mailto:{{post.user.email}}">{{post.user.email}}</a>
+            <a itemprop="email" content="{{post.user.email}}" href="mailto:{{post.user.email}}">{{post.user.email}}</a>
         </p>
         {% content 'network/' ~ post.user.login ~ '-about.md' %}
     </div>
     
-  </div>
+  </div>  
 </div>
+        
+<span itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <span itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
+        <meta itemprop="name" content="JumpLink logo"/>
+        <meta itemprop="url" content="https://jumplink.eu/themes/jumplink/assets/images/logos/logo.png"/>
+        <meta itemprop="height" content="60"/>
+        <meta itemprop="width" content="60"/>
+    </span>
+    <meta itemprop="name" content="JumpLink" />
+</span>

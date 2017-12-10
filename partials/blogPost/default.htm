@@ -1,33 +1,52 @@
 [viewBag]
 ==
 {% set post = __SELF__.post %}
-
-{% if post.featured_images.count %}
-    <div class="featured-images text-center center-block">
-        {% for image in post.featured_images %}
-            <p>
-                <img
-                    data-src="{{ image.filename }}"
-                    src="{{ image.path }}"
-                    alt="{{ image.description }}"
-                    class="img-fluid center-block"
-                    />
-            </p>
-        {% endfor %}
-    </div>
-{% endif %}
-<h1>{{post.title}}</h1>
-<p class="info">
-    {{ 'Erstellt'|_ }}
-    {% if post.categories.count %} in
-        {% for category in post.categories %}
-            <a href="{{ category.url }}">{{ category.name }}</a>{% if not loop.last %}, {% endif %}
-        {% endfor %}
+<div itemscope itemtype="http://schema.org/Article">
+    {% if post.featured_images.count %}
+        <div class="featured-images text-center center-block">
+            {% for image in post.featured_images %}
+                <p>
+                    <img
+                        itemprop="image"
+                        data-src="{{ image.filename }}"
+                        src="{{ image.path }}"
+                        alt="{{ image.description }}"
+                        class="img-fluid center-block"
+                        />
+                </p>
+            {% endfor %}
+        </div>
     {% endif %}
-    {{ 'am'|_ }} {{ post.published_at|date('d M Y') }}
-</p>
-<div class="markdown content">{{ post.content_html|raw }}</div>
-
-{% if post.user %}
-    {% partial 'blogPost/author' %}
-{% endif %}
+    <h1 itemprop="headline">
+        {{post.title}}
+    </h1>
+    
+    <p itemprop="description" class="hidden-xs-up">
+        {{ post.summary | raw }}
+    </p>
+    
+    <p class="info">
+        {{ 'Erstellt'|_ }}
+        {% if post.categories.count %}
+            {{ 'in'|_ }}
+        {% endif %}
+        <span itemprob="articleSection">
+            {% for category in post.categories %}
+                <a href="{{ category.url |_ }}">{{ category.name }}</a>{% if not loop.last %}, {% endif %}
+            {% endfor %}
+        </span>
+        {{ 'am'|_ }}
+        <span itemprop="datePublished" content="{{ post.published_at | date('c') }}">
+            {{ post.published_at | date('d M Y') }}
+        </span>
+        
+    </p>
+    <div itemprob="articleBody" class="markdown content">{{ post.content_html|raw }}</div>
+    
+    <meta itemprop="dateModified" content="{{ post.updated_at | date('c') }}" />
+    <meta itemprop="mainEntityOfPage" content="{{ this.controller.currentPageUrl() }}" />
+    
+    {% if post.user %}
+        {% partial 'blogPost/author' %}
+    {% endif %}
+</div>
