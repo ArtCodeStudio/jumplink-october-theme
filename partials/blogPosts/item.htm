@@ -1,0 +1,43 @@
+[viewBag]
+==
+<div class="{{postColumnClass}} grid-item">
+    <div class="card card-outline-primary">
+
+        {% if post.featured_images.count %}
+            <a href="{{ post.url }}">
+                <img
+                    data-src="{{ post.featured_images[0].filename }}"
+                    src="{{ post.featured_images[0].path }}"
+                    alt="{{ post.featured_images[0].description }}"
+                    class="card-img-top img-fluid center-block"
+                />    
+            </a> 
+        {% endif %}
+        <div class="card-block">
+            <p class="card-text markdown">
+                <a href="{{ post.url }}">
+                    <strong>{{ post.title }}</strong>
+                </a>
+            </p>
+            {% if show_excerption %}
+                <p class="card-text markdown">
+                {{ post.summary | raw }}
+                <a href="{{ post.url }}">
+                    Weiterlesen..
+                </a>
+                </p>
+            {% endif %}
+            
+        </div>
+        {% if show_footer %}
+            <div class="card-footer no-border bg-body small">
+                {{ 'Erstellt'|_ }}
+                {% if post.categories.count %} in {% endif %}
+                {% for category in post.categories %}
+                    <a href="{{ category.url |_ }}">{{ category.name }}</a>{% if not loop.last %}, {% endif %}
+                {% endfor %}
+                {{ 'am'|_ }} <a href="{{ post.url }}">{{ post.published_at|date('d M Y') }} {% if post.user %} {{'von'|_}} {{ post.user.first_name }} {{ post.user.last_name }}  {% endif %}</a>
+            </div>
+        {% endif %}
+    </div>
+</div>

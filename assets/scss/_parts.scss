@@ -6,3 +6,15 @@
      @extend .bg-inverse;
      @extend .bg-primary;
 }
+
+#social-buttons {
+    .the-buttons {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        > div,
+        > a {
+            margin: 15px;
+        }
+    }
+}

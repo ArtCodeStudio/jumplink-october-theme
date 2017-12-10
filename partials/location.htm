@@ -1,3 +1,4 @@
+[viewBag]
 ==
 <div id="location" class="m-y-3">
     <div class="card card-inverse card-primary text-xs-center col-sm-12 col-md-4 col-lg-3 col-xl-2">
@@ -5,13 +6,19 @@
         <p class="card-text">
             <strong>{{ 'Anfahrt' | _ }}</strong>
         </p>
-        <address itemscope itemtype="http://schema.org/LocalBusiness" class="card-text">
+        <address itemscope itemtype="http://schema.org/ProfessionalService" class="card-text">
+            <meta itemprop="additionalType" href="http://schema.org/LocalBusiness">
+            <img itemprop="image" class="img-fluid center-block p-x-2 m-b-1 hidden-xs-up" src="https://jumplink.eu/themes/jumplink/assets/images/logos/logo_inverse.svg" alt="JumpLink network logo">
             {% if this.theme.location_name %}
                 <span itemprop="name">{{ this.theme.location_name }}</span>
             {% endif %}
             {% if this.theme.location_description %}
+                <br>
                 <small itemprop="description">{{ this.theme.location_description |_ }}</small>
             {% endif %}
+            <span class="hidden-xs-up">
+                <br>Preisklasse <span itemprop="priceRange">€€€€</span>
+            </span> 
             <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
                 {% if this.theme.location_street_address %}
                     <br>
@@ -26,6 +33,15 @@
                     <span itemprop="addressRegion">{{ this.theme.location_address_region }}</span>
                 {% endif %}
             </span>
+            <br>
+            <br>
+            <a itemprop="telephone" class="color-white" content="+4915254090189" href="tel:+4915254090189">+49 152 54 09 01 89</a>
+            <br>
+            <a itemprop="email" class="color-white" href="mailto:info@jumplink.eu">info@jumplink.eu</a>
+            <div itemprop="geo" itemscope itemtype="http://schema.org/GeoCoordinates">
+                <meta itemprop="latitude" content="{{this.theme.location_latitude}}" />
+                <meta itemprop="longitude" content="{{this.theme.location_longitude}}" />
+            </div>
         </address>
         <div class="card-footer">
             <a class="btn btn-primary" id="navigation_link" data-toggle="tooltip" data-placement="top" title="{{'Anfahrt ermitteln'|_}}", target="_blank">

@@ -7,6 +7,8 @@ $(function () {
     var $contact = $('#contact');
     var $imprint= $('#imprint');
     
+
+    
     
     affix(function () {
         return 500;

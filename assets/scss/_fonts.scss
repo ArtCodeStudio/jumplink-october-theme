@@ -2,6 +2,11 @@
 // Roboto
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,900italic,900,700,700italic,500italic,500,400italic,300italic,100,100italic,300);
 
+
+h1, h2, h3, h4, h5, h6, #imprint, .navbar, .card-footer {
+    font-family: $font-family-monospace;
+}
+
 /*
 @font-face {
   font-family: 'Ubuntu';

@@ -1,0 +1,99 @@
+[viewBag]
+
+[blogPosts]
+pageNumber = "{{ :page }}"
+postsPerPage = 4
+noPostsMessage = "No posts found"
+sortOrder = "published_at desc"
+categoryPage = "blog/category"
+postPage = "blog/post"
+==
+{% set posts = blogPosts.posts %}
+{% set postColumnClass = 'col-xs-12 col-sm-6 col-md-6 col-xl-3' %}
+{% if posts|length > 0 %}
+<div id="latest-blog-posts" data-target="#latest-blog-posts" class="p-y-3">
+    <div class="container-fluid p-t-3">
+        <div class="row">
+            <div class="col-xs-12 text-xs-center">
+                <h2>
+                    {{'Blog'|_}}
+                    <br><small>{{'Die letzen Artikel aus unserem Blog'|_}}</small>
+                </h2>
+            </div>
+            
+            {% for post in posts %}
+                {%
+                    partial 'blogPosts/item'
+                    post=post
+                    postColumnClass=postColumnClass
+                    show_excerption=true
+                    show_footer=false
+                %}
+            {% else %}
+                <div class="no-data">
+                    {{ noPostsMessage }}
+                </div>
+            {% endfor %}
+            <div class="{{postColumnClass}} grid-sizer"></div>
+            
+            <div class="col-xs-12 text-xs-center p-y-1">
+                <a href="{{'blog'|page}}" class="btn btn-danger text-xs-center">{{'Alle Artikel anschauen'|_}}</a>
+            </div>
+            
+        </div>
+    </div>
+</div>
+{% endif %}
+
+{% put scripts %}
+	<script>
+        $(function() {
+            
+            var $grid = $('#latest-blog-posts.grid');
+            
+            $grid.masonry({
+                // set itemSelector so .grid-sizer is not used in layout
+                itemSelector: '.grid-item',
+                // use element for option
+                columnWidth: '.grid-sizer',
+                percentPosition: true
+            });
+            
+            // layout Masonry after each image loads
+            $grid.imagesLoaded().progress( function(instance, image) {
+                var $image = $(image.img);
+                var $item = $image.closest('.grid-item');
+                $item.addClass('loaded');
+                $grid.masonry('layout');
+            });
+            
+                
+    	    var $slicks = $('#latest-blog-posts .slick-slider');
+    	    
+    	    $slicks.each(function(){
+    	        var $slick = $(this);
+                if( !$slick.hasClass('slick-initialized') ) {
+                    $slick.slick({
+                        dots: false,
+                        arrows: false,
+                        infinite: true,
+                        speed: 500,
+                        fade: true,
+                        centerMode: true,
+                        cssEase: 'linear',
+                        variableWidth: false,
+                        autoplay: true,
+                        autoplaySpeed: 5000,
+                    });
+                    
+                }
+    	    });
+
+        });
+
+	</script>
+{% endput %}
+
+{% put scripts %}
+    <script type="text/javascript" src="{{ 'assets/javascript/partials/jumplink-latest-articles.js' |theme }}"></script>
+{% endput %}

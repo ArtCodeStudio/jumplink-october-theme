@@ -60,6 +60,10 @@ body {
   display: block;
 }
 
+.no-border {
+    border: none;
+}
+
 
 
 .icon-circle {
@@ -119,6 +123,13 @@ body {
     background-color: $body-bg;
 }
 
+.d-none {
+    display: none;
+}
+
+.color-white {
+    color: white;
+}
 
 
 // javascript links

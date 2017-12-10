@@ -2,11 +2,13 @@ title = "Startseite"
 url = "/"
 layout = "default"
 description = "Entwicklung erstklassiger und individueller Onlineshops"
-meta_title = "<3 Onlineshops"
+meta_title = "💙 Onlineshops"
 meta_description = "Entwicklung erstklassiger und individueller Onlineshops"
 is_hidden = 0
+meta_keywords = "Webdesign, Onlineshop, App, Cuxhaven, Entwicklung, Programmierung, Progressive Web Apps, Shopify, e-Commerce, Internetseite, Homepage, Online, Design, Webentwicklung"
 robot_index = "index"
 robot_follow = "follow"
+og_image = "/anitahass_1200x600x150_002.png"
 
 [viewBag]
 localeUrl[en] = "/"
@@ -25,10 +27,22 @@ localeUrl[en] = "/"
     {% partial 'navigation' %}
     {% partial 'development' %}
     {% partial 'credentials_carousel' %}
+    
+    {# Blog #}
+    {% partial 'jumplink-latest-articles'
+        handle='jumplink-latest-articles'
+        title='<strong>lesenswert</strong>'
+        subtitle='<a href="/blog" title="Blog">alle Artikel sehen</a>'
+        headerTextColClass=headerTextColClass
+        leftColClass=leftColClass
+        rightColClass=rightColClass
+    %}
+    
     {% partial 'network_grid' %}
+
     {% partial 'contact' %}
     {% partial 'location' %}
-    {% partial 'imprint' %}
+    {% partial 'footer' %}
 </div>
 {% put scripts %}
     <script type="text/javascript" src="{{ 'assets/javascript/pages/home.js' |theme }}"></script>
