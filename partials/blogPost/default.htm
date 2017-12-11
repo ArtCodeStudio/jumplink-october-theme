@@ -44,7 +44,7 @@
     <div itemprob="articleBody" class="markdown content">{{ post.content_html|raw }}</div>
     
     <meta itemprop="dateModified" content="{{ post.updated_at | date('c') }}" />
-    <meta itemprop="mainEntityOfPage" content="{{ this.controller.currentPageUrl() }}" />
+    <meta itemprop="mainEntityOfPage" itemType="https://schema.org/WebPage" itemid="{{ this.controller.currentPageUrl() }}" content="{{ this.controller.currentPageUrl() }}"/>
     
     {% if post.user %}
         {% partial 'blogPost/author' %}

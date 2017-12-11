@@ -51,7 +51,7 @@
         
         <meta itemprop="datePublished" content="{{ post.published_at | date('c') }}" />
         <meta itemprop="dateModified" content="{{ post.updated_at | date('c') }}" />
-        <meta itemprop="mainEntityOfPage" itemType="https://schema.org/WebPage" itemid="{{ post.url }}"/>
+        <meta itemprop="mainEntityOfPage" itemType="https://schema.org/WebPage" itemid="{{ post.url }}" content="{{ post.url }}"/>
 
         <span itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
             <span itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
