@@ -12,17 +12,17 @@ var jumplink = {};
 
 jumplink.names = {
     invoice: 'Invoice from manufacturer',
-}
+};
 
 jumplink.texts = {
     dataTransfer: "Ich bin damit einverstanden, dass meine Daten an die Hersteller der Ware weitergegeben werden, damit diese vor der Produktion oder Zustellung der Ware zum Zwecke der Abstimmung und Rechnungsstellung Kontakt mit mir aufnehmen bzw. Statusinformationen zur Sendungszustellung übermitteln können. Meine diesbezüglich erteilte Einwilligung kann ich jederzeit widerrufen.",
     acceptDataTransfer: "Please accept the data transfer"
-}
+};
 
 jumplink.urls = {
     privacyPolicy: 'https://studio-pezzetta.myshopify.com/pages/it-recht-datenschutz',
     TermsOfService: 'https://studio-pezzetta.myshopify.com/pages/it-recht-agb',
-}
+};
 
 jumplink.templates = {
     notes: `
@@ -55,8 +55,7 @@ jumplink.templates = {
           </div>
         </div>
     `,
-
-}
+};
 
 
 jumplink.loadJquery = function (cb) {
@@ -91,7 +90,7 @@ jumplink.loadJquery = function (cb) {
         
         document.body.appendChild(script_tag);
     }
-}
+};
 
 jumplink.loadCss = function (cb) {
     var head  = document.getElementsByTagName('head')[0];
@@ -106,7 +105,7 @@ jumplink.loadCss = function (cb) {
     };
     
     head.appendChild(link);
-}
+};
 
 jumplink.timeout = function (duration, timer, cb) {
     setTimeout(function () {
@@ -115,7 +114,7 @@ jumplink.timeout = function (duration, timer, cb) {
             jumplink.timeout(duration, timer, cb);
         }
     }, duration);
-}
+};
 
 jumplink.init = function (cb) {
     
@@ -124,7 +123,7 @@ jumplink.init = function (cb) {
     });
     
     jumplink.loadJquery(cb);
-}
+};
 
 jumplink.validate = function ($) {
     
@@ -142,7 +141,7 @@ jumplink.validate = function ($) {
         }
         
     });
-}
+};
 
 
 jumplink.customContactInformation = function () {
@@ -155,7 +154,7 @@ jumplink.customContactInformation = function () {
         
         
     });
-}
+};
 
 
 
@@ -174,7 +173,7 @@ jumplink.customShippingMethod = function () {
         });
         */  
     });
-}
+};
 
 jumplink.customPaymentMethod = function () {
     jumplink.init(function(error, $) {
@@ -186,7 +185,7 @@ jumplink.customPaymentMethod = function () {
 
         
     });
-}
+};
 
 jumplink.customThankYou = function () {
     
@@ -197,13 +196,13 @@ jumplink.customThankYou = function () {
         
         
     });
-}
+};
 
 
 // console.log(window.Shopify.Checkout);
 var checkoutStep = '';
 if(window && window.Shopify && window.Shopify.Checkout && window.Shopify.Checkout.step) {
-  checkoutStep = window.Shopify.Checkout.step
+  checkoutStep = window.Shopify.Checkout.step;
 }
 
 switch(checkoutStep) {

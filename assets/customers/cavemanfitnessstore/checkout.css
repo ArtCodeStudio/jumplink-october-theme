@@ -1,0 +1,9 @@
+/* custom */
+.content-legals {
+    padding: 10px 0 10px 30px;
+}
+
+.field__message.field__message--error a {
+    font-weight: bold;
+    color: #d9534f;
+}

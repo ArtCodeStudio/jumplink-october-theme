@@ -5,25 +5,13 @@ description = "Als offizieller Shopify Partner entwickeln wir wundervolle Websho
 meta_title = "💙 Onlineshops"
 meta_description = "Als offizieller Shopify Partner entwickeln wir wundervolle Webshops mit Herz"
 is_hidden = 0
-meta_keywords = "Webdesign, Onlineshop, App, Cuxhaven, Entwicklung, Programmierung, Progressive Web Apps, Shopify, e-Commerce, Internetseite, Homepage, Online, Design, Webentwicklung"
 robot_index = "index"
 robot_follow = "follow"
-og_image = "/anitahass_1200x600x150_002.png"
 
 [viewBag]
 localeUrl[en] = "/"
 ==
 <div class="home">
-    {% set headerText='Entwicklung wundervoller Onlineshops' %}
-    {% if this.theme.home_header_animation == 'particles' %}
-        {% partial 'header/particles' headerText=headerText %}
-     {% elseif this.theme.home_header_animation == 'dust' %}
-        {% partial 'header/dust' headerText=headerText %}
-    {% elseif this.theme.home_header_animation == 'flat-surface-shader' %}
-        {% partial 'header/flat-surface-shader' headerText=headerText %}
-    {% else %}
-        {% partial 'header/particles' headerText = headerText %}
-    {% endif %}
     {% partial 'navigation' %}
     {% partial 'development' %}
     {% partial 'credentials_carousel' %}

@@ -1,11 +1,11 @@
 title = "JumpLink Network Docs"
 url = "/intern/network-docs"
 layout = "default"
+meta_title = "JumpLink Network Docs"
+meta_description = "JumpLink Network Docs"
 is_hidden = 0
 robot_index = "index"
 robot_follow = "follow"
-meta_title = "JumpLink Network Docs"
-meta_description = "JumpLink Network Docs"
 
 [viewBag]
 localeUrl[en] = "/jumplink-network-docs"
@@ -19,13 +19,9 @@ redirect = "home"
     {% partial 'navigation' %}
     <div class="container m-t-1" data-target="#intern-network-docs">
         <div class="col-xs-12">
-            {% if can('network_docs') %}
-                <div class="markdown content">
-                    {% content 'intern-network/shopify-apps.md' %}
-                </div>
-            {% else %}
-                {{'Du bist für diese Seite nicht freigeschaltet'|_}}
-            {% endif %}
+            <div class="markdown content">
+                {#% content 'intern-network/shopify-apps.md' %#}
+            </div>
         </div>
     </div>
 </div>

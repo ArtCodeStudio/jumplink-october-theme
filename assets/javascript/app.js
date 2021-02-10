@@ -22,15 +22,15 @@ var sameHeightCards = function ($cards) {
             $this.css('min-height', t);
         }
     });
-}
+};
 
 /**
  * Enable tooltips everywhere
  * @see http://v4-alpha.getbootstrap.com/components/tooltips/#example-enable-tooltips-everywhere
  */ 
 $(function () {
-  $('[data-toggle="tooltip"]').tooltip()
-  $('[data-toggle="tooltip"][data-show="always"]').tooltip('show')
+  $('[data-toggle="tooltip"]').tooltip();
+  $('[data-toggle="tooltip"][data-show="always"]').tooltip('show');
 });
 
 /**
@@ -143,7 +143,7 @@ var movingImageOnMousemove = function (mouseSelector, backgroundSelector, xOffse
             newvalueY += $(mouseSelector).height() / 2;
         }
         $(backgroundSelector).css("background-position", newvalueX+"px "+newvalueY+"px");
-    }
+    };
     // initial position
     move(0, 0);
     // reset position on windows resize
@@ -162,7 +162,7 @@ var movingImageOnMousemove = function (mouseSelector, backgroundSelector, xOffse
  * @see https://github.com/maxwellito/vivus
  */
 var playHeaderLineAnimation = function (cb) {
-    if(!headerAnimateWrapper) var headerAnimateWrapper = $('#top .svg-wrapper');
+    var headerAnimateWrapper = $('#top .svg-wrapper');
     // if animation is not already played
     if(!$(headerAnimateWrapper).hasClass( "white-pathes" )) {
         // make all pathes white (before they are transparent) as a workaround for bad looking flipping effect
@@ -176,7 +176,7 @@ var playHeaderLineAnimation = function (cb) {
         
         headerLineAnimation.play(0.5);
     }
-}
+};
 
 /**
  * Play subtext fadein animation
@@ -190,7 +190,7 @@ var playSubtextAnimation = function (selector, cb) {
             $(value).animateCss('fadeIn', cb);
         }
     });
-}
+};
 
 /**
  * Start the subtext and line animation
@@ -199,7 +199,7 @@ var playHeaderAnimation = function () {
     playHeaderLineAnimation(function () {
         playSubtextAnimation('.jumplink-subtext');
     });
-}
+};
 
 /**
  * Init support Chat

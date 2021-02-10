@@ -35,22 +35,16 @@ forceUrl = 0
             'assets/vendor/prism/themes/prism-okaidia.css'
         ] | theme }}" rel="stylesheet">
         
-        {% component 'googleTracker' %}
-        
-        {#% partial 'facebook-pixel' %#}
-        
     </head>
     <body id="{{ str_studly(this.page.title) }}" data-spy="scroll" data-target=".navbar-scrollspy">
-    
-        {# Facebook button #}
-        <div id="fb-root"></div>
-        <script>(function(d, s, id) {
-          var js, fjs = d.getElementsByTagName(s)[0];
-          if (d.getElementById(id)) return;
-          js = d.createElement(s); js.id = id;
-          js.src = 'https://connect.facebook.net/de_DE/sdk.js#xfbml=1&version=v2.11&appId=137159413372827';
-          fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));</script>
+
+        <a href="https://artandcode.studio" id="new-side" style="height: 500px; width: 100%; background-color: black; display: flex; align-items: center; justify-content: center;">
+            <p class="h3" style="color: white;">Wir haben einen neuen Namen und eine neue Seite</p>
+            <div>
+                <img class="img-fluid" src="{{'/assets/images/logos/artandcodestudio-white.svg' | theme}}" alt="Art+Code Studio Logo">
+            </div>
+            
+        </a>
         
         {# Content #}
         <section id="layout-content">
@@ -114,6 +108,7 @@ forceUrl = 0
             'assets/vendor/prism/prism.js',
             'assets/javascript/affix.js',
             'assets/javascript/app.js',
+            'assets/javascript/snowflakes.js',
         ]|theme }}"></script>
         {% framework extras %}
         {# More theme variables #}
@@ -121,6 +116,5 @@ forceUrl = 0
             L.Icon.Default.imagePath = "/themes/{{this.theme.dirname}}/assets/vendor/leaflet/dist/images/";
         </script>
         {% scripts %}
-        
     </body>
 </html>
