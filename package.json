@@ -11,7 +11,7 @@
     "build": "npm run sass && npm run autoprefixer",
     "watch": "npm run sass -- -w"
   },
-  "author": "Pascal Garber <pascal.jumplink.eu>",
+  "author": "Pascal Garber <pascal@artandcode.studio>",
   "license": "MIT",
   "dependencies": {
     "autoprefixer": "^6.3.6",
