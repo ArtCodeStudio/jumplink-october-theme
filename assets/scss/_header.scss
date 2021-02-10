@@ -41,6 +41,9 @@
 }
 
 #particles {
+    display: block;
+    background-color: black;
+    color: white;
     .particles-js-canvas-el {
         transition: opacity 1s ease-in-out;
         opacity: 0.99;

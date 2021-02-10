@@ -1,5 +1,5 @@
 $(function () {
-    var $header = $('header');    
+    var $header = $('header');
     
     playSubtextAnimation('.jumplink-subtext');
     

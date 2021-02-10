@@ -1,17 +1,19 @@
 ==
-<header id="particles" class="bg-info background-vignette noselect" data-target="#top">
-    <div id="output">
+<a id="particles" href="https://artandcode.studio" title="Art+Code Studio" class="background-vignette noselect" data-target="#top">
+    <div id="output" >
         <div id="subtext-container">
             <div class="container">
                 <div class="row">
-                    <div class="col-xs-12">
-                        <h1 class="text-xs-center jumplink-subtext">{{ headerText |_ }}</h1>
+                    <div class="col-xs-12 jumplink-subtext">
+                        <h2 class="h3 text-xs-center">{{ headerText |_ }}</h2>
+                        <img class="img-fluid m-y-2" style="width: 800px;" src="{{'/assets/images/logos/artandcodestudio-white.svg' | theme}}" alt="Art+Code Studio Logo">
+                        <p class="text-xs-center">Klicke hier um unsere neue Seite zu besuchen</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</header>
+</a>
 
 {% put scripts %}
     <script type="text/javascript" src="{{ 'assets/javascript/partials/header/particles.js' |theme }}"></script>

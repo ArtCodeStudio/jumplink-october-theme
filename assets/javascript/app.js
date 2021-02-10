@@ -217,3 +217,10 @@ $(function () {
     });
     */
 });
+
+$(function () {   
+    var $header = $('particles'); 
+    affix(function () {
+        return $header.height();
+    });
+})

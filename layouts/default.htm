@@ -38,13 +38,16 @@ forceUrl = 0
     </head>
     <body id="{{ str_studly(this.page.title) }}" data-spy="scroll" data-target=".navbar-scrollspy">
 
-        <a href="https://artandcode.studio" id="new-side" style="height: 500px; width: 100%; background-color: black; display: flex; align-items: center; justify-content: center;">
-            <p class="h3" style="color: white;">Wir haben einen neuen Namen und eine neue Seite</p>
-            <div>
-                <img class="img-fluid" src="{{'/assets/images/logos/artandcodestudio-white.svg' | theme}}" alt="Art+Code Studio Logo">
-            </div>
-            
-        </a>
+        {% set headerText='Wir sind fusioniert' %}
+        {% if this.theme.home_header_animation == 'particles' %}
+            {% partial 'header/particles' headerText=headerText %}
+         {% elseif this.theme.home_header_animation == 'dust' %}
+            {% partial 'header/dust' headerText=headerText %}
+        {% elseif this.theme.home_header_animation == 'flat-surface-shader' %}
+            {% partial 'header/flat-surface-shader' headerText=headerText %}
+        {% else %}
+            {% partial 'header/particles' headerText = headerText %}
+        {% endif %}
         
         {# Content #}
         <section id="layout-content">
